@@ -126,3 +126,43 @@
     -webkit-text-stroke-color: #fff;
     }
 }
+
+@media screen and (max-width:450px) {
+    .catalog-item{
+        padding: 10px;
+    }
+    .catalog-title{
+        font-size: 16px;
+    }
+    .faq-date{
+        font-size: 13px;
+    }
+    .faq-date img{
+        width: 20px;
+        height: 20px;
+    }
+    .catalog-number{
+        font-size: 14px !important;
+    }
+    .catalog {
+        height: auto !important;
+    }
+    .hero-title h1{
+        padding: 5px;
+        
+    }
+    .catalog-title-badge{
+        display: none;
+    }
+    .services-help-col{
+        padding:20px 8px;
+    }
+    .services-help-title{
+        font-size: 32px;
+    }
+    .credit{
+        padding: 5px;
+        text-align: center;
+    }
+
+}

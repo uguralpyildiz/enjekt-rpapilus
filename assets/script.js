@@ -105,4 +105,4 @@ setTimeout(() => {
         loading.style.display = "none"; 
     }, 6500);
     
-}, 4000);
+}, 3000);
