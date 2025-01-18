@@ -370,6 +370,9 @@ background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.8
     flex-wrap: wrap;
     gap: 12px;
 }
+.con-ser{
+    text-align: center;
+}
 .portfolio-pill{
     border: 1px solid #4d4d4d;
     padding: 7px 15px;
@@ -456,9 +459,11 @@ background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.8
     flex-wrap: wrap;
     padding: 10px;
     background: #3D265B10;
-    border: 2px dotted #3D265B;
+    border: 2px solid #35353550;
+    box-shadow: 0 0 150px #002fff15;
     max-width: 1450px;
     margin: auto;
+    padding-top: 50px;
     margin-bottom: 100px;
     border-radius: 0px;
 }
@@ -475,12 +480,20 @@ background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.8
     display: flex;
     align-items: center;
     gap: 5px;
-    top: -25px;
+    top: 10px;
+    left: 20px;
     padding: 8px 15px;
-    background: linear-gradient(to left,#0400ff20,#3D265B);
+   
     color: #ffffff;
     border-radius: 0px;
     font-size: 15px;
+}
+
+.p20{
+    padding: 20px;
+}
+.con-ser{
+    font-size: 24px !important;
 }
 .catalog-item{
     width: 25%;
@@ -526,7 +539,7 @@ background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.8
     gap: 5px;
     padding:10px 20px;
     justify-content: end;
-    background: #00000020;
+    
     border-top: 4px solid #00000005;
 }
 .catalog-img{
@@ -539,8 +552,8 @@ background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.8
     
 }
 .catalog-img img{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
 .plus-mode{
     color: #b8b8b8;
@@ -557,11 +570,11 @@ background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.8
     font-weight: 500;
     font-size: 18px;
     
-    padding:10px 20px;
+    padding:20px;
     color: #ffffff;
-    background: #00000010;
+    
     border-radius: 5px 5px 0 0;
-    border-bottom: 4px solid #00000005;
+   
 }
 .catalog-title-badge{
     display: flex;
@@ -998,6 +1011,13 @@ h1.typing-text{
     font-size: 89px !important;
     line-height: 100px;
 }
+.hero-title-alt{
+    
+    max-width: 755px;
+    font-size: 18px;
+    color: #d8d8d8;
+    margin: auto;
+}
 .first-container .slider {
     background: transparent;
     height: 100px;
@@ -1244,4 +1264,31 @@ h1.typing-text{
     height: 100%;
     background: linear-gradient(to left, #000000a9, transparent);
     z-index: 99;
+}
+
+.paral-ef {
+    position: relative;
+    background: url(https://images.unsplash.com/photo-1659469377768-4f42f2f091c5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 150px;
+    padding-top: 170px;
+}
+.paral-ef-item{
+    position: relative;
+    top: -170px;
+}
+.paral-ef-item .catalog-filter{
+    background: #0f0f0f;
+}
+.badge-detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    
+    opacity: .8;
+    border-radius: 50px;
 }
