@@ -1,3 +1,14 @@
+
+window.addEventListener('scroll', function () {
+    var nav = document.querySelector(".sticky-fun"); // İlk 'nav' öğesini seç
+    if (window.scrollY > 150) {
+        nav.style.background = "#111111"; // Arka plan rengini değiştir
+    } else {
+        nav.style.background = ""; // Kaydırma 150px'ten azsa eski arka planı geri getir
+    }
+});
+
+
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
 
@@ -21,7 +32,7 @@ window.addEventListener("scroll", reveal);
                 var scroll = window.scrollY;
     var hero = document.querySelector('.hero');
 
-    var transformValue = 'translate3d(0, ' + (scroll / 100) + '%, 0) scale(' + (100 + scroll / 100) / 100 + ')';
+    var transformValue = 'translate3d(0, ' + (scroll / 75) + '%, 0) scale(' + (75 + scroll / 75) / 75 + ')';
     hero.style.transform = transformValue;
             });
 

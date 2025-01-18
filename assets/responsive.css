@@ -47,8 +47,33 @@
 
 
 @media screen and (max-width:1400px) {
+    .container-fluid-hero-default{
+        padding: 0px;
+    }
+    .portfolio{
+        padding: 10px !important;
+    }
+    .services-help-col{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    .case-section{
+        padding: 10px;
+    }
+        .case-section::before{
+            width: 0;
+        }
+        .case-section::after{
+            width: 0;
+        }
     .catalog-item{
         width: 50%;
+    }
+    .services-help-title{
+        text-align: center;
+    }
+    .services-help-img img{
+        margin-right: 0;
     }
     .hero-title h1{
         font-size: 42px !important;
@@ -62,6 +87,27 @@
     }
     .services-help{
         margin: 10px;
+    }
+    .portfolio-flex-container{
+        flex-direction: column;
+    }
+    .services-help, .nth1, .nth2{
+        flex-direction: column;
+        width: 100% !important;
+        margin: 0;
+        
+    }
+    .title-flex{
+        flex-direction: column-reverse;
+    }
+    .services-help-col{
+        flex-direction: column-reverse !important;
+    }
+    .services-help-img-big{
+        height: auto !important;
+    }
+    .services-help-img-big img{
+        height: auto !important;
     }
 }
 
@@ -108,9 +154,12 @@
     .nav-ghost{
         height: 63px;
     }
-    .hero-title h1{
+    .first-container .hero-title h1{
         font-size: 26px !important;
         line-height: normal;
+    }
+    .services-help-title{
+        font-size: 28px !important;
     }
     .services-help-title-alt{
         padding: 15px;
