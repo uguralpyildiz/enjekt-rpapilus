@@ -1,10 +1,10 @@
 
 window.addEventListener('scroll', function () {
-    var nav = document.querySelector(".sticky-fun"); // İlk 'nav' öğesini seç
+    var nav = document.querySelector(".sticky-fun"); 
     if (window.scrollY > 150) {
-        nav.style.background = "#111111"; // Arka plan rengini değiştir
+        nav.style.background = "#111111";
     } else {
-        nav.style.background = ""; // Kaydırma 150px'ten azsa eski arka planı geri getir
+        nav.style.background = ""; 
     }
 });
 
@@ -38,15 +38,15 @@ window.addEventListener("scroll", reveal);
 
 
 
-// get the element
+
 const text = document.querySelector('.typing-text');
 
-// make a words array
+
 const words = [
     "Sonunda Aradığın Ajansı Buldun"
 ];
 
-// start typing effect
+
 setTyper(text, words);
 
 function setTyper(element, words) {

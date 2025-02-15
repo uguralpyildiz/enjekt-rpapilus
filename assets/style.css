@@ -203,11 +203,13 @@ nav {
     background: linear-gradient(to right,#2d2ba7, #2d2ba7, #2d2ba7);
     border-radius: 0px;
 }
+
 .nav-cta-btn a{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .nav-cta-btn-sec{
     display: flex;
     align-items: center;
@@ -224,14 +226,15 @@ nav {
     font-size: 15px;
     transition: .3s ease all;
 }
+
 .annoucment{
     display: flex;
 }
+
 .nav-cta-btn-lang:hover{
     color: #ffffff;
     text-shadow: 0 0 50px #ffffff;
 }
-
 
 .container-fluid-hero{
     position: relative;
@@ -243,7 +246,6 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    
     margin: auto;
     padding: 0 20px;
     height: calc(100vh); 
@@ -283,7 +285,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #00000054;
+    background: linear-gradient(to top, #11111199, transparent);
    
     z-index: -1 !important;
 }
@@ -316,7 +318,7 @@ nav {
 .stroke-text-gradient-s{
     
     position: relative;
-background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.89%);
+background: linear-gradient(88deg, #dd8bfd -11.16%, #6f6df8 46.95%, #2b7df7 94.89%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-repeat: no-repeat;
@@ -360,10 +362,11 @@ background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.8
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px 0;
+    margin: 0px 0;
     gap: 10px;
     font-weight: 500;
 }
+
 .pill-section{
     display: flex;
     align-items: center;
@@ -374,12 +377,23 @@ background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.8
     text-align: center;
 }
 .portfolio-pill{
+    display: flex;
+    align-items: center;
+    gap: 8px;
     border: 1px solid #4d4d4d;
     padding: 7px 15px;
-    color: #b1b1b1;
+    color: #fff;
     font-size: 14px;
     background: #202020;
     margin-top: 20px;
+}
+.blog-img{
+    width: 100% !important;
+}
+.blog-img img{
+    width: 600px !important;
+    height: 250px !important;
+    object-fit: cover !important;
 }
 .whatsapp-btn{
     position: relative;
@@ -464,7 +478,7 @@ background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.8
     max-width: 1450px;
     margin: auto;
     padding-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 15px;
     border-radius: 0px;
 }
 .kasend-btn span{
@@ -516,7 +530,7 @@ background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.8
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #191919;
+    background: #11111199 !important;
     border-radius: 0px;
     box-shadow: 0 0 25px #00000010;
     border: 2px solid ;
@@ -526,10 +540,10 @@ background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.8
 
 
 .catalog-number{
-    font-weight: 400;
-    font-size: 15px;    
+    font-weight:500 ;
+    font-size: 16px;    
     padding: 20px;
-    color: #b8b8b8;
+    color: #ffffffc5;
     height: 180px;
 
 }
@@ -611,17 +625,18 @@ background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.8
 }
 .portfolio-header-container{
     display: flex !important;
-    align-items: start !important;
+    align-items: center !important;
     justify-content: start !important;
     gap: 5px !important;
 }
 .flex-head-title-arrow{
     display: flex;
     align-items: start;
-    justify-content: space-between;
+    justify-content: center;
 }
 .hero-text-sub{
     font-weight: 500;
+    
 }
 
 .gradi{
@@ -631,38 +646,40 @@ background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.8
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 0px;
 }
 .services-help{
     position: relative;
 }
 .shadow-text{
-    text-shadow: 0 0 100px #ffffff50;
+    text-shadow: 0 0 150px #ffffff50;
 }
 .numsmash{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     position: absolute;
     left: 0%;
-    top: 0px;
-    background: #353535;
+    top: 20px;
+    background: #000;
     color: #fff;
     width: 45px ;
     height: 45px    ;
-    border-radius: 50px 50px 50px 0;
+    border-radius: 50px;
     font-weight: 600;
     border: 2px solid #474747;
     font-size: 18px;
 }
 .services-help-column img {
-    max-width: 100%;
-   
+    max-width: 300px;
+    height: 200px;
+    object-fit: contain;
     border-radius: 0px;
 }
 .title-flex{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 .catalog:hover::before{
@@ -671,6 +688,7 @@ background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.8
 .catalog:hover{
     transform: translateY(-8px);
     box-shadow: 0px 0px 25px #00000049;
+    background: #252525;
 }
 .catalog:active   {
     transform: scale(.99);
@@ -684,12 +702,12 @@ background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.8
     width: 100%;
 }
 .portfolio .services-help-col{
-    background: #191919;
+    background: linear-gradient(to top, #191919, #121212);
     border-radius: 0px;
     margin-top: 25px;
     margin-bottom: 50px;
-    padding: 20px;
-    border: 2px solid #ffffff20;
+    padding-left:20px;
+    border: 1px solid #ffffff30;
 }
 .col-n{
     margin-top: 40px;
@@ -709,7 +727,7 @@ background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.8
     display: flex;
     align-items: start;
     justify-content: space-between;
- 
+    
     flex-direction: column;
     max-width: 1450px;
     margin: auto;
@@ -721,7 +739,7 @@ background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.8
 }
 .services-help-title{
     font-weight: 600;
-    
+    text-align: left;
     font-size: 42px;
     color: #fff;
     
@@ -731,9 +749,19 @@ background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.8
     font-size: 16px;
     max-width: 650px;
     padding-top: 10px;
-    
+    text-align: center;
     color: #ececee99;
 
+}
+.cta-alt{
+    text-align: left;
+}
+.services-crew-img{
+    padding: 50px 15px;
+    padding-bottom: 0;
+}
+.services-crew-img img{
+    max-width: 100%;
 }
 .services-help-title{
     position: relative;
@@ -746,8 +774,7 @@ background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.8
     box-shadow: 0 0 250px #3c39c630;
 }
 .services-help-img img{
-    max-width: 300px;
-    margin-right: 50px;
+    width: 100%;
     object-fit: cover;
    
 }
@@ -755,7 +782,8 @@ background: linear-gradient(88deg, #ffb493 -11.16%, #fa6bbe 46.95%, #2b7df7 94.8
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    width: 100%;
+    padding-right: 20px;
 }
 .services-help-img-big img{
     max-width: 100%;
@@ -782,7 +810,7 @@ footer{
     z-index: 2;
 }
 .faq-container{
-    background: linear-gradient(to top, #191919, #1d1c3850);
+    background: linear-gradient(to top, #191919, #12121250);
     border: 2px solid #353535;
     max-width: 1450px;
     border-radius: 0px;
@@ -932,9 +960,9 @@ footer{
 
 .reveal {
     position: relative;
-    transform: translateY(30px);
-    opacity: 0;
-    transition: .5s all ease;
+    transform: translateY(80px);
+    opacity: .5;
+    transition: 1s all ease;
 }
 .instagram {
     background: #833ab4;
@@ -1089,6 +1117,7 @@ h1.typing-text{
     transition: .3s ease all;
 }
 .portfolio-sec .services-help-header{
+    text-align: center;
     margin: 0;
     padding: 5px 0;
 }
@@ -1104,7 +1133,7 @@ h1.typing-text{
     display: flex;
     align-items: center;
     height: 50px;
-    
+    padding-top: 20px;
 }
 
 
@@ -1158,7 +1187,7 @@ h1.typing-text{
 }
 
 .reverse-port .services-help-col{
-    height: 450px;
+    
     overflow: hidden;
 }
 
@@ -1187,7 +1216,7 @@ h1.typing-text{
  .swiper {
      width: 100%;
      height: 100%;
-     background: #000;
+     
      
  }
 
@@ -1206,7 +1235,10 @@ h1.typing-text{
     border: 2px solid #353535;
     padding: 20px;
  }
- 
+ .portfolio-flex-container .setting-services-hero{
+    width: 33.3%;
+   
+ }
  .profil-card .services-help{
     text-align: center;
  }
@@ -1291,4 +1323,56 @@ h1.typing-text{
     
     opacity: .8;
     border-radius: 50px;
+}
+
+.cta-container-s {
+    position: relative;
+    padding: 20px 0;
+    background: linear-gradient(to right, #4B6CE930, #4B6CE950, #4B6CE985) !important;
+    z-index: 1;
+    border: 2px solid #353535 !important;
+}
+.cta-container-s2{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    position: relative;
+    padding: 20px 0;
+    background-image: url(https://ninjapromo.io/wp-content/themes/ninjapromo/assets/newdesign/b2b_case_bg.png) !important;
+    background-position: left !important;
+    background-size: 50% !important;
+    background-repeat: no-repeat !important;
+    background-color: #111111 !important;
+    z-index: 1;
+    border: 2px solid #191919 !important;
+}
+
+.endura-pro {
+    position: relative;
+    background: url(https://ninjapromo.io/wp-content/themes/ninjapromo/assets/pricing/price_bghero.jpg);
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.endura-pro::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 50%;
+    background: linear-gradient(to bottom, #000, transparent);
+    z-index: -1;
+}
+.endura-pro::after{
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100% !important;
+    height: 100%;
+    background: linear-gradient(to top, #000, transparent);
+    z-index: -2;
 }

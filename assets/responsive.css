@@ -105,6 +105,7 @@
     }
     .services-help-img-big{
         height: auto !important;
+        padding:0 10px;
     }
     .services-help-img-big img{
         height: auto !important;
