@@ -165,11 +165,11 @@ downloadCv.addEventListener("click", () => {
     }, 250);
 
     setTimeout(() => {
-        downloadCv.innerHTML = '<span class="download-text"><i class="fa-solid fa-check"></i>Thank you</span>'
+        downloadCv.innerHTML = '<span class="download-text"><i class="fa-solid fa-check"></i>Teşekkürler</span>'
     }, 2500);
 
     setTimeout(() => {
-        downloadCv.innerHTML = '<span class="download-text"><i class="fa-solid fa-file-arrow-down"></i>Download CV</span>'
+        downloadCv.innerHTML = '<span class="download-text">Kolay Teklif Talebi <img width="16" height="16" src="https://img.icons8.com/e3e5e9/android/124/up-right-arrow.png" alt="up-right-arrow"></span>'
         downloadCv.style.pointerEvents = "auto";
     }, 7000);
 })

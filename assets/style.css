@@ -60,6 +60,7 @@ body{
 }
 .nav-logo{
     display: flex;
+    filter: brightness(5) grayscale(1);
     align-items: center;
     gap: 8px;
     text-decoration: none;
@@ -2076,4 +2077,57 @@ header {
 
 section {
     background: transparent;
+}
+
+
+.referances-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+    max-width: 1450px;
+    margin: auto;
+}
+.referances{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111111;
+    padding: 12px;
+    width: 25%;
+    border: 1px solid #ffffff20;
+}
+.referances img{
+    width: 100%;
+    height: 100%;
+    background: #111111;
+    object-fit: cover;
+}
+.story-box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    max-width: 1450px;
+    margin: auto;
+    margin-top: 150px;
+    gap: 50px;
+}
+.story-box-container .services-crew-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 650px;
+    border: 5px solid #fff;
+    padding: 0;
+    transform: rotate(-2deg);
+
+}
+.story-title h2{
+    padding: 20px 0;
+    font-style: italic;
+}
+.story-title p{
+    opacity: .8;
 }
