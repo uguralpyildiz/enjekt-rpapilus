@@ -171,38 +171,34 @@
 
   
 
-    
+    <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
 
  
         <div class="container-fluid-hero-default portfolio endura-pro">
         
-            <div class="container reveal active" style="margin-top: 150px; margin-bottom: 50px;">
+            <div class="container  active" style="margin-top: 150px; margin-bottom: 50px;">
                 <div class="services-help" style="align-items: center;">
         
                     <div class="services-help-title " style="text-align: center;">
         
                         <span class="stroke-text-gradient-s"> Kolay Teklif Talebi</span>
                     </div>
-                    <div class="hero-info"
-                        style="padding: 15px 0; max-width: 850px; margin: auto; text-align: center; opacity: .8;">
-        
-                        Kolay teklif talebi ile ihtiyaçlarınıza özel çözümleri öğrenmek için aşağıdaki soruları cevaplayın ve hemen teklif alın!
-                    </div>
+                    
                 </div>
         
             </div>
         
         
-            <div class="lake-vis">
+            <div class="lake-vis ">
                 <div class="form-container">
                     <div class="progress-bar">
                         <div class="progress"></div>
                     </div>
-                    <form id="multiStepForm">
+                    <form id="multiStepForm" action="https://formspree.io/f/mblggkyb" method="POST" target="dummyframe">
                         <div class="step active">
                             <div class="questions">
                                 <label>Size Nasıl Hitap Etmemizi İstersiniz?</label>
-                                <input type="text" name="fullname" placeholder="Adınız" required>
+                                <input type="text" name="fullname" placeholder="Adınız" >
                                 <div class="alt-p-form">
                                     <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png" alt="info--v1">
                                     <span>
@@ -224,7 +220,7 @@
                         <div class="step">
                             <div class="questions">
                                 <label>Şirketinizin veya Markanızın Adı:</label>
-                                <input type="text" name="company" required>
+                                <input type="text" name="company" >
                                 <div class="alt-p-form">
                                     <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png" alt="info--v1">
                                     <span>
@@ -247,7 +243,7 @@
                         <div class="step">
                             <div class="questions">
                                 <label>Telefon Numaranız:</label>
-                                <input type="tel" name="phone" required>
+                                <input type="tel" name="phone" >
                                 <div class="alt-p-form">
                                     <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png" alt="info--v1">
                                     <span>
@@ -584,22 +580,22 @@
                             <label>Ekstra Grafik Tasarımı Hizmetimizden Yararlanmak İstiyor Musunuz?</label>
                             <div class="question-checkbox">
                                 <label>
-                                    <input type="checkbox" name="design" value="Banner Tasarımı"> Banner Tasarımı
+                                    <input type="checkbox" name="ekistek" value="Banner Tasarımı"> Banner Tasarımı
                                 </label>
                             </div>
                             <div class="question-checkbox">
                                 <label>
-                                    <input type="checkbox" name="design" value="Logo Tasarımı"> Logo Tasarımı
+                                    <input type="checkbox" name="ekistek" value="Logo Tasarımı"> Logo Tasarımı
                                 </label>
                             </div>
                             <div class="question-checkbox">
                                 <label>
-                                    <input type="checkbox" name="design" value="Özel Grafik Tasarımı"> Sosyal Medya İçin Grafik Tasarımı
+                                    <input type="checkbox" name="ekistek" value="Özel Grafik Tasarımı"> Sosyal Medya İçin Grafik Tasarımı
                                 </label>
                             </div>
                             <div class="question-checkbox">
                                 <label>
-                                    <input type="checkbox" name="design" value="Bunlara Şimdilik Gerek Yok">  Şimdilik Gerek Yok
+                                    <input type="checkbox" name="ekistek" value="Bunlara Şimdilik Gerek Yok">  Şimdilik Gerek Yok
                                 </label>
                             </div>
                             
@@ -737,11 +733,11 @@
                             </div>
                         </div>
 
-
+                        <!-- steps section ********************** -->
                         <div class="step">
                             <div class="questions">
                                 <label>Belirtmek İstediğiniz Başka Talepleriniz Varsa Yazın</label>
-                                <textarea name="additional_requests" required placeholder="Mesajınız"></textarea>
+                                <textarea name="additional_requests"  placeholder="Mesajınız"></textarea>
                                 <div class="alt-p-form">
                                     <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
                                         alt="info--v1">
@@ -758,10 +754,43 @@
                                     <img style="position: absolute; left: 10px;" width="15" height="15"
                                         src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left" /> Önceki Soru
                                 </button>
-                                <button type="button" onclick="bitir()">Bitir ve Talebi Gönder <img style="position: absolute; right: 10px;" width="15"
+                                <button class="checkbtn" type="submit" onclick="nextStep()">Talebi Gönder <img style="position: absolute; right: 10px;" width="15"
                                         height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png"
                                         alt="chevron-right" /></button>
                             </div>
+                        </div>
+
+
+                        <!-- steps bitisssss ********************** -->
+                        <div class="step">
+                            <div class="info-bar" style="text-align: center; display: flex; align-items: center; justify-content: center; flex-direction: column; height: 100%;">
+                                <svg class="svg" style="margin-bottom: 15px;" width="75px" height="75px" viewBox="0 0 133 133" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="check-group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <circle id="filled-circle" fill="#1CBB57" cx="66.5" cy="66.5" r="54.5"></circle>
+                                        <circle id="white-circle" fill="#FFFFFF" cx="66.5" cy="66.5" r="55.5"></circle>
+                                        <circle id="outline" stroke="#1CBB57" stroke-width="4" cx="66.5" cy="66.5" r="54.5">
+                                        </circle>
+                                        <polyline id="check" stroke="#FFFFFF" stroke-width="4" points="41 70 56 85 92 49">
+                                        </polyline>
+                                    </g>
+                                </svg>
+                                
+                                <h1 class="easesanim" style="font-size: 18px; color: #2c2c2c;">Hepsi bu kadar.</h1>
+                                
+                                <div class="alt-p-form">
+                                    <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png" alt="info--v1">
+                                    <span>
+                                        Talebiniz başarıyla gönderildi. Cevapladığınız sorulara göre bir plan oluşturup, en kısa sürede sizinle iletişime geçeceğiz. Teşekkür Ederiz 🌟
+                                    </span>
+                                </div>
+                            
+                            
+                            
+                            
+                            </div>
+                        
+                            
                         </div>
 
                     </form>
@@ -778,6 +807,8 @@
 <script>
     let currentStep = 0;
     const steps = document.querySelectorAll(".step");
+    const svg = document.querySelector(".svg");
+    const checkbtn = document.querySelector(".checkbtn");
     const progress = document.querySelector(".progress");
 
     function showStep(step) {
@@ -808,6 +839,9 @@
         const progressPercentage = ((currentStep + 1) / steps.length) * 100;
         progress.style.width = progressPercentage + "%";
     }
+    checkbtn.addEventListener("click", ()=>{
+        svg.style.display = "block"
+    })
 </script>
 
    

@@ -1,7 +1,7 @@
 
 window.addEventListener('scroll', function () {
     var nav = document.querySelector(".sticky-fun"); 
-    if (window.scrollY > 150) {
+    if (window.scrollY > 50) {
         nav.style.background = "#111111";
     } else {
         nav.style.background = ""; 
