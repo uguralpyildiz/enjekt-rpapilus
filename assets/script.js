@@ -2,7 +2,7 @@
 window.addEventListener('scroll', function () {
     var nav = document.querySelector(".sticky-fun"); 
     if (window.scrollY > 50) {
-        nav.style.background = "#111111";
+        nav.style.background = "linear-gradient(to bottom,#000000,#161616)";
     } else {
         nav.style.background = ""; 
     }
@@ -28,13 +28,7 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 
-    window.addEventListener('scroll', function () {
-                var scroll = window.scrollY;
-    var hero = document.querySelector('.hero');
-
-    var transformValue = 'translate3d(0, ' + (scroll / 75) + '%, 0) scale(' + (75 + scroll / 75) / 75 + ')';
-    hero.style.transform = transformValue;
-            });
+    
 
 
 
