@@ -185,19 +185,19 @@
                 
                 <img class="contact-img" src="assets/img/services/webdev.png" alt="">
             </div>
-            
+            <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
             <div class="contact-form-sec">
-                <form action="#" method="post" enctype="multipart/form-data">
+                <form id="contactForm" action="https://formspree.io/f/xvgazzya" method="POST" target="dummyframe">
                 
                     <div class="form-row">
                         <div class="form-secs">
                             <label for="full-name">Ad Soyad</label><br>
-                            <input type="text" id="full-name" name="full-name" placeholder="Adınız Soyadınız">
+                            <input required type="text" id="full-name" name="full-name" placeholder="Adınız Soyadınız">
                         </div>
                 
                         <div class="form-secs">
-                            <label for="email">E-posta Adresi</label><br>
-                            <input type="email" id="email" name="email" placeholder="iletisim@nowifymedia.com">
+                            <label for="email">E-posta Adresi <span>(Opsiyonel)</span></label><br>
+                            <input  type="email" id="email" name="email" placeholder="iletisim@nowifymedia.com">
                         </div>
                     </div>
                 
@@ -208,15 +208,15 @@
                         </div>
                 
                         <div class="form-secs">
-                            <label for="website">Web Site Linki <span>(Opsiyonel)</span></label><br>
-                            <input type="text" id="website" name="website" placeholder="nowifymedia.com">
+                            <label for="phone">Telefon Numarası</label><br>
+                            <input required type="tel" id="phone" name="phone" maxlength="20" inputmode="numeric" placeholder="05xx xxx xx xx">
                         </div>
                     </div>
                 
                     <div class="form-row">
                     <div class="form-secs">
                         <label for="services">Hizmetler</label><br>
-                        <select id="services" name="services">
+                        <select required id="services" name="services">
                             <option value="" disabled selected>Seçiniz</option>
                             <option value="web-tasarim">Web Tasarımı</option>
                             <option value="web-yazilim-ve-eticaret">Web Yazılımı & E-Ticaret</option>
@@ -228,7 +228,7 @@
                     
                     <div class="form-secs">
                         <label for="budget">Bütçe</label><br>
-                        <select id="budget" name="budget">
+                        <select required id="budget" name="budget">
                             <option value="" disabled selected>Seçiniz</option>
                             <option value="5000-10000">5.000 TL - 10.000 TL arası</option>
                             <option value="10000-15000">10.000 TL - 15.000 TL arası</option>
@@ -266,7 +266,7 @@
                     <div class="form-colo">
                         <div class="form-message-sec">
                             <label for="message">Mesajınız</label><br>
-                            <textarea id="message" name="message" placeholder="Projeniz hakkında bilgi verin..." rows="5"></textarea>
+                            <textarea required id="message" name="message" placeholder="Projeniz hakkında bilgi verin..." rows="5"></textarea>
                         </div>
                     </div>
                 
@@ -274,17 +274,65 @@
                 
                     
                     <div class="hero-cta-buttons">
-                        <a class="nav-cta-btn" href="/iletisim" target="_blank">
-                            <div class="nav-cta-btn-sec">
-                                <span>Mesajı Gönder</span> <img width="16" height="16"
-                                    src="https://img.icons8.com/242424/android/124/up-right-arrow.png" alt="up-right-arrow">
+                        <button class="nav-cta-btn" type="submit">
+                            <div style="width: auto;" class="nav-cta-btn-sec" id="submitButtonContent">
+                                <span>Mesajı Gönder</span>
+                                <img width="16" height="16" src="https://img.icons8.com/242424/android/124/up-right-arrow.png"
+                                    alt="up-right-arrow">
                             </div>
-                        </a>
-                    
-                    
+                        </button>
                     </div>
                 
                 </form>
+
+                <script>
+                    document.getElementById('contactForm').addEventListener('submit', function (e) {
+                        const btnContent = document.getElementById('submitButtonContent');
+                        const form = e.target;
+
+                        // "Gönderiliyor..." yazısı ve iconu
+                        btnContent.innerHTML = `
+                        <span>Gönderiliyor...</span> 
+                        <img width="16" height="16" src="https://img.icons8.com/sf-ultralight-filled/242424/55/paper-plane.png" alt="loading">
+                    `;
+
+                        // Form iframe'e gidecek zaten, biz sadece görsellik kontrolü yapıyoruz
+                        setTimeout(() => {
+                            // "Teşekkürler. Size Ulaşacağız" yazısı ve iconu
+                           btnContent.innerHTML = `
+                            <span>Teşekkürler. Size Ulaşacağız</span> 
+                            <svg class="svg" style=" display: block;" width="30px" height="30px" viewBox="0 0 133 133" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g id="check-group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <circle id="filled-circle" fill="#1CBB57" cx="66.5" cy="66.5" r="54.5"></circle>
+                                        <circle id="white-circle" fill="#FFFFFF" cx="66.5" cy="66.5" r="55.5"></circle>
+                                        <circle id="outline" stroke="#1CBB57" stroke-width="4" cx="66.5" cy="66.5" r="54.5">
+                                        </circle>
+                                        <polyline id="check" stroke="#FFFFFF" stroke-width="4" points="41 70 56 85 92 49">
+                                        </polyline>
+                                    </g>
+                                </svg>
+                        `;
+
+                            form.reset();
+
+                            // select renklerini sıfırla
+                            const selects = form.querySelectorAll('select');
+                            selects.forEach(select => {
+                                const event = new Event('change');
+                                select.dispatchEvent(event);
+                            });
+
+                            // 10 saniye sonra "Mesajı Gönder" olarak eski haline dön
+                            setTimeout(() => {
+                                btnContent.innerHTML = `
+                                <span>Mesajı Gönder</span> 
+                                <img width="16" height="16" src="https://img.icons8.com/242424/android/124/up-right-arrow.png" alt="up-right-arrow">
+                            `;
+                            }, 10000);
+
+                        }, 2300); // 2.3 saniye sonra teşekkür mesajı
+                    });
+                </script>
             </div>
         </div>
     </section>
