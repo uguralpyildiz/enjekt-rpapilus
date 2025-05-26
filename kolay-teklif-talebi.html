@@ -62,31 +62,10 @@
 </head>
 
 <body>
-    <!-- <div class="overlay-loading" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
-       
-        <h1 class="typing-text"></h1>
-    </div> -->
-    <div class="nav-top-border">
-        <a style="max-width: 700px; margin: auto;" href="https://wa.me/905379409326" target="_blank" class="duyuru-div">
-            <img width="20" height="20" src="https://img.icons8.com/material-rounded/e3e5e9/24/commercial.png"
-                alt="commercial" />
-            <marquee class="annoucment">
+   
+    <nav class="sticky-fun">
     
-                <span style=" padding: 5px 15px; padding-left: 5px; color: #e3e5e9;">
-                    Web sitemiz şu anda geliştirme aşamasındadır. Daha iyi bir deneyim sunmak için çalışıyoruz; bu süreçte
-                    bazı linkler geçici
-                    olarak çalışmayabilir.
-                </span>
-            </marquee>
-        </a>
-        <div class="nav-top-border-close">
-            <img width="25" height="25" src="https://img.icons8.com/ios/e3e5e9/100/delete-sign--v1.png"
-                alt="delete-sign--v1" />
-        </div>
-    </div>
-    <nav>
-    
-        <div class="nav-container sticky-fun">
+        <div class="nav-container">
             <div class="overlay-menu"></div>
             <div class="nav-title">
                 <div class="nav-logo-container">
@@ -110,7 +89,7 @@
                         </a>
                     </div>
                     <div id="nth" class="nav-links-effect-container">
-            
+    
                         <a href="/" class="nav-link">
                             <div class="link-anim-set">
                                 <div class="link-anim-set-p p1">
@@ -132,42 +111,43 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="hikayemiz.html" class="nav-link">
+                        <a href="/hakkimizda" class="nav-link">
                             <div class="link-anim-set">
                                 <div class="link-anim-set-p p4">
-                                    Hikayemiz
+                                    Hakkımızda
                                 </div>
                             </div>
                         </a>
-                        <a href="https://wa.me/905379409326" class="nav-link">
+                        <a href="/iletisim" class="nav-link">
                             <div class="link-anim-set">
                                 <div class="link-anim-set-p p5">
                                     İletişim
                                 </div>
                             </div>
                         </a>
-            
-                        
-            
+    
+                       
+    
                     </div>
                     <div class="download-center">
-                        <a href="kolay-teklif-talebi.html" id="downloadCv" class="download-cv">
+                        <a href="/iletisim" id="downloadCv" class="download-cv">
                             <span class="download-text">
-                                Kolay Teklif Talebi
-                                <img width="16" height="16" src="https://img.icons8.com/e3e5e9/android/124/up-right-arrow.png"
-                                    alt="up-right-arrow">
+                                Hemen Başlayalım
+                                <img width="16" height="16"
+                                    src="https://img.icons8.com/e3e5e9/android/124/up-right-arrow.png" alt="up-right-arrow">
                             </span>
                         </a>
                     </div>
-            
+    
+    
                 </div>
                 <button class="menu-btn">
                     <img width="30" height="30" src="https://img.icons8.com/ios/100/ffffff/menu--v1.png" alt="menu--v1" />
                 </button>
             </div>
-
+    
         </div>
-        
+    
     </nav>
 
   
@@ -196,12 +176,267 @@
                         <div class="progress"></div>
                     </div>
                     <form id="multiStepForm" action="https://formspree.io/f/mblggkyb" method="POST" target="dummyframe">
+                       
+                    
+
+                    
+                    
+
+                        <!-- steps section ********************** -->
+                        
                         <div class="step active">
+                            <label>Web sitenizin tasarımı hakkında ne tür tercihleriniz var?</label>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="checkbox" name="design" value="Modern"> Modern
+                                </label>
+                            </div>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="checkbox" name="design" value="Minimal"> Minimal
+                                </label>
+                            </div>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="checkbox" name="design" value="Renkli ve Canlı"> Renkli ve Canlı
+                                </label>
+                            </div>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="checkbox" name="design" value="Klasik"> Klasik
+                                </label>
+                            </div>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="checkbox" name="design" value="Sofistike ve Kurumsal"> Sofistike ve Kurumsal
+                                </label>
+                            </div>
+                            <div class="alt-p-form">
+                                <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
+                                    alt="info--v1">
+                                <span>
+                                    <strong>Tasarımı Kişiselleştirmek İçin Gereklidir</strong><br>
+                                    Sitenizin estetik anlayışı, kullanıcı deneyimi üzerinde doğrudan etkili olacaktır. Kullanıcı dostu, şık, modern veya
+                                    klasik bir tasarım tercih ediyorsanız, bu karar tasarımcılar için oldukça önemlidir.
+                                </span>
+                            </div>
+                            <div class="buttons">
+                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left"/> Geri</button>
+                                <button type="button" onclick="nextStep()">İleri <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
+                            </div>
+                        </div>
+                    
+
+                        <!-- steps section ********************** -->
+                        
+                        <div class="step">
+                            <label>Web siteniz kaç dilde destekleyecek?</label>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="checkbox" name="language_support" value="Türkçe"> Türkçe
+                                </label>
+                            </div>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="checkbox" name="language_support" value="İngilizce"> İngilizce
+                                </label>
+                            </div>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="checkbox" name="language_support" value="Almanca"> Almanca
+                                </label>
+                            </div>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="checkbox" name="language_support" value="more"> Daha Fazla
+                                </label>
+                            </div>
+                            <div class="alt-p-form">
+                                <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
+                                    alt="info--v1">
+                                <span>
+                                    <strong>Global Hedef Kitlenizi Düşünmek İçin Gereklidir</strong><br>
+                                    Global bir kitleye hitap etmeyi planlıyorsanız, web sitenizin birden fazla dilde destek sunması gerekebilir. Hangi
+                                    dillerin siteye entegre edileceğini belirlemek, çeviri ve içerik uyumluluğu açısından önemlidir.
+                                </span>
+                            </div>
+                            <div class="buttons">
+                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left"/> Geri</button>
+                                <button type="button" onclick="nextStep()">İleri <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
+                            </div>
+                        </div>
+                    
+
+                        <!-- steps section ********************** -->
+                        
+                        <div class="step">
+                            <label>Web sitenizin hangi performans özellikleri önemli?</label>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="checkbox" name="performance" value="Hızlı Yüklenme"> Hızlı Yüklenme
+                                </label>
+                            </div>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="checkbox" name="performance" value="SEO Optimizasyonu"> SEO Optimizasyonu
+                                </label>
+                            </div>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="checkbox" name="performance" value="Mobil Uyumlu Tasarım"> Mobil Uyumlu Tasarım
+                                </label>
+                            </div>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="checkbox" name="performance" value="Dikkat Çekici Animasyonlar"> Dikkat Çekici Animasyonlar
+                                </label>
+                            </div>
+                            <div class="alt-p-form">
+                                <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
+                                    alt="info--v1">
+                                <span>
+                                    <strong>Sitenizin Verimli Çalışması İçin Gerekli</strong><br>
+                                    Performans özellikleri, sitenizin hızını ve erişilebilirliğini etkiler. Yüksek hız ve SEO optimizasyonu,
+                                    sitenizin başarısını arttırır ve daha fazla kullanıcıya ulaşır.
+                                </span>
+                            </div>
+                            <div class="buttons">
+                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left"/> Geri</button>
+                                <button type="button" onclick="nextStep()">İleri <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
+                            </div>
+                        </div>
+
+
+                        <!-- steps section ********************** -->
+                        
+                        <div class="step">
+                            <label>Web Siteniz Tahmini Kaç Sayfa Olacak?</label>
+                            
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="radio" name="content" value="1-5 Arası"> 1-5 Arası
+                                </label>
+                            </div>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="radio" name="content" value="5-10 Arası"> 5-10 Arası
+                                </label>
+                            </div>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="radio" name="content" value="10-20 Arası"> 10-20 Arası
+                                </label>
+                            </div>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="radio" name="content" value="20den Fazla Olabilir"> 20'den Fazla Olabilir
+                                </label>
+                            </div>
+                            
+                            <div class="alt-p-form">
+                                <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
+                                    alt="info--v1">
+                                <span>
+                                    <strong>İçerik Türünü Seçmek, Hedef Kitlenizi Çeker</strong><br>
+                                    Web siteniz belirli bir dizi özelliğe sahip olabilir. Bu özellikler, sitenizin işlevselliğini arttırır ve kullanıcı
+                                    deneyimini geliştirir.
+                                </span>
+                            </div>
+                            <div class="buttons">
+                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left"/> Geri</button>
+                                <button type="button" onclick="nextStep()">İleri <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
+                            </div>
+                        </div>
+                        <!-- steps section ********************** -->
+                        
+                        <div class="step">
+                            <label>Web Sitenizin Hangi Özelliklere Sahip Olmasını İstiyorsunuz?</label>
+                            
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="checkbox" name="content" value="Blog ve Makale"> Blog ve Makale Girişi
+                                </label>
+                            </div>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="checkbox" name="content" value="Çevrimiçi Formlar (İletişim formu, rezervasyon)"> Çevrimiçi Formlar (İletişim formu, rezervasyon)
+                                </label>
+                            </div>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="checkbox" name="content" value="Canlı Sohbet"> Canlı Sohbet
+                                </label>
+                            </div>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="checkbox" name="content" value="Sosyal Medya Entegrasyonu"> Sosyal Medya Entegrasyonu
+                                </label>
+                            </div>
+                            
+                            <div class="alt-p-form">
+                                <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
+                                    alt="info--v1">
+                                <span>
+                                    <strong>İçerik Türünü Seçmek, Hedef Kitlenizi Çeker</strong><br>
+                                    Web siteniz belirli bir dizi özelliğe sahip olabilir. Bu özellikler, sitenizin işlevselliğini arttırır ve kullanıcı
+                                    deneyimini geliştirir.
+                                </span>
+                            </div>
+                            <div class="buttons">
+                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left"/> Geri</button>
+                                <button type="button" onclick="nextStep()">İleri <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
+                            </div>
+                        </div>
+
+                      
+
+                   
+                        <!-- steps section ********************** -->
+                        <div class="step">
+                            <label>Web Sitesi İçin Bütçeniz Nedir?</label>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="radio" name="budget" value="6.500 TL ile 8.000 TL arası"> 6.500 TL ile 8.000 TL arası
+                                </label>
+                            </div>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="radio" name="budget" value="8.000 TL ile 12.000 TL arası"> 8.000 TL ile 12.000 TL arası
+                                </label>
+                            </div>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="radio" name="budget" value="12.000 TL ile 18.000 TL arası"> 12.000 TL ile 18.000 TL arası
+                                </label>
+                            </div>
+                            <div class="question-checkbox">
+                                <label>
+                                    <input type="radio" name="budget" value="Sizden Teklif Almak İstiyorum"> Sizden Teklif Almak İstiyorum
+                                </label>
+                            </div>
+                        
+                            <div class="alt-p-form">
+                                <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
+                                    alt="info--v1">
+                                <span>
+                                    
+                                    Web sitesinin tasarımı ve geliştirilmesi genellikle bütçeye dayalıdır. Web sitesi tasarımında kullanılacak teknoloji,
+                                    işlevsellik ve özelleştirme derecesi bütçenizle doğrudan ilişkilidir.
+                                </span>
+                            </div>
+                            <div class="buttons">
+                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left"/> Geri</button>
+                                <button type="button" onclick="nextStep()">İleri <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
+                            </div>
+                        </div>
+
+                        <div class="step ">
                             <div class="questions">
                                 <label>Size Nasıl Hitap Etmemizi İstersiniz?</label>
-                                <input type="text" name="fullname" placeholder="Adınız" >
+                                <input type="text" name="fullname" placeholder="Adınız">
                                 <div class="alt-p-form">
-                                    <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png" alt="info--v1">
+                                    <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
+                                        alt="info--v1">
                                     <span>
                                         <strong>Kişisel İletişim İçin Gerekli</strong><br>
                                         Adınızı bilmemiz, sizinle daha kişisel bir iletişim kurabilmemizi sağlar. Bu, sizinle daha etkili ve
@@ -209,21 +444,24 @@
                                     </span>
                                 </div>
                             </div>
-                            
+                        
                             <div class="buttons">
-                                <button type="button" onclick="nextStep()">Sonraki Soru <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
+                                <button type="button" onclick="nextStep()">İleri <img style="position: absolute; right: 10px;" width="15"
+                                        height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png"
+                                        alt="chevron-right" /></button>
                             </div>
                         </div>
-                    
-
+                        
+                        
                         <!-- steps section ********************** -->
                         
                         <div class="step">
                             <div class="questions">
                                 <label>Şirketinizin veya Markanızın Adı:</label>
-                                <input type="text" name="company" >
+                                <input type="text" name="company">
                                 <div class="alt-p-form">
-                                    <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png" alt="info--v1">
+                                    <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
+                                        alt="info--v1">
                                     <span>
                                         <strong>Projenizi Kişiselleştirebilmek İçin Gereklidir</strong><br>
                                         Şirket veya markanızın adı, projenizin özgünleştirilmesine ve doğru stratejilerin uygulanmasına yardımcı
@@ -231,22 +469,27 @@
                                     </span>
                                 </div>
                             </div>
-                            
+                        
                             <div class="buttons">
-                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left"/> Önceki Soru</button>
-                                <button type="button" onclick="nextStep()">Sonraki Soru <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
+                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15"
+                                        height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left" />
+                                    Geri</button>
+                                <button type="button" onclick="nextStep()">İleri <img style="position: absolute; right: 10px;" width="15"
+                                        height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png"
+                                        alt="chevron-right" /></button>
                             </div>
                         </div>
-                    
-
+                        
+                        
                         <!-- steps section ********************** -->
                         
                         <div class="step">
                             <div class="questions">
                                 <label>Telefon Numaranız:</label>
-                                <input type="tel" name="phone" >
+                                <input type="tel" name="phone">
                                 <div class="alt-p-form">
-                                    <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png" alt="info--v1">
+                                    <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
+                                        alt="info--v1">
                                     <span>
                                         <strong>Hızlı İletişim İçin Gerekli</strong><br>
                                         Telefon numaranız, hızlı bir şekilde ulaşabilmemiz ve acil durumlarda iletişime geçebilmemiz için
@@ -254,14 +497,18 @@
                                     </span>
                                 </div>
                             </div>
-                            
+                        
                             <div class="buttons">
-                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left"/> Önceki Soru</button>
-                                <button type="button" onclick="nextStep()">Sonraki Soru <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
+                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15"
+                                        height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left" />
+                                    Geri</button>
+                                <button type="button" onclick="nextStep()">İleri <img style="position: absolute; right: 10px;" width="15"
+                                        height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png"
+                                        alt="chevron-right" /></button>
                             </div>
                         </div>
-                    
-
+                        
+                        
                         <!-- steps section ********************** -->
                         
                         <div class="step">
@@ -269,7 +516,8 @@
                                 <label>E-posta Adresiniz:</label>
                                 <input type="email" name="email" required>
                                 <div class="alt-p-form">
-                                    <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png" alt="info--v1">
+                                    <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
+                                        alt="info--v1">
                                     <span>
                                         <strong>Dijital İletişim İçin Gereklidir</strong><br>
                                         E-posta adresiniz, proje ile ilgili tüm güncellemeleri, önerileri ve önemli bilgileri size iletmemiz
@@ -277,14 +525,18 @@
                                     </span>
                                 </div>
                             </div>
-                            
+                        
                             <div class="buttons">
-                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left"/> Önceki Soru</button>
-                                <button type="button" onclick="nextStep()">Sonraki Soru <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
+                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15"
+                                        height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left" />
+                                    Geri</button>
+                                <button type="button" onclick="nextStep()">İleri <img style="position: absolute; right: 10px;" width="15"
+                                        height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png"
+                                        alt="chevron-right" /></button>
                             </div>
                         </div>
-                    
-
+                        
+                        
                         <!-- steps section ********************** -->
                         
                         <div class="step">
@@ -324,413 +576,12 @@
                                 </span>
                             </div>
                             <div class="buttons">
-                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left"/> Önceki Soru</button>
-                                <button type="button" onclick="nextStep()">Sonraki Soru <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
-                            </div>
-                        </div>
-                    
-
-                        <!-- steps section ********************** -->
-                        
-                        <div class="step">
-                            <label>Web sitenizin hedef kitlesi kimdir?</label>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="audience" value="Gençler"> Gençler
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="audience" value="Yetişkinler"> Yetişkinler
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="audience" value="İş Dünyası"> İş Dünyası
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="audience" value="Herkes"> Herkes
-                                </label>
-                            </div>
-                            <div class="alt-p-form">
-                                <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
-                                    alt="info--v1">
-                                <span>
-                                    <strong>İçerik ve Tasarımı Yönlendirmek İçin Gerekli</strong><br>
-                                    Hedef kitlenizi belirlemek, tasarımı ve içeriği o kitlenin ihtiyaçlarına göre şekillendirmemize olanak
-                                    tanır. Bu bilgi, web sitenizin etkili olmasını sağlar.
-                                </span>
-                            </div>
-                            <div class="buttons">
-                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left"/> Önceki Soru</button>
-                                <button type="button" onclick="nextStep()">Sonraki Soru <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
-                            </div>
-                        </div>
-                    
-
-                        <!-- steps section ********************** -->
-                        
-                        <div class="step">
-                            <label>Web sitenizin tasarımı hakkında ne tür tercihleriniz var?</label>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="design" value="Modern"> Modern
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="design" value="Minimal"> Minimal
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="design" value="Renkli ve Canlı"> Renkli ve Canlı
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="design" value="Klasik"> Klasik
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="design" value="Sofistike ve Kurumsal"> Sofistike ve Kurumsal
-                                </label>
-                            </div>
-                            <div class="alt-p-form">
-                                <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
-                                    alt="info--v1">
-                                <span>
-                                    <strong>Tasarımı Kişiselleştirmek İçin Gereklidir</strong><br>
-                                    Sitenizin estetik anlayışı, kullanıcı deneyimi üzerinde doğrudan etkili olacaktır. Kullanıcı dostu, şık, modern veya
-                                    klasik bir tasarım tercih ediyorsanız, bu karar tasarımcılar için oldukça önemlidir.
-                                </span>
-                            </div>
-                            <div class="buttons">
-                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left"/> Önceki Soru</button>
-                                <button type="button" onclick="nextStep()">Sonraki Soru <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
-                            </div>
-                        </div>
-                    
-
-                        <!-- steps section ********************** -->
-                        
-                        <div class="step">
-                            <label>Web siteniz kaç dilde destekleyecek?</label>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="language_support" value="Türkçe"> Türkçe
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="language_support" value="İngilizce"> İngilizce
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="language_support" value="Almanca"> Almanca
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="language_support" value="more"> Daha Fazla
-                                </label>
-                            </div>
-                            <div class="alt-p-form">
-                                <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
-                                    alt="info--v1">
-                                <span>
-                                    <strong>Global Hedef Kitlenizi Düşünmek İçin Gereklidir</strong><br>
-                                    Global bir kitleye hitap etmeyi planlıyorsanız, web sitenizin birden fazla dilde destek sunması gerekebilir. Hangi
-                                    dillerin siteye entegre edileceğini belirlemek, çeviri ve içerik uyumluluğu açısından önemlidir.
-                                </span>
-                            </div>
-                            <div class="buttons">
-                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left"/> Önceki Soru</button>
-                                <button type="button" onclick="nextStep()">Sonraki Soru <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
-                            </div>
-                        </div>
-                    
-
-                        <!-- steps section ********************** -->
-                        
-                        <div class="step">
-                            <label>Web sitenizin hangi performans özellikleri önemli?</label>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="performance" value="Hızlı Yüklenme"> Hızlı Yüklenme
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="performance" value="SEO Optimizasyonu"> SEO Optimizasyonu
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="performance" value="Mobil Uyumlu Tasarım"> Mobil Uyumlu Tasarım
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="performance" value="Dikkat Çekici Animasyonlar"> Dikkat Çekici Animasyonlar
-                                </label>
-                            </div>
-                            <div class="alt-p-form">
-                                <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
-                                    alt="info--v1">
-                                <span>
-                                    <strong>Sitenizin Verimli Çalışması İçin Gerekli</strong><br>
-                                    Performans özellikleri, sitenizin hızını ve erişilebilirliğini etkiler. Yüksek hız ve SEO optimizasyonu,
-                                    sitenizin başarısını arttırır ve daha fazla kullanıcıya ulaşır.
-                                </span>
-                            </div>
-                            <div class="buttons">
-                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left"/> Önceki Soru</button>
-                                <button type="button" onclick="nextStep()">Sonraki Soru <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
-                            </div>
-                        </div>
-
-
-                        <!-- steps section ********************** -->
-                        
-                        <div class="step">
-                            <label>Web Siteniz Tahmini Kaç Sayfa Olacak?</label>
-                            
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="content" value="1-5 Arası"> 1-5 Arası
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="content" value="5-10 Arası"> 5-10 Arası
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="content" value="10-20 Arası"> 10-20 Arası
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="content" value="20den Fazla Olabilir"> 20'den Fazla Olabilir
-                                </label>
-                            </div>
-                            
-                            <div class="alt-p-form">
-                                <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
-                                    alt="info--v1">
-                                <span>
-                                    <strong>İçerik Türünü Seçmek, Hedef Kitlenizi Çeker</strong><br>
-                                    Web siteniz belirli bir dizi özelliğe sahip olabilir. Bu özellikler, sitenizin işlevselliğini arttırır ve kullanıcı
-                                    deneyimini geliştirir.
-                                </span>
-                            </div>
-                            <div class="buttons">
-                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left"/> Önceki Soru</button>
-                                <button type="button" onclick="nextStep()">Sonraki Soru <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
-                            </div>
-                        </div>
-                        <!-- steps section ********************** -->
-                        
-                        <div class="step">
-                            <label>Web Sitenizin Hangi Özelliklere Sahip Olmasını İstiyorsunuz?</label>
-                            
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="content" value="Blog ve Makale"> Blog ve Makale Girişi
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="content" value="Çevrimiçi Formlar (İletişim formu, rezervasyon)"> Çevrimiçi Formlar (İletişim formu, rezervasyon)
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="content" value="Canlı Sohbet"> Canlı Sohbet
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="content" value="Sosyal Medya Entegrasyonu"> Sosyal Medya Entegrasyonu
-                                </label>
-                            </div>
-                            
-                            <div class="alt-p-form">
-                                <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
-                                    alt="info--v1">
-                                <span>
-                                    <strong>İçerik Türünü Seçmek, Hedef Kitlenizi Çeker</strong><br>
-                                    Web siteniz belirli bir dizi özelliğe sahip olabilir. Bu özellikler, sitenizin işlevselliğini arttırır ve kullanıcı
-                                    deneyimini geliştirir.
-                                </span>
-                            </div>
-                            <div class="buttons">
-                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left"/> Önceki Soru</button>
-                                <button type="button" onclick="nextStep()">Sonraki Soru <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
-                            </div>
-                        </div>
-
-                        <!-- steps section ********************** -->
-                        <div class="step">
-                            <label>Ekstra Grafik Tasarımı Hizmetimizden Yararlanmak İstiyor Musunuz?</label>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="ekistek" value="Banner Tasarımı"> Banner Tasarımı
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="ekistek" value="Logo Tasarımı"> Logo Tasarımı
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="ekistek" value="Özel Grafik Tasarımı"> Sosyal Medya İçin Grafik Tasarımı
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="ekistek" value="Bunlara Şimdilik Gerek Yok">  Şimdilik Gerek Yok
-                                </label>
-                            </div>
-                            
-                            <div class="alt-p-form">
-                                <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
-                                    alt="info--v1">
-                                <span>
-                                    <strong>Özel Tasarım Seçenekleri, Markanızı Yansıtır</strong><br>
-                                    Web sitenizin tasarımı, markanızı ve hedef kitlenizi yansıtan önemli bir unsurdur. Logo ve banner gibi özelleştirilmiş
-                                    tasarım elemanları, sitenizin profesyonel görünmesini sağlar.
-                                </span>
-                            </div>
-                            <div class="buttons">
-                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left"/> Önceki Soru</button>
-                                <button type="button" onclick="nextStep()">Sonraki Soru <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
-                            </div>
-                        </div>
-
-                        <!-- steps section ********************** -->
-                        <div class="step">
-                            <label>Web Siteniz İçin Hangi Online Reklam Kampanyalarını İstiyorsunuz?</label>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="ads" value="Google Ads"><img width="30" height="30" src="https://img.icons8.com/color/480/google-ads.png" alt="google-ads" /> Google Ads
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="ads" value="Meta Ads (Facebook, Instagram)"><img width="30" height="30" src="https://img.icons8.com/fluency/480/meta.png" alt="meta" /> Meta Ads <img width="30" height="30" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new" /> <img width="30" height="30" src="https://img.icons8.com/color/480/facebook-new.png" alt="facebook-new" /> 
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="ads" value="LinkedIn Ads"><img width="30" height="30" src="https://img.icons8.com/color/480/linkedin.png" alt="linkedin" /> LinkedIn Ads
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="ads" value="Şimdilik Gerek Yok"><img width="30" height="30" src="https://img.icons8.com/fluency/480/close-window--v1.png" alt="close-window--v1" /> Şimdilik Gerek Yok
-                                </label>
-                            </div>
-                            
-                        
-                            <div class="alt-p-form">
-                                <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
-                                    alt="info--v1">
-                                <span>
-                                    <strong>Reklam Kampanyaları ile Hedef Kitlenize Ulaşın</strong><br>
-                                    Online reklamlar, sitenize daha fazla ziyaretçi çekmek ve hedef kitlenize doğrudan ulaşmak için önemli bir
-                                    araçtır. Hangi platformda reklam yapmak istediğinizi seçerek, stratejinizi netleştirebilirsiniz.
-                                </span>
-                            </div>
-                            <div class="buttons">
-                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left"/> Önceki Soru</button>
-                                <button type="button" onclick="nextStep()">Sonraki Soru <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
-                            </div>
-                        </div>
-                        
-                        <!-- steps section ********************** -->
-                        <div class="step">
-                            <label>Hangi Online Platformda Toplantı Yapmak İstersiniz?</label>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="meeting_platform" value="WhatsApp"><img width="30" height="30" src="https://img.icons8.com/color/480/whatsapp--v1.png" alt="whatsapp--v1" /> WhatsApp
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="meeting_platform" value="Zoom"><img width="30" height="30" src="https://img.icons8.com/color/480/zoom.png" alt="zoom" /> Zoom
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="meeting_platform" value="Google Meet"><img width="30" height="30" src="https://img.icons8.com/fluency/480/google-meet.png" alt="google-meet" /> Google Meet
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="meeting_platform" value="Microsoft Teams"><img width="30" height="30" src="https://img.icons8.com/fluency/480/microsoft-teams-2019.png"
-                                        alt="microsoft-teams-2019" /> Microsoft Teams
-                                </label>
-                            </div>
-                        
-                            <div class="alt-p-form">
-                                <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
-                                    alt="info--v1">
-                                <span>
-                                    <strong>Toplantı Platformu Seçmek, Etkileşimi Kolaylaştırır</strong><br>
-                                    Hangi platformda toplantı yapacağınızı belirlemek, görüşmenizin verimliliğini artırır. Farklı platformlar,
-                                    kullanım kolaylığı ve özellikler açısından değişiklik gösterir, bu nedenle tercihinizi buna göre
-                                    yapabilirsiniz.
-                                </span>
-                            </div>
-                            <div class="buttons">
-                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left"/> Önceki Soru</button>
-                                <button type="button" onclick="nextStep()">Sonraki Soru <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
-                            </div>
-                        </div>
-                        <!-- steps section ********************** -->
-                        <div class="step">
-                            <label>Web Sitesi İçin Bütçeniz Nedir?</label>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="meeting_platform" value="6.500 TL ile 8.000 TL arası"> 6.500 TL ile 8.000 TL arası
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="meeting_platform" value="8.000 TL ile 12.000 TL arası"> 8.000 TL ile 12.000 TL arası
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="meeting_platform" value="12.000 TL ile 18.000 TL arası"> 12.000 TL ile 18.000 TL arası
-                                </label>
-                            </div>
-                            <div class="question-checkbox">
-                                <label>
-                                    <input type="checkbox" name="meeting_platform" value="Sizden Teklif Almak İstiyorum"> Sizden Teklif Almak İstiyorum
-                                </label>
-                            </div>
-                        
-                            <div class="alt-p-form">
-                                <img width="24" height="24" src="https://img.icons8.com/material-outlined/007bff/24/info--v1.png"
-                                    alt="info--v1">
-                                <span>
-                                    
-                                    Web sitesinin tasarımı ve geliştirilmesi genellikle bütçeye dayalıdır. Web sitesi tasarımında kullanılacak teknoloji,
-                                    işlevsellik ve özelleştirme derecesi bütçenizle doğrudan ilişkilidir.
-                                </span>
-                            </div>
-                            <div class="buttons">
-                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left"/> Önceki Soru</button>
-                                <button type="button" onclick="nextStep()">Sonraki Soru <img style="position: absolute; right: 10px;" width="15" height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png" alt="chevron-right"/></button>
+                                <button class="geri" type="button" onclick="prevStep()"><img style="position: absolute; left: 10px;" width="15"
+                                        height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left" />
+                                    Geri</button>
+                                <button type="button" onclick="nextStep()">İleri <img style="position: absolute; right: 10px;" width="15"
+                                        height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png"
+                                        alt="chevron-right" /></button>
                             </div>
                         </div>
 
@@ -753,7 +604,7 @@
                             <div class="buttons">
                                 <button class="geri" type="button" onclick="prevStep()">
                                     <img style="position: absolute; left: 10px;" width="15" height="15"
-                                        src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left" /> Önceki Soru
+                                        src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-left.png" alt="chevron-left" /> Geri
                                 </button>
                                 <button class="checkbtn" type="submit" onclick="nextStep()">Talebi Gönder <img style="position: absolute; right: 10px;" width="15"
                                         height="15" src="https://img.icons8.com/ios-glyphs/ffffff/300/chevron-right.png"
