@@ -61,10 +61,33 @@
 </head>
 
 <body>
-    <!-- <div class="overlay-loading" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
-       
-        <h1 class="typing-text"></h1>
-    </div> -->
+    <div class="overlayloadingscreen">
+        <div class="nav-logo-container">
+            <a class="nav-logo ">
+                <img class="sloadr" width="60px" height="auto" src="logo.png" alt="NowifyMedia">
+                <div class="nav-logo-text" style="font-size: 32px;">
+                    Nowify<span>Media</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script>
+        
+            const overlayloadingscreen = document.querySelector(".overlayloadingscreen");
+
+            // İlk başta overflow'u gizle
+            document.body.style.overflow = "hidden";
+
+            setTimeout(() => {
+                overlayloadingscreen.style.top = "-150%";
+            }, 3500);
+
+            setTimeout(() => {
+                overlayloadingscreen.style.display = "none";
+                // 5 saniye sonra overflow'u eski haline getir
+                document.body.style.overflow = "auto";
+            }, 4500);
+    </script>
     <!-- <div class="nav-top-border">
         <a style="max-width: 700px; margin: auto;" href="https://wa.me/905379409326" target="_blank" class="duyuru-div">
             <img width="20" height="20" src="https://img.icons8.com/material-rounded/e3e5e9/24/commercial.png"
@@ -148,16 +171,18 @@
             
                     </div>
                     <div class="download-center">
-                        <a href="/iletisim" id="downloadCv" class="download-cv">
+                        <a href="/kolay-teklif-talebi" id="downloadCv" class="download-cv">
                             <span class="download-text">
-                                Hemen Başlayalım
+                                Kolay Teklif Talebi
                                 <img width="16" height="16" src="https://img.icons8.com/e3e5e9/android/124/up-right-arrow.png"
                                     alt="up-right-arrow">
                             </span>
                         </a>
                     </div>
-                    
-            
+                    <!-- <div class="lang-btn">
+                        <img width="20" height="20" src="https://img.icons8.com/ios/f5f5f5/50/globe--v1.png" alt="globe--v1" /> (EN)
+                    </div>
+             -->
                 </div>
                 <button class="menu-btn">
                     <img width="30" height="30" src="https://img.icons8.com/ios/100/ffffff/menu--v1.png" alt="menu--v1" />
@@ -177,11 +202,13 @@
                     
                     <div class="hero-title ">
                         <div class="badge-section">
-                            
+                            <div class="hero-info-badge sc1"><img style="filter: grayscale(0) ;" width="20" height="20"
+                                    src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" />
+                                Enterprise Partner</div>
                             <div class="hero-info-badge sc2"><img width="25" height="25" src="https://img.icons8.com/glyph-neue/ffffff/64/github.png" alt="google-logo" /> Professional Partner of the Year</div>
                             
                         </div>
-                        <h1 >
+                        <h1>
                             
                             <span class="stroke-text">
                                 Her markanın hedefi farklıdır. Web siteniz de öyle olmalı Kaliteli, özgün ve size özel.
@@ -198,7 +225,7 @@
                     <div class="hero-cta-buttons">
                         <a class="nav-cta-btn" href="/iletisim" target="_blank">
                             <div class="nav-cta-btn-sec">
-                                <span>Hemen Başlayalım </span> <img width="16" height="16"
+                                <span>Kolay Teklif Talebi </span> <img width="16" height="16"
                                     src="https://img.icons8.com/242424/android/124/up-right-arrow.png" alt="up-right-arrow">
                             </div>
                         </a>
@@ -234,10 +261,10 @@
                             <img src="assets/img/clients/final.png" height="100" width="250" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="assets/img/clients/getir.png" height="100" width="250" alt="" />
+                            <img src="assets/img/clients/hypershield.png" height="100" width="250" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="assets/img/clients/pamukkale.png" height="100" width="250" alt="" />
+                            <img src="assets/img/clients/fuller.png" height="100" width="250" alt="" />
                         </div>
                         <div class="slide">
                             <img src="assets/img/clients/borvey.png" height="100" width="250" alt="" />
@@ -309,10 +336,10 @@
                             <img src="assets/img/clients/final.png" height="100" width="250" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="assets/img/clients/getir.png" height="100" width="250" alt="" />
+                            <img src="assets/img/clients/hypershield.png" height="100" width="250" alt="" />
                         </div>
                         <div class="slide">
-                            <img src="assets/img/clients/pamukkale.png" height="100" width="250" alt="" />
+                            <img src="assets/img/clients/fuller.png" height="100" width="250" alt="" />
                         </div>
                         <div class="slide">
                             <img src="assets/img/clients/borvey.png" height="100" width="250" alt="" />
@@ -377,6 +404,312 @@
         </div>
     </section>
     
+
+    <section style="background: #000000; padding-top: 120px;">
+        <div class="container-5 reveal">
+            <div class="index-services">
+    
+                <div class="i-services-header">
+                    <div class="badge-section" style="justify-content: center;">
+    
+                        <div class="hero-info-badge sc2"><img width="25" height="25"
+                                src="https://img.icons8.com/glyph-neue/ffffff/64/github.png" alt="google-logo" />
+                            Professional Partner of
+                            the Year</div>
+    
+                    </div>
+                    Markanıza ve Hedeflerinize <br> <span class="stroke-text-gradient-s">Özel Çözümler.</span>
+                </div>
+                <div class="i-services-container tailor">
+    
+    
+    
+                    <div class="i-services reveal erw2">
+                        <div class="i-services-img">
+    
+                        </div>
+                        <div class="i-services-text-container">
+                            <div class="i-services-text">
+                                Kişisel Markalar İçin
+                            </div>
+                            <div class="i-services-text-alt">
+                                Hayal Et, Gerçekleştirelim Kişisel projelerinizi dijitalde profesyonel bir markaya
+                                dönüştürüyoruz.
+                            </div>
+    
+                            <div class="hero-cta-buttons" style="margin-top: 30px;">
+                                <a class="nav-cta-btn" href="/iletisim" target="_blank">
+                                    <div class="nav-cta-btn-sec" style="width: 100%;">
+                                        <span>Kişisel Çözümleri İncele</span> <img width="16" height="16"
+                                            src="https://img.icons8.com/242424/android/124/up-right-arrow.png"
+                                            alt="up-right-arrow">
+                                    </div>
+                                </a>
+    
+    
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="i-services reveal erw">
+                        <div class="i-services-img">
+    
+                        </div>
+                        <div class="i-services-text-container">
+                            <div class="i-services-text">
+                                Kurumsal Markalar İçin
+                            </div>
+                            <div class="i-services-text-alt">
+                                Büyümek İsteyen Markaların Tercihi Dijital dünyada sürdürülebilir büyüme için yanınızdayız.
+                            </div>
+    
+                            <div class="hero-cta-buttons" style="margin-top: 30px;">
+                                <a class="nav-cta-btn" href="/iletisim" target="_blank">
+                                    <div class="nav-cta-btn-sec" style="width: 100%;">
+                                        <span>Kurumsal Çözümleri İncele</span> <img width="16" height="16"
+                                            src="https://img.icons8.com/242424/android/124/up-right-arrow.png"
+                                            alt="up-right-arrow">
+                                    </div>
+                                </a>
+    
+    
+                            </div>
+                        </div>
+    
+                    </div>
+    
+    
+    
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+
+    <div style="padding-top: 0;" class="case-section endura-pro">
+        <!-- Swiper -->
+        <div class="container reveal" style="margin-top: 150px;">
+            <div class="services-help">
+                <div class="badge-section ">
+                    <div class="hero-info-badge sc3"><img width="20" height="20"
+                            src="https://img.icons8.com/fluency/48/ok--v1.png" alt="google-logo"> Bütçenizi Önemsiyoruz
+                    </div>
+    
+    
+                </div>
+                <div class="services-help-title ">
+                    Binlerce Reklam Ajansı Varken, <br> Neden
+                    <span class="stroke-text-gradient-s"> Bizi Seçmelisiniz?</span>
+                </div>
+            </div>
+        </div>
+        <div class="swiper profileSwiper reveal">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="profil-card">
+                        <div class="services-help">
+                            <div class="services-help-col portfolio-sec gradient-bg">
+                                <div class="promo-con">
+                                    <div class="services-help-column">
+                                        <img src="assets/icon/plus.png" alt="">
+                                    </div>
+                                    <div class="services-help-header">
+                                        <div class="flex-head-title-arrow">
+                                            <div class="hero-info brand-case" style="justify-content: start;">
+                                                <div class="hero-text-sub">
+                                                    Yüksek kaliteli sonuçlar sunuyoruz.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="services-help-title-alt head-box-title">
+                                            Sadece şık görünen değil, hızlı, sürdürülebilir ve yüksek performanslı projeler
+                                            sunuyoruz.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="profil-card">
+                        <div class="services-help">
+                            <div class="services-help-col portfolio-sec gradient-bg">
+                                <div class="promo-con">
+                                    <div class="services-help-column">
+                                        <img src="assets/icon/circle.png" alt="">
+                                    </div>
+                                    <div class="services-help-header">
+                                        <div class="flex-head-title-arrow">
+                                            <div class="hero-info brand-case" style="justify-content: start;">
+                                                <div class="hero-text-sub">
+                                                    En son teknolojiyi kullanıyoruz.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="services-help-title-alt head-box-title">
+                                            Yapay zeka destekli sistemler ve güncel teknolojilerle markanızı dijitalde öne
+                                            çıkarıyoruz.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="profil-card">
+                        <div class="services-help">
+                            <div class="services-help-col portfolio-sec gradient-bg">
+                                <div class="promo-con">
+                                    <div class="services-help-column">
+                                        <img src="assets/icon/xmark.png" alt="">
+                                    </div>
+                                    <div class="services-help-header">
+                                        <div class="flex-head-title-arrow">
+                                            <div class="hero-info brand-case" style="justify-content: start;">
+                                                <div class="hero-text-sub">
+                                                    Başarınız için çalışıyoruz.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="services-help-title-alt head-box-title">
+                                            Satışlarınızı ve dijital görünürlüğünüzü artırmak için stratejik çözümler
+                                            geliştiriyoruz.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="profil-card">
+                        <div class="services-help">
+                            <div class="services-help-col portfolio-sec gradient-bg">
+                                <div class="promo-con">
+                                    <div class="services-help-column">
+                                        <img src="assets/icon/value.png" alt="">
+                                    </div>
+                                    <div class="services-help-header">
+                                        <div class="flex-head-title-arrow">
+                                            <div class="hero-info brand-case" style="justify-content: start;">
+                                                <div class="hero-text-sub">
+                                                    Zamanınıza değer veriyoruz.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="services-help-title-alt head-box-title">
+                                            Projeleri söz verdiğimiz tarihte, her aşamasını size raporlayarak tamamlıyoruz.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="profil-card">
+                        <div class="services-help">
+                            <div class="services-help-col portfolio-sec gradient-bg">
+                                <div class="promo-con">
+                                    <div class="services-help-column">
+                                        <img src="assets/icon/play.png" alt="">
+                                    </div>
+                                    <div class="services-help-header">
+                                        <div class="flex-head-title-arrow">
+                                            <div class="hero-info brand-case" style="justify-content: start;">
+                                                <div class="hero-text-sub">
+                                                    Açık ve net iletişim kuruyoruz.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="services-help-title-alt head-box-title">
+                                            Size özel proje yöneticisiyle süreci hızlı ve kolay şekilde yönetiyoruz.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="profil-card">
+                        <div class="services-help">
+                            <div class="services-help-col portfolio-sec gradient-bg">
+                                <div class="promo-con">
+                                    <div class="services-help-column">
+                                        <img src="assets/icon/xmark.png" alt="">
+                                    </div>
+                                    <div class="services-help-header">
+                                        <div class="flex-head-title-arrow">
+                                            <div class="hero-info brand-case" style="justify-content: start;">
+                                                <div class="hero-text-sub">
+                                                    Profesyonel çözümler geliştiriyoruz.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="services-help-title-alt head-box-title">
+                                            Sektörünüze uygun, kullanıcı dostu ve marka değerinizi artıran çözümler
+                                            sunuyoruz.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+    
+            </div>
+    
+            <div class="swiper-nav">
+    
+                <div class="swiper-button-prev-c"><img width="50" height="50"
+                        src="https://img.icons8.com/pastel-glyph/ffffff/64/circled-chevron-left.png"
+                        alt="circled-chevron-right" /></div>
+                <div class="swiper-button-next-c"><img width="50" height="50"
+                        src="https://img.icons8.com/pastel-glyph/ffffff/64/circled-chevron-right.png"
+                        alt="circled-chevron-right" /></div>
+            </div>
+        </div>
+    
+    
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".profileSwiper", {
+                slidesPerView: 1.16,
+
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                loop: true,
+                coverflowEffect: {
+                    rotate: 20,
+                    stretch: -20,
+                    depth: 50,
+                    modifier: 1,
+                    slideShadows: false,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next-c',
+                    prevEl: '.swiper-button-prev-c',
+                },
+
+                breakpoints: {
+                    1400: {
+                        slidesPerView: 4.5,
+                    },
+
+                }
+            });
+        </script>
+    </div>
 
     <section style="background: #000000; padding-top: 120px;">
         <div class="container-5 reveal">
@@ -524,84 +857,7 @@
     </section>
 
    
-    <section style="background: #000000; padding-top: 120px;">
-        <div class="container-5 reveal">
-            <div class="index-services">
     
-                <div class="i-services-header">
-                    <div class="badge-section" style="justify-content: center;">
-                        
-                        <div class="hero-info-badge sc2"><img width="25" height="25"
-                                src="https://img.icons8.com/glyph-neue/ffffff/64/github.png" alt="google-logo" /> Professional Partner of
-                            the Year</div>
-                    
-                    </div>
-                    Markanıza ve Hedeflerinize <br> <span class="stroke-text-gradient-s">Özel Çözümler.</span>
-                </div>
-                <div class="i-services-container tailor">
-    
-    
-    
-                    <div class="i-services reveal erw2">
-                        <div class="i-services-img">
-                            
-                        </div>
-                        <div class="i-services-text-container">
-                            <div class="i-services-text">
-                                Kişisel Markalar İçin
-                            </div>
-                            <div class="i-services-text-alt">
-                                Hayal Et, Gerçekleştirelim Kişisel projelerinizi dijitalde profesyonel bir markaya dönüştürüyoruz.
-                            </div>
-                            
-                            <div class="hero-cta-buttons" style="margin-top: 30px;">
-                                <a class="nav-cta-btn" href="/iletisim" target="_blank">
-                                    <div class="nav-cta-btn-sec" style="width: 100%;">
-                                        <span>Kişisel Çözümleri İncele</span> <img width="16" height="16"
-                                            src="https://img.icons8.com/242424/android/124/up-right-arrow.png"
-                                            alt="up-right-arrow">
-                                    </div>
-                                </a>
-    
-    
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="i-services reveal erw">
-                        <div class="i-services-img">
-                            
-                        </div>
-                        <div class="i-services-text-container">
-                            <div class="i-services-text">
-                                Kurumsal Markalar İçin
-                            </div>
-                            <div class="i-services-text-alt">
-                                Büyümek İsteyen Markaların Tercihi Dijital dünyada sürdürülebilir büyüme için yanınızdayız.
-                            </div>
-                            
-                            <div class="hero-cta-buttons" style="margin-top: 30px;">
-                                <a class="nav-cta-btn" href="/iletisim" target="_blank">
-                                    <div class="nav-cta-btn-sec" style="width: 100%;">
-                                        <span>Kurumsal Çözümleri İncele</span> <img width="16" height="16"
-                                            src="https://img.icons8.com/242424/android/124/up-right-arrow.png"
-                                            alt="up-right-arrow">
-                                    </div>
-                                </a>
-    
-    
-                            </div>
-                        </div>
-                        
-                    </div>
-    
-                    
-    
-                </div>
-            </div>
-        </div>
-        
-    </section>
     
     
 
@@ -777,220 +1033,7 @@
     </section>
 
 
-    <div style="padding-top: 0;" class="case-section endura-pro">
-        <!-- Swiper -->
-        <div class="container reveal" style="margin-top: 150px;">
-            <div class="services-help">
-            <div class="badge-section " >
-                <div class="hero-info-badge sc3"><img width="20" height="20" src="https://img.icons8.com/fluency/48/ok--v1.png"
-                        alt="google-logo"> Bütçenizi Önemsiyoruz</div>
-            
-            
-            </div>
-                <div class="services-help-title " >
-                    Binlerce Reklam Ajansı Varken, <br> Neden
-                    <span class="stroke-text-gradient-s"> Bizi Seçmelisiniz?</span>
-                </div>
-            </div>
-        </div>
-        <div class="swiper profileSwiper reveal">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="profil-card">
-                        <div class="services-help">
-                            <div class="services-help-col portfolio-sec gradient-bg">
-                                <div class="promo-con">
-                                    <div class="services-help-column">
-                                        <img src="assets/icon/plus.png" alt="">
-                                    </div>
-                                    <div class="services-help-header">
-                                        <div class="flex-head-title-arrow">
-                                            <div class="hero-info brand-case" style="justify-content: start;">
-                                                <div class="hero-text-sub">
-                                                    Yüksek kaliteli sonuçlar sunuyoruz.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="services-help-title-alt head-box-title">
-                                            Sadece şık görünen değil, hızlı, sürdürülebilir ve yüksek performanslı projeler sunuyoruz.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="profil-card">
-                        <div class="services-help">
-                            <div class="services-help-col portfolio-sec gradient-bg">
-                                <div class="promo-con">
-                                    <div class="services-help-column">
-                                        <img src="assets/icon/circle.png" alt="">
-                                    </div>
-                                    <div class="services-help-header">
-                                        <div class="flex-head-title-arrow">
-                                            <div class="hero-info brand-case" style="justify-content: start;">
-                                                <div class="hero-text-sub">
-                                                    En son teknolojiyi kullanıyoruz.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="services-help-title-alt head-box-title">
-                                            Yapay zeka destekli sistemler ve güncel teknolojilerle markanızı dijitalde öne çıkarıyoruz.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="profil-card">
-                        <div class="services-help">
-                            <div class="services-help-col portfolio-sec gradient-bg">
-                                <div class="promo-con">
-                                    <div class="services-help-column">
-                                        <img src="assets/icon/xmark.png" alt="">
-                                    </div>
-                                    <div class="services-help-header">
-                                        <div class="flex-head-title-arrow">
-                                            <div class="hero-info brand-case" style="justify-content: start;">
-                                                <div class="hero-text-sub">
-                                                    Başarınız için çalışıyoruz.
-                                                </div>
-                                            </div>
-                                        </div>
-                                            <div class="services-help-title-alt head-box-title">
-                                                Satışlarınızı ve dijital görünürlüğünüzü artırmak için stratejik çözümler geliştiriyoruz.
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="profil-card">
-                        <div class="services-help">
-                            <div class="services-help-col portfolio-sec gradient-bg">
-                                <div class="promo-con">
-                                    <div class="services-help-column">
-                                        <img src="assets/icon/value.png" alt="">
-                                    </div>
-                                    <div class="services-help-header">
-                                        <div class="flex-head-title-arrow">
-                                            <div class="hero-info brand-case" style="justify-content: start;">
-                                                <div class="hero-text-sub">
-                                                    Zamanınıza değer veriyoruz.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="services-help-title-alt head-box-title">
-                                            Projeleri söz verdiğimiz tarihte, her aşamasını size raporlayarak tamamlıyoruz.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="profil-card">
-                        <div class="services-help">
-                            <div class="services-help-col portfolio-sec gradient-bg">
-                                <div class="promo-con">
-                                    <div class="services-help-column">
-                                        <img src="assets/icon/play.png" alt="">
-                                    </div>
-                                    <div class="services-help-header">
-                                        <div class="flex-head-title-arrow">
-                                            <div class="hero-info brand-case" style="justify-content: start;">
-                                                <div class="hero-text-sub">
-                                                    Açık ve net iletişim kuruyoruz.
-                                                </div>
-                                            </div>
-                                        </div>
-                                            <div class="services-help-title-alt head-box-title">
-                                                Size özel proje yöneticisiyle süreci hızlı ve kolay şekilde yönetiyoruz.
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="profil-card">
-                        <div class="services-help">
-                            <div class="services-help-col portfolio-sec gradient-bg">
-                                <div class="promo-con">
-                                    <div class="services-help-column">
-                                        <img src="assets/icon/xmark.png" alt="">
-                                    </div>
-                                    <div class="services-help-header">
-                                        <div class="flex-head-title-arrow">
-                                            <div class="hero-info brand-case" style="justify-content: start;">
-                                                <div class="hero-text-sub">
-                                                    Profesyonel çözümler geliştiriyoruz.
-                                                </div>
-                                            </div>
-                                        </div>
-                                            <div class="services-help-title-alt head-box-title">
-                                                Sektörünüze uygun, kullanıcı dostu ve marka değerinizi artıran çözümler sunuyoruz.
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-               
-                
-                
-            </div>
-           
-            <div class="swiper-nav">
-                
-                <div class="swiper-button-prev-c"><img width="50" height="50" src="https://img.icons8.com/pastel-glyph/ffffff/64/circled-chevron-left.png" alt="circled-chevron-right"/></div>
-                <div class="swiper-button-next-c"><img width="50" height="50" src="https://img.icons8.com/pastel-glyph/ffffff/64/circled-chevron-right.png" alt="circled-chevron-right"/></div>
-            </div>
-        </div>
-
-        
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper(".profileSwiper", {
-                slidesPerView: 1.16,
-               
-                effect: "coverflow",
-                grabCursor: true,
-                centeredSlides: true,
-               loop:true,
-                coverflowEffect: {
-                    rotate:20,
-                    stretch: -20,
-                    depth: 50,
-                    modifier: 1,
-                    slideShadows: false,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next-c',  
-                    prevEl: '.swiper-button-prev-c', 
-                },
-               
-                breakpoints: {
-                    1400: {
-                        slidesPerView: 4.5, 
-                    },
-                    
-                }
-            });
-        </script>
-    </div>
+   
 
     
 
@@ -1095,7 +1138,7 @@
                             <div class="hero-cta-buttons">
                                 <a class="nav-cta-btn" href="/iletisim" target="_blank">
                                     <div class="nav-cta-btn-sec" style="width: 100%;">
-                                        <span>Hemen Başlayalım</span> <img width="16" height="16"
+                                        <span>Kolay Teklif Talebi</span> <img width="16" height="16"
                                             src="https://img.icons8.com/242424/android/124/up-right-arrow.png" alt="up-right-arrow">
                                     </div>
                                 </a>

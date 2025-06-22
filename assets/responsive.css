@@ -167,9 +167,9 @@
        
     } 
         .container-fluid-hero {
-            height: auto;
+            
             background-position: top;
-            background-size: 150%;
+            background-size: 100%;
         }
     
         .hero-section {
