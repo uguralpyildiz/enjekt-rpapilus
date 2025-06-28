@@ -28,7 +28,25 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 
-    
+
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll('img');
+
+  images.forEach(img => {
+        img.classList.add('lazy-img'); // Başlangıçta blur+grayscale
+
+    if (img.complete) {
+        // Hemen yüklenmişse (cache'den vs.)
+        img.classList.add('loaded');
+    } else {
+        img.addEventListener('load', () => {
+            img.classList.add('loaded');
+        });
+    }
+  });
+});
+
+
 
 
 
