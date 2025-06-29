@@ -6,7 +6,7 @@
 
 body{
     font-family: "Poppins", sans-serif;
-    background: #000;
+    background: #000 !important;
 }
 .nav-top-border{
     position: fixed;
@@ -1054,6 +1054,9 @@ filter: grayscale(0);
     box-shadow: 0 0 150px #00000015;
     object-fit: cover;
    
+}
+.portfolio-flex-container .services-help-img-big img{
+    box-shadow: 0 0 150px #3e21be35;
 }
 .hero-info img{
     width: 250px;
