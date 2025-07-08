@@ -33,10 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const images = document.querySelectorAll('img');
 
   images.forEach(img => {
-        img.classList.add('lazy-img'); // Başlangıçta blur+grayscale
+        img.classList.add('lazy-img'); 
 
     if (img.complete) {
-        // Hemen yüklenmişse (cache'den vs.)
+   
         img.classList.add('loaded');
     } else {
         img.addEventListener('load', () => {

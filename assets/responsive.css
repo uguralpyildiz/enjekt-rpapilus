@@ -81,7 +81,7 @@
         flex-direction: column-reverse;
     }
     .services-help-col{
-        flex-direction: column-reverse !important;
+        flex-direction: column !important;
     }
     .services-help-img-big{
         height: auto !important;
@@ -146,9 +146,15 @@
     .team-section {
         padding: 30px;
     }
+        .img0title span:nth-child(2) {
+    
+            max-width: 100px;   }
     .team-box{
         width: 100%;
         
+    }
+    .mbhead, p{
+        text-align: center !important;
     }
     .referance .hero-cta-buttons{
         align-items: start !important;
@@ -176,13 +182,20 @@
             padding: 50px 20px 10px 20px;
         }
     
-        
+        .pad5{
+            padding: 10px;
+        }
     
         .badge-section {
            justify-content: start;
            align-items: start;
             flex-direction: column;
         }
+        .sss .hero-alt{
+            text-align: center;
+        }
+                .testiomonials .i-services {
+                    width: 100%;       }
         .hero-info-badge{
             padding: 5px 10px;
         }
@@ -204,7 +217,7 @@
                 .i-services-img {
                     background: #000;
                     border-bottom: 1px solid #ffffff50;
-                    margin: 10px;
+                    
                     width: 100%;
                 }
                 .i-services-container {
@@ -212,7 +225,7 @@
                 }
                 
                 .hero-cta-buttons .nav-cta-btn-sec {
-                    padding: 8px 20px;
+                    padding: 8px 0px;
                     width: auto;
                 }
                     .hero-cta-buttons{
@@ -236,8 +249,9 @@
             padding: 10px !important;
             padding-top: 80px !important;
         }
-        .index-services .i-services{
-            padding-top: 100px !important;
+        .i-services-img img{
+            height: 250px;  
+          
         }
         .erw2{
     text-shadow: 0 0 20px #ffffff50;
@@ -353,9 +367,7 @@
     .catalog-title-badge{
         display: none;
     }
-    .services-help-col{
-        padding:20px 8px;
-    }
+    
     .services-help-title{
         font-size: 32px;
     }
