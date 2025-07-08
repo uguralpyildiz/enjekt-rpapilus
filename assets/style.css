@@ -1505,12 +1505,14 @@ h1.typing-text{
         justify-content: space-between;
         gap: 5px;
     font-weight: 300;
+    font-size: 14px;
 }
 .imgretitler{
     display: flex;
     align-items: center;
     gap: 5px;
     font-weight: 300;
+    font-size: 14px;
 }
 .nth1 .services-help-col{
     
