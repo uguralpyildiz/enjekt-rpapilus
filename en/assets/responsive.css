@@ -1,0 +1,379 @@
+@media screen and (max-width:1500px){
+    
+    .footer-col-container{
+        flex-wrap: wrap;
+        padding: 25px;
+    }
+    .sec-col{
+        width: 100%;
+    }
+    .footer-col:nth-child(5){
+        width: 350px;
+    }
+    .footer-credit{
+        flex-direction: column;
+    }
+    .footer-credit-links{
+        padding: 15px 0;
+    }
+}
+
+
+@media screen and (max-width:1400px) {
+    .container-fluid-hero-default{
+        padding: 0px;
+    }
+    .portfolio{
+        padding: 10px !important;
+    }
+    .services-help-col{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    .form-row{
+        flex-direction: column;
+    }
+    .form-secs{
+        width: 100%;
+    }
+    .case-section{
+        padding: 10px;
+    }
+        .case-section::before{
+            width: 0;
+        }
+        .case-section::after{
+            width: 0;
+        }
+    .catalog-item{
+        width: 50%;
+    }
+    .services-help-title{
+        text-align: center;
+    }
+    .services-help-img img {
+        width: 123px !important;
+        margin-right: 0;
+    }
+    .hero-title h1{
+        font-size: 42px !important;
+        line-height: normal;
+    }
+    .services-help-title{
+        font-size: 36px;
+    }
+    footer{
+        padding: 10px;
+    }
+    .services-help{
+        margin: 10px;
+    }
+    .portfolio-flex-container{
+        flex-direction: column;
+    }
+    .services-help, .nth1, .nth2{
+        flex-direction: column;
+        width: 100% !important;
+        margin: 0;
+        
+    }
+    .title-flex{
+        flex-direction: column-reverse;
+    }
+    .services-help-col{
+        flex-direction: column !important;
+    }
+    .services-help-img-big{
+        height: auto !important;
+        padding:0 10px;
+    }
+    .services-help-img-big img{
+        height: auto !important;
+    }
+}
+
+
+@media screen and (max-width:1100px) {
+    .contact-form-container{
+        flex-direction: column;
+    }
+    .contact-section{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .contact-form-sec{
+        padding: 15px;
+    }
+    .contact-img{
+        display: none;
+    }
+    .contact-title{
+        font-size: 36px;
+    }
+    .contact-title-alt{
+        gap: 0;
+       
+        flex-direction: column;
+    }
+    .contact-title-alt a{
+        margin: 0;
+    }
+    .contact-form-sec, .contact-title{
+        width: 100%;
+    }
+    .services-help-col{
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+    .services-help-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .faq-container .catalog-item{
+        width: 100%;
+    }
+    .footer-col{
+        width: 48%;
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+    .team-section {
+        padding: 30px;
+    }
+        .img0title span:nth-child(2) {
+    
+            max-width: 100px;   }
+    .team-box{
+        width: 100%;
+        
+    }
+    .mbhead, p{
+        text-align: center !important;
+    }
+    .referance .hero-cta-buttons{
+        align-items: start !important;
+        justify-content: start !important;
+    }
+    .catalog-item{
+        width: 100% !important;
+    }
+         .footer-col {
+             width: 100%;
+         }
+    .footer-credit-links{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+       
+    } 
+        .container-fluid-hero {
+            
+            background-position: top;
+            background-size: 100%;
+        }
+    
+        .hero-section {
+            padding: 50px 20px 10px 20px;
+        }
+    
+        .pad5{
+            padding: 10px;
+        }
+    
+        .badge-section {
+           justify-content: start;
+           align-items: start;
+            flex-direction: column;
+        }
+        .sss .hero-alt{
+            text-align: center;
+        }
+                .testiomonials .i-services {
+                    width: 100%;       }
+        .hero-info-badge{
+            padding: 5px 10px;
+        }
+                .i-services{
+                    flex-direction: column-reverse;
+                }
+                .i-services{
+                    flex-direction: column-reverse;
+                }
+                .i-services-text{
+                    font-size: 22px;
+                }
+                .i-services-text-alt{
+                    font-size: 14px;
+                }
+                .i-services-text-container{
+                    padding:20px 15px;
+                }
+                .i-services-img {
+                    background: #000;
+                    border-bottom: 1px solid #ffffff50;
+                    
+                    width: 100%;
+                }
+                .i-services-container {
+                    flex-direction: column !important;
+                }
+                
+                .hero-cta-buttons .nav-cta-btn-sec {
+                    padding: 8px 0px;
+                    width: auto;
+                }
+                    .hero-cta-buttons{
+                        align-items: start;
+                    }
+
+        .i-services-container {
+            padding: 8px;
+        }
+       
+        .index-services .badge-section{
+            justify-content: center !important;
+            align-items: center;
+        }
+        .services-help .badge-section{
+            justify-content: center !important;
+            align-items: center !important;
+            width: 100%;
+        }
+        .sss{
+            padding: 10px !important;
+            padding-top: 80px !important;
+        }
+        .i-services-img img{
+            height: 250px;  
+          
+        }
+        .erw2{
+    text-shadow: 0 0 20px #ffffff50;
+    background-size: 120%;
+    background-position: center;
+    opacity: 1 !important;
+}
+        .erw{
+    text-shadow: 0 0 20px #ffffff50;
+    background-size: 120%;
+    background-position: center;
+    opacity: 1 !important;
+}
+        
+        .erwf{
+            background-position: top;
+            background: #000;
+        }
+        .index-services .i-services-img{
+            height: auto !important;
+            border: none !important;
+        }
+        .index-services .hero-cta-buttons {
+            align-items: center;
+        }
+         .index-services .mobile-services{
+            flex-direction: column-reverse !important;
+            padding-top: 0px !important;
+        }
+        .mobile-referance .i-services-img {
+            width: 100% !important;
+            margin: 0 !important;
+        }
+        .erwf {
+    text-shadow: 0 0 20px #ffffff50;
+    background-size: 120%;
+    background-position: top;
+    filter: grayscale(0);
+}
+                
+}
+@media screen and (max-width:650px) {
+    .nav-cta-btn-sec{
+        display: none;
+    }
+    .nav-ghost{
+        height: 63px;
+    }
+    .first-container .hero-title h1{
+        font-size: 22px !important;
+        line-height: normal;
+        padding: 0;
+    }
+    .services-help-title{
+        font-size: 22px !important;
+        margin: auto;
+    }
+        .hero-section .hero-alt {
+            font-size: 14px !important;
+    
+        }
+    .services-help-title-alt{
+        padding: 15px;
+    }
+        .i-services-header{
+            font-size: 22px;
+            padding:0 5px;
+        }
+    .hero-cta-buttons{
+        flex-direction: column;
+    }
+  
+    .stroke-text{
+        color: #fff;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: #fff;
+    }
+
+    .story-box-container{
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .referances{
+        width: 50%;
+    }
+    .catalog-item{
+        padding: 10px;
+    }
+    .catalog-title{
+        font-size: 16px;
+    }
+    .faq-date{
+        font-size: 13px;
+    }
+    .faq-date img{
+        width: 20px;
+        height: 20px;
+    }
+    .catalog-number{
+        font-size: 14px !important;
+    }
+    .catalog {
+        height: auto !important;
+    }
+    .hero-title h1{
+        padding: 5px;
+        
+    }
+    .catalog-title-badge{
+        display: none;
+    }
+    
+    .services-help-title{
+        font-size: 32px;
+    }
+    .credit{
+        padding: 5px;
+        text-align: center;
+    }
+
+}
