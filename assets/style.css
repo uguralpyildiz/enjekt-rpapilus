@@ -585,7 +585,7 @@ background: url(/assets/img/services/erw2.png);
     justify-content: end;
     height: 1px;
     width: 100%;
-    background: #4d4d4d;
+    background: #4d4d4d50;
     margin: 25px 0;
 }
 .erwf:hover{
@@ -593,6 +593,12 @@ background: url(/assets/img/services/erw2.png);
     background-size: 120%;
     background-position: top;
 filter: grayscale(0);
+}
+.tailor .i-services,
+.mobile-reference .i-services{
+
+    border: 1px solid #353535;
+    border-radius: 11px;
 }
 .erw2:hover{
     text-shadow: 0 0 20px #ffffff50;
