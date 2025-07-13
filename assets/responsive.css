@@ -249,10 +249,13 @@
             padding: 10px !important;
             padding-top: 80px !important;
         }
+                .rwreverse {
+                    flex-direction: column-reverse !important;       }
         .i-services-img img{
-            height: 250px;  
+            height: auto;  
           
         }
+        
         .erw2{
     text-shadow: 0 0 20px #ffffff50;
     background-size: 120%;
