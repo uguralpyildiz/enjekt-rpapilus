@@ -185,6 +185,41 @@
         .pad5{
             padding: 10px;
         }
+                #stickycontainer {
+                    overflow: visible !important;     
+                flex-direction: column !important;
+            height: auto !important;  }
+                .services-c {
+                    position: relative !important;
+                    top: 0px !important;
+                    right: 0 !important;       
+                }.services-c{
+                    width: 100%;
+                }
+                .i-services-detail{
+                    padding: 0 !important;
+                    padding-bottom: 70px !important;
+                }
+                .i-services-detail .i-services-text{
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+                .i-services-detail .i-services-text-alt{
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+                .rememberclas{
+                    padding: 40px 15px !important;
+                    
+                }
+
+                                .quotesse {
+                                    width: calc(100%);
+                
+                                    border: 1px solid #cccccc50;
+                                    border-radius: 8px;
+                                    height: 150px;
+                                    padding: 15px;               }
     
         .badge-section {
            justify-content: start;
@@ -216,7 +251,7 @@
                 }
                 .i-services-img {
                     background: #000;
-                    border-bottom: 1px solid #ffffff50;
+                  
                     
                     width: 100%;
                 }
