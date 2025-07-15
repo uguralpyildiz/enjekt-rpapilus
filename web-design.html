@@ -63,7 +63,32 @@
     </head>
 
 <body>
-    
+    <div class="overlayloadingscreen">
+        <div class="nav-logo-container">
+            <a class="nav-logo ">
+                <img width="60px" height="auto" src="logo.png" alt="NowifyMedia">
+                <div class="nav-logo-text" style="font-size: 32px;">
+                    Nowify<span>Media</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script>
+
+        const overlayloadingscreen = document.querySelector(".overlayloadingscreen");
+
+        document.body.style.overflow = "hidden";
+
+        setTimeout(() => {
+            overlayloadingscreen.style.top = "-150%";
+        }, 2000);
+
+        setTimeout(() => {
+            overlayloadingscreen.style.display = "none";
+
+            document.body.style.overflow = "auto";
+        }, 3000);
+    </script>
     <nav class="sticky-fun" >
     
         <div class="nav-container">
@@ -519,252 +544,7 @@
     
   
     
-    <section style="padding-bottom: 100px; margin-top: 200px; ">
-        <div class="container-5 ">
-            <div class="index-services reveal" style="padding: 5px 0;">
-    
-                <div class="i-services-header">
-                    
-                
-                
-                    Here’s Everything You  <br> <span class="stroke-text-gradient-s">Need to Know</span>
-                </div>
-    
-                <div class="i-services-container " style="margin-top: 50px; ">
-    
-                    <div class="i-services" id="stickycontainer" style="align-items: start;">
-                        <div class="i-services-text-container i-services-detail" style="max-width: 830px; padding-top: 0;">
-                            <div class="detailimg" style="margin-bottom: 21px;">
-                                <img style="width: 100%; height: 100%;" src="assets/img/services/Incomplete2.png" alt="">
-                            </div>
-                            <div class="i-services-text" style=" font-weight: 600;">
-                                No website? No growth. <br> Just digital silence on repeat.
-                            </div>
-                            <div class="i-services-text-alt">
-                                <span class="dangers">We don’t just build websites, we build experiences that convert.</span>
-                                <br><br>
-                                Everyone has a site today.<br>
-                                But how many are fast, clear, and built for results?<br>
-                                How many actually guide the user and sell while you sleep?<br><br>
-                                <span class="dangers">“This feels smooth”</span> — that’s what we’re after.
-                                <br><br>
-                                That kind of feeling doesn’t come from templates.
-                                It comes from strategy, UX thinking, and sharp execution.
-                                <br><br>
-                                With this service, we don’t just make you <span class="dangers">look good</span>.<br>
-                                We give your site <span class="dangers">purpose, flow, and performance</span>.
-                            </div>
-                        
-                            <div class="i-services-text" style=" margin-top: 50px;">
-                                <span class="dangers">1. Discovery & Strategy:</span>
-                            </div>
-                            <div class="i-services-text-alt">
-                                Before the first pixel, we plan the entire journey.
-                                <br><br>
-                                We ask:<br>
-                                <span class="dangers">What’s the goal? Who’s visiting? What actions do we want?</span>
-                                <br><br>
-                                Our process defines a clear roadmap.
-                                <br><br>
-                                <span class="dangers">This phase includes:</span>
-                            </div>
-                        
-                            <div class="i-services-list service-list-get">
-                                <div class=" quotesse catalog">
-                                    <div class="i-services-text" style=" padding-top: 0;">
-                                        <img width="25" height="25" src="https://img.icons8.com/forma-light/9fffc2/148/checked.png"
-                                            alt="checked" class="lazy-img loaded">
-                                        <span class="dangers">Website Audit</span>
-                                    </div>
-                                    <div class="i-services-text-alt" style="max-width: 550px;  font-size: 16px;">
-                                        We assess your current site (if you have one), your competitors, and your conversion roadblocks.
-                                    </div>
-                                </div>
-                        
-                                <div class="quotesse catalog">
-                                    <div class="i-services-text" style=" padding-top: 0;">
-                                        <img width="25" height="25" src="https://img.icons8.com/forma-light/9fffc2/148/checked.png"
-                                            alt="checked" class="lazy-img loaded">
-                                        <span class="dangers">User Journey Mapping</span>
-                                    </div>
-                                    <div class="i-services-text-alt" style="max-width: 550px;  font-size: 16px;">
-                                        We map out the flow — from homepage to checkout or contact. Every click should have a reason.
-                                    </div>
-                                </div>
-                        
-                                <div class="quotesse catalog">
-                                    <div class="i-services-text" style=" padding-top: 0;">
-                                        <img width="25" height="25" src="https://img.icons8.com/forma-light/9fffc2/148/checked.png"
-                                            alt="checked" class="lazy-img loaded">
-                                        <span class="dangers">Wireframes & Flowcharts</span>
-                                    </div>
-                                    <div class="i-services-text-alt" style="max-width: 550px;  font-size: 16px;">
-                                        Structural planning before design — the blueprint of your site.
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <div class="i-services-text" style=" margin-top: 50px;">
-                                <span class="dangers">2. Design & Development:</span>
-                            </div>
-                            <div class="i-services-text-alt">
-                                Here’s where it starts to look and feel real.
-                                <br><br>
-                                We turn insights into clean, functional, and stunning layouts.
-                                <br><br>
-                                <span class="dangers">Here’s what we deliver:</span>
-                            </div>
-                        
-                            <div class="i-services-list service-list-get">
-                                <div class="quotesse catalog">
-                                    <div class="i-services-text" style=" padding-top: 0;">
-                                        <img width="25" height="25" src="https://img.icons8.com/forma-light/9fffc2/148/checked.png"
-                                            alt="checked" class="lazy-img loaded">
-                                        <span class="dangers">Custom UI Design</span>
-                                    </div>
-                                    <div class="i-services-text-alt" style="max-width: 550px;  font-size: 16px;">
-                                        Not cookie-cutter. We design every section with your brand and audience in mind.
-                                    </div>
-                                </div>
-                        
-                                <div class="quotesse catalog">
-                                    <div class="i-services-text" style=" padding-top: 0;">
-                                        <img width="25" height="25" src="https://img.icons8.com/forma-light/9fffc2/148/checked.png"
-                                            alt="checked" class="lazy-img loaded">
-                                        <span class="dangers">Responsive Layouts</span>
-                                    </div>
-                                    <div class="i-services-text-alt" style="max-width: 550px;  font-size: 16px;">
-                                        Your site will look and work great on desktop, tablet, and mobile — no excuses.
-                                    </div>
-                                </div>
-                        
-                                <div class="quotesse catalog">
-                                    <div class="i-services-text" style=" padding-top: 0;">
-                                        <img width="25" height="25" src="https://img.icons8.com/forma-light/9fffc2/148/checked.png"
-                                            alt="checked" class="lazy-img loaded">
-                                        <span class="dangers">Performance & SEO Optimization</span>
-                                    </div>
-                                    <div class="i-services-text-alt" style="max-width: 550px;  font-size: 16px;">
-                                        Fast load times, clean code, basic on-page SEO baked in.
-                                    </div>
-                                </div>
-                        
-                                <div class="quotesse catalog">
-                                    <div class="i-services-text" style=" padding-top: 0;">
-                                        <img width="25" height="25" src="https://img.icons8.com/forma-light/9fffc2/148/checked.png"
-                                            alt="checked" class="lazy-img loaded">
-                                        <span class="dangers">CMS Integration</span>
-                                    </div>
-                                    <div class="i-services-text-alt" style="max-width: 550px;  font-size: 16px;">
-                                        We build with Webflow, WordPress, or custom code. You’ll be able to update things yourself — no dev
-                                        needed.
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <div class="i-services-text" style=" margin-top: 50px;">
-                                <span class="dangers">This is for you if:</span>
-                            </div>
-                            <div class="i-services-list service-list-get">
-                                <div class=" quotesse catalog">
-                                    <div class="i-services-text-alt" style="max-width: 550px;  font-size: 16px;">
-                                        You want a website that’s not just pretty, but performs.
-                                    </div>
-                                </div>
-                                <div class=" quotesse catalog">
-                                    <div class="i-services-text-alt" style="max-width: 550px;  font-size: 16px;">
-                                        You’re launching a new offer, product, or brand.
-                                    </div>
-                                </div>
-                                <div class=" quotesse catalog">
-                                    <div class="i-services-text-alt" style="max-width: 550px;  font-size: 16px;">
-                                        Your current site is slow, confusing, or outdated.
-                                    </div>
-                                </div>
-                                <div class=" quotesse catalog">
-                                    <div class="i-services-text-alt" style="max-width: 550px;  font-size: 16px;">
-                                        You’re ready to invest in a site that actually grows your business.
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <div class="rememberclas erwf" style="margin-top: 50px;">
-                                <div class="remembericon">
-                                    <img width="50" height="50" src="https://img.icons8.com/ios-filled/f1f1f1/50/bookmark-ribbon.png"
-                                        alt="light-bulb-emoji" />
-                                </div>
-                                <div class="i-services-text" style="  text-align: center;">
-                                    <span class="dangers"> Remember this: </span>
-                                </div>
-                                <div class="i-services-text-alt" style="font-size: 16px;">
-                                    Custom-coded websites aren’t for everyone.
-                                    
-                                    <br><br>
-                                    They take more work, more precision, and more thought.
-                                    <br><br>
-                                    But if you’re serious about your brand —
-                                    you don’t want fast and easy.
-                                    You want fast and effective.
-                                    
-                                   
-                                    <br><br>
-                                    Let’s build that.
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="services-c">
-                            <div class="i-services-list amazingasd" style="padding: 0 ; margin: 0; width: 100%;">
-                                <div class="i-services-text erw2"
-                                    style="color: #fff;  padding: 15px 20px !important; opacity: 1 !important; ">
-    
-                                    <span class="dangers">Useful Links</span>
-                                </div>
-    
-                                <a href="/brand-strategy-and-identity.html" class="i-services-text" >
-    
-                                    <span class="dangers">Brand Strategy & Identity Design</span>
-                                    <img width="20" height="20"
-                                        src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png" alt="checked"
-                                        class="lazy-img loaded">
-                                </a>
-    
-                                <a href="/digital-ads-and-seo" class="i-services-text" >
-    
-                                    <span class="dangers">Digital Advertising</span>
-                                    <img width="20" height="20"
-                                        src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png" alt="checked"
-                                        class="lazy-img loaded">
-                                </a>
-                                <a href="/digital-ads-and-seo" class="i-services-text" >
-    
-                                    <span class="dangers">SEO Optimization</span>
-                                    <img width="20" height="20"
-                                        src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png" alt="checked"
-                                        class="lazy-img loaded">
-                                </a>
-                                
-                            </div>
-                            <div class="i-services-list amazingasd" style="padding: 0">
-                                <a href="/contact" class="i-services-text">
-                                
-                                    <span class="dangers stroke-text-gradient-s" style="font-weight: 650 !important;">Let's Work Together</span>
-                                    <img width="20" height="20" src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png" alt="checked"
-                                        class="lazy-img loaded"></a>
-                            </div>
-                        </div>
-                        
-                    </div>
-    
-    
-                </div>
-    
-    
-    
-    
-            </div>
-        </div>
-    </section>
+ 
 
    
     <section style="background: #000000; padding-top: 120px;">
