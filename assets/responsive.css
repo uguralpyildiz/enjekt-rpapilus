@@ -156,6 +156,12 @@
     .mbhead, p{
         text-align: center !important;
     }
+    .mb-6{
+        text-align: left !important;
+    }
+    .mb-4{
+        text-align: left !important;
+    }
     .referance .hero-cta-buttons{
         align-items: start !important;
         justify-content: start !important;

@@ -23,6 +23,40 @@ body{
     right: 20px;
     cursor: pointer;
 }
+.i-services-detail h1, .i-services-detail h2{
+    color: #ffffff;
+    font-weight: 500;
+    text-align: left !important;
+    padding: 20px 0;
+}
+.i-services-detail a{
+    color: #ffffff;
+   
+}
+.i-services-detail ul{
+    list-style-type:decimal;
+    padding: 0 30px;
+    margin: 25px 0;
+    background: linear-gradient(to left, #ffffff00, #ffffff10);
+    border: 1px solid #ffffff35;
+    border-radius: 8px;
+}
+.mb-6{
+   
+    margin-bottom: 20px;
+    background: linear-gradient(to left, #ffffff00, #ffffff10);
+    border: 1px solid #ffffff35;
+    border-radius: 8px;
+    color: #ffffff;
+    text-align: left !important;
+   padding: 25px 15px;
+}
+.i-services-detail ul li{
+    
+    color: #ffffff;
+    text-align: left !important;
+   padding: 15px 0;
+}
 
 
 .duyuru-div{
@@ -533,7 +567,7 @@ body{
 }
 
 .erw{
-background: url(/assets/img/services/erw.png);
+background: url(/assets/img/services/erw.webp);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -541,7 +575,7 @@ background: url(/assets/img/services/erw.png);
     opacity: .76 !important;
 }
 .erwf{
-background: url(/assets/img/services/erwf.png);
+background: url(/assets/img/services/erwf.webp);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -551,7 +585,7 @@ background: url(/assets/img/services/erwf.png);
 
 
 .erw2{
-background: url(/assets/img/services/erw2.png);
+background: url(/assets/img/services/erw2.webp);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -585,7 +619,7 @@ background: url(/assets/img/services/erw2.png);
     justify-content: end;
     height: 1px;
     width: 100%;
-    background: #4d4d4d50;
+    background: #adadad50;
     margin: 25px 0;
 }
 .erwf:hover{
@@ -3040,7 +3074,7 @@ button{
     position: absolute;
     top: 0;
     left: 0;
-    background: url(/assets/img/services/erw.png);
+    background: url(/assets/img/services/erw.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -3257,7 +3291,7 @@ z-index: 0;
     max-width: 1350px;
     margin: auto;
     margin-top: 150px;
-    background: url(/assets/img/services/erwf.png);
+    background: url(/assets/img/services/erwf.webp);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100%;
