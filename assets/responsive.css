@@ -146,6 +146,11 @@
     .team-section {
         padding: 30px;
     }
+        .pricing .i-services {
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
         .img0title span:nth-child(2) {
     
             max-width: 100px;   }

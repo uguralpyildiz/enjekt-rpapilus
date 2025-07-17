@@ -33,6 +33,7 @@ body{
     color: #ffffff;
    
 }
+
 .i-services-detail ul{
     list-style-type:decimal;
     padding: 0 30px;
@@ -1964,20 +1965,100 @@ i {
     left: 90%;
 }
 
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 .link-numbers {
-    font-size: 15px;
-    font-family: consolas;
-    text-align: right;
-    color: #fff;
-    opacity: .50;
-    transition: .3s;
+
+    font-family: 'Inconsolata', monospace !important;
+    font-size: 46px;
 }
 
 .slash {
     letter-spacing: 4px;
 }
+.pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+   
+    
+}
+.pricing .i-services {
+    display: flex !important;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0 !important;
+    background: #111111;
+    border: 1px solid #353535;
+    border-radius: 8px;
+    padding: 35px;
+    color: #fff;
+    width: 33.33%;
+    transition: .3s ease all;
+    
+}
+.pricing .i-services:hover {
+   
+    box-shadow: 0 0 105px #ffffff15;
 
+    
+}
+.pricing .i-services.middle {
+    border: 2px solid #796bbf80;
+    background: radial-gradient(circle, #111111 1%, rgba(121, 107, 191, 0.185) 63%, #111111 100%);
+}
+.pricing .i-services.middle .pack-title-mini {
+    color: #bbadff;
+}
+.pack-title-mini{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px !important;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.mostpop{
+    position: absolute;
+    top: -5px;
+    right: 0;
+    padding: 5px 15px;
+    background: #796bbf30;
+    
+    border-radius: 50px;
+}
+.pack-title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #fff;
+   
+}
+.pack-price{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    
+}
+.pack-details-text{
+    padding-bottom: 15px;
+}
+.pack-detail-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+}
+.pack-detail-list ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 0;
+    font-weight: 300;
+    color: #d0d0d0;
+}
 .nav-title {
     display: flex;
     align-items: center;
@@ -2133,7 +2214,7 @@ i {
     content: "";
     position: absolute;
     bottom: 0px;
-    left: 250px;
+    left: 350px;
     width: 100%;
     height: 100%;
     transform: rotate(-320deg);
@@ -2151,7 +2232,7 @@ i {
     }
 
     100% {
-        left: 250px;
+        left: 350px;
     }
 }
 
