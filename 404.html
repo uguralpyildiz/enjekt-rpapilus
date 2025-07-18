@@ -36,7 +36,7 @@
         href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <meta name="robots" content="index, follow">
-    
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -68,32 +68,7 @@
 </head>
 
 <body>
-    <div class="overlayloadingscreen">
-        <div class="nav-logo-container">
-            <a class="nav-logo ">
-                <img width="60px" height="auto" src="logo.png" alt="NowifyMedia">
-                <div class="nav-logo-text" style="font-size: 32px;">
-                    Nowify<span>Media</span>
-                </div>
-            </a>
-        </div>
-    </div>
-    <script>
 
-        const overlayloadingscreen = document.querySelector(".overlayloadingscreen");
-
-        document.body.style.overflow = "hidden";
-
-        setTimeout(() => {
-            overlayloadingscreen.style.top = "-150%";
-        }, 2000);
-
-        setTimeout(() => {
-            overlayloadingscreen.style.display = "none";
-
-            document.body.style.overflow = "auto";
-        }, 3000);
-    </script>
 
     <nav class="sticky-fun">
 
@@ -404,14 +379,11 @@
             <div class="index-services">
 
                 <div class="i-services-header">
-                    <div style="padding: 15px 0; display: flex; align-items: center; justify-content: center;">
-                        <img style="box-shadow: 0 0 35px #ffffff50; border-radius: 50%;" width="25" height="25"
-                            src="https://img.icons8.com/ios-filled/A3C4FF/50/full-stop.png" alt="full-stop" />
-                        <img style="box-shadow: 0 0 35px #ffffff50; border-radius: 50%;" width="25" height="25"
-                            src="https://img.icons8.com/ios-filled/FFB87C/50/full-stop.png" alt="full-stop" />
-                        <img style="box-shadow: 0 0 35px #ffffff50; border-radius: 50%;" width="25" height="25"
-                            src="https://img.icons8.com/ios-filled/90EE90/50/full-stop.png" alt="full-stop" />
-
+                    <div class="hero-info" style="padding: 15px 0;">
+                        <img style="width: 150px;"
+                            src="https://ninjapromo.io/wp-content/uploads/2023/12/b2bhero-labels.svg" alt="nowify media"
+                            class="lazy-img loaded">
+                        <span style="margin-left: 10px; opacity: .7; font-size: 14px;">Client-First Approach</span>
                     </div>
 
 
@@ -419,58 +391,86 @@
                 </div>
                 <div class="i-services-container ">
 
-                    <div class="i-services  reveal">
+                    <div class="i-services  ">
                         <div class="i-services-text-container">
+                            <div class="imgoverlayer">
+                                <img width="35" height="35" src="assets/icon/circle.png" alt="checked"
+                                    class="lazy-img loaded">
+                                <img width="35" height="35" src="assets/icon/play.png" alt="checked"
+                                    class="lazy-img loaded">
+                                <img width="35" height="35" src="assets/icon/plus.png" alt="checked"
+                                    class="lazy-img loaded">
+
+                                <img width="35" height="35" src="assets/icon/value.png" alt="checked"
+                                    class="lazy-img loaded">
+
+                            </div>
                             <div class="i-services-text">
                                 Brand
                                 Strategy & Identity Design
                             </div>
                             <div class="i-services-text-alt">
                                 We help new and established brands stand out through bold, modern identities. From logo
-                                and color systems to brand voice
+                                and color
+                                systems to brand voice
                                 and strategy, we make sure every detail works together to tell a clear and consistent
                                 story.
                             </div>
                             <div class="i-services-list">
                                 <div class="i-services-text">
                                     <img width="25" height="25"
-                                        src="https://img.icons8.com/forma-light/9fffc2/148/checked.png" alt="checked"
+                                        src="https://img.icons8.com/forma-light/ffffff/148/checked.png" alt="checked"
                                         class="lazy-img loaded">
                                     Brand Positioning & Core Identity
                                 </div>
 
                                 <div class="i-services-text">
                                     <img width="25" height="25"
-                                        src="https://img.icons8.com/forma-light/9fffc2/148/checked.png" alt="checked"
+                                        src="https://img.icons8.com/forma-light/ffffff/148/checked.png" alt="checked"
                                         class="lazy-img loaded">
                                     Custom Color & Typography Systems
                                 </div>
 
                                 <div class="i-services-text">
                                     <img width="25" height="25"
-                                        src="https://img.icons8.com/forma-light/9fffc2/148/checked.png" alt="checked"
+                                        src="https://img.icons8.com/forma-light/ffffff/148/checked.png" alt="checked"
                                         class="lazy-img loaded">
                                     UX-Driven Web Presence
                                 </div>
 
+
                             </div>
-                            <div class="hero-cta-buttons" style="margin-top: 30px;">
-                                <a class="nav-cta-btn" href="/brand-strategy-and-identity">
-                                    <div class="nav-cta-btn-sec">
-                                        <span>Learn more</span> <img width="16" height="16"
-                                            src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png"
+                            <div class="download-center mxw">
+                                <a href="/brand-strategy-and-identity" id="downloadCv" class="download-cv"
+                                    style="border-radius: 5px;">
+                                    <span class="download-text">
+                                        View Details & Pricing
+                                        <img width="16" height="16"
+                                            src="https://img.icons8.com/000000/android/124/up-right-arrow.png"
                                             alt="up-right-arrow">
-                                    </div>
+                                    </span>
                                 </a>
                             </div>
                         </div>
-                        <div class="i-services-img">
+                        <div class="i-services-img" style="max-width: 600px;">
                             <img src="assets/img/services/consult.webp" alt="nowify media">
                         </div>
                     </div>
-                    <div class="h505" style="height: 150px;"></div>
-                    <div class="i-services  reveal rwreverse">
+                    <div class="divider"></div>
+                    <div class="i-services  reveal ">
                         <div class="i-services-text-container">
+                            <div class="imgoverlayer">
+                                <img width="35" height="35" src="https://img.icons8.com/color/148/html-5--v1.png"
+                                    alt="checked" class="lazy-img loaded">
+                                <img width="35" height="35" src="https://img.icons8.com/color/148/css3.png"
+                                    alt="checked" class="lazy-img loaded">
+                                <img width="35" height="35" src="https://img.icons8.com/color/148/javascript--v1.png"
+                                    alt="checked" class="lazy-img loaded">
+
+                                <img width="35" height="35" src="https://img.icons8.com/fluency/148/tailwind_css.png"
+                                    alt="checked" class="lazy-img loaded">
+
+                            </div>
                             <div class="i-services-text">
                                 Web
                                 Design & Development
@@ -484,88 +484,105 @@
                             <div class="i-services-list">
                                 <div class="i-services-text">
                                     <img width="25" height="25"
-                                        src="https://img.icons8.com/forma-light/9fffc2/148/checked.png" alt="checked"
+                                        src="https://img.icons8.com/forma-light/ffffff/148/checked.png" alt="checked"
                                         class="lazy-img loaded">
                                     Custom Frontend Development
                                 </div>
                                 <div class="i-services-text">
                                     <img width="25" height="25"
-                                        src="https://img.icons8.com/forma-light/9fffc2/148/checked.png" alt="checked"
+                                        src="https://img.icons8.com/forma-light/ffffff/148/checked.png" alt="checked"
                                         class="lazy-img loaded">
                                     Conversion-Focused Design
                                 </div>
                                 <div class="i-services-text">
                                     <img width="25" height="25"
-                                        src="https://img.icons8.com/forma-light/9fffc2/148/checked.png" alt="checked"
+                                        src="https://img.icons8.com/forma-light/ffffff/148/checked.png" alt="checked"
                                         class="lazy-img loaded">
                                     Brand-Driven Visual Systems
                                 </div>
                             </div>
-                            <div class="hero-cta-buttons" style="margin-top: 30px;">
-                                <a class="nav-cta-btn" href="/web-design">
-                                    <div class="nav-cta-btn-sec">
-                                        <span>Learn more</span> <img width="16" height="16"
-                                            src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png"
+                            <div class="download-center mxw">
+                                <a href="/web-design" id="downloadCv" class="download-cv" style="border-radius: 5px;">
+                                    <span class="download-text">
+                                        View Details & Pricing
+                                        <img width="16" height="16"
+                                            src="https://img.icons8.com/000000/android/124/up-right-arrow.png"
                                             alt="up-right-arrow">
-                                    </div>
+                                    </span>
                                 </a>
                             </div>
                         </div>
-                        <div class="i-services-img ">
-                            <video poster="assets/img/services/thumbnail.jpg" autoplay muted loop playsinline style="width: 100%; height: auto; display: block;">
-                                <source src="assets/img/services/webdesign.webm" type="video/webm">
-                                <source src="assets/img/services/webdesign.mp4" type="video/mp4">
+                        <div class="i-services-img " style="max-width: 600px;">
+                            <video poster="assets/img/services/thumbnail.jpg" autoplay muted loop playsinline
+                                style="width: 100%; height: auto; display: block;">
+                                <source src="assets/img/services/webdesign2.webm" type="video/webm">
+                                <source src="assets/img/services/webdesign2.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </div>
                     </div>
-                    <div class="h505" style="height: 150px;"></div>
+                    <div class="divider"></div>
                     <div class="i-services reveal">
                         <div class="i-services-text-container">
+                            <div class="imgoverlayer">
+                                <img width="35" height="35" src="https://img.icons8.com/fluency/148/google-logo.png"
+                                    alt="checked" class="lazy-img loaded">
+                                <img width="35" height="35" src="https://img.icons8.com/color/148/google-ads.png"
+                                    alt="checked" class="lazy-img loaded">
+                                <img width="35" height="35" src="https://img.icons8.com/fluency/148/meta.png"
+                                    alt="checked" class="lazy-img loaded">
+
+
+
+
+                            </div>
                             <div class="i-services-text">
 
                                 Digital Advertising & SEO Optimization
                             </div>
                             <div class="i-services-text-alt">
                                 We boost your online presence by combining precise, data-driven advertising campaigns
-                                with comprehensive SEO strategies.
+                                with
+                                comprehensive SEO strategies.
                                 From targeting the right audience with high-converting ads to optimizing your website
-                                for better search rankings, we
+                                for better
+                                search rankings, we
                                 make sure your brand gets noticed and drives real results.
 
                             </div>
                             <div class="i-services-list">
                                 <div class="i-services-text">
                                     <img width="25" height="25"
-                                        src="https://img.icons8.com/forma-light/9fffc2/148/checked.png" alt="checked"
+                                        src="https://img.icons8.com/forma-light/ffffff/148/checked.png" alt="checked"
                                         class="lazy-img loaded">
                                     Performance-Driven Digital Advertising
                                 </div>
                                 <div class="i-services-text">
                                     <img width="25" height="25"
-                                        src="https://img.icons8.com/forma-light/9fffc2/148/checked.png" alt="checked"
+                                        src="https://img.icons8.com/forma-light/ffffff/148/checked.png" alt="checked"
                                         class="lazy-img loaded">
                                     SEO (Search Engine Optimization)
                                 </div>
                                 <div class="i-services-text">
                                     <img width="25" height="25"
-                                        src="https://img.icons8.com/forma-light/9fffc2/148/checked.png" alt="checked"
+                                        src="https://img.icons8.com/forma-light/ffffff/148/checked.png" alt="checked"
                                         class="lazy-img loaded">
                                     Data-Backed Strategy & Reporting
                                 </div>
                             </div>
 
-                            <div class="hero-cta-buttons" style="margin-top: 30px;">
-                                <a class="nav-cta-btn" href="/digital-ads-and-seo">
-                                    <div class="nav-cta-btn-sec">
-                                        <span>Learn more</span> <img width="16" height="16"
-                                            src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png"
+                            <div class="download-center mxw">
+                                <a href="/web-design" id="downloadCv" class="download-cv" style="border-radius: 5px;">
+                                    <span class="download-text">
+                                        View Details & Pricing
+                                        <img width="16" height="16"
+                                            src="https://img.icons8.com/000000/android/124/up-right-arrow.png"
                                             alt="up-right-arrow">
-                                    </div>
+                                    </span>
                                 </a>
                             </div>
                         </div>
-                        <div class="i-services-img">
+                        <div class="i-services-img" style="max-width: 600px;">
                             <img src="assets/img/services/ads.webp" alt="nowify media">
                         </div>
                     </div>
@@ -581,12 +598,16 @@
         <!-- Swiper -->
         <div class="container reveal" style="margin-top: 150px;">
             <div class="i-services-header">
+                <div style="padding: 15px 0; display: flex; align-items: center; justify-content: center;">
+                    <img style="box-shadow: 0 0 35px #ffffff50; border-radius: 50%;" width="25" height="25"
+                        src="https://img.icons8.com/ios-filled/A3C4FF/50/full-stop.png" alt="full-stop" />
+                    <img style="box-shadow: 0 0 35px #ffffff50; border-radius: 50%;" width="25" height="25"
+                        src="https://img.icons8.com/ios-filled/FFB87C/50/full-stop.png" alt="full-stop" />
+                    <img style="box-shadow: 0 0 35px #ffffff50; border-radius: 50%;" width="25" height="25"
+                        src="https://img.icons8.com/ios-filled/90EE90/50/full-stop.png" alt="full-stop" />
 
-                <div class="hero-info" style="padding: 15px 0;">
-                    <img style="width: 150px;" src="https://ninjapromo.io/wp-content/uploads/2023/12/b2bhero-labels.svg"
-                        alt="nowify media" class="lazy-img loaded">
-                    <span style="margin-left: 10px; opacity: .7; font-size: 14px;">Client-First Approach</span>
                 </div>
+
                 Why
                 <span class="stroke-text-gradient-s"> Brands Work With Us</span>
             </div>
@@ -1056,7 +1077,8 @@
                     <div class="i-services mobile-services erwf" style="flex-direction: row-reverse;">
                         <div class="i-services-text-container">
                             <div class="i-services-text">
-                                <img class="cst-i" style="width: 150px;" src="https://vercos.ai/img/logo.svg" alt="nowify media">
+                                <img class="cst-i" style="width: 150px;" src="https://vercos.ai/img/logo.svg"
+                                    alt="nowify media">
                             </div>
                             <div class="i-services-text-alt">
                                 VercosAI provides AI and image processing based solutions. Website development and SEO
@@ -1080,7 +1102,8 @@
                         <div class="i-services-text-container">
                             <div class="i-services-text">
                                 <img class="cst-i" style="width: 250px;"
-                                    src="https://texep.ch/wp-content/uploads/2023/09/Texep_Logo_White_Long.png" alt="nowify media">
+                                    src="https://texep.ch/wp-content/uploads/2023/09/Texep_Logo_White_Long.png"
+                                    alt="nowify media">
                             </div>
                             <div class="i-services-text-alt">
                                 Texep offers bespoke solar energy solutions combining aesthetics and functionality.
@@ -1466,11 +1489,14 @@
                     <div class="footer-col-title">Useful Links</div>
                     <div class="footer-col-links">
                         <a href="/"><img width="10" height="10"
-                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns"/> Home</a>
+                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns" />
+                            Home</a>
                         <a href="/case-studies"><img width="10" height="10"
-                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns"/> Our Work</a>
+                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns" /> Our
+                            Work</a>
                         <a href="/contact"><img width="10" height="10"
-                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns"/> Contact Us</a>
+                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns" />
+                            Contact Us</a>
                     </div>
                 </div>
 
@@ -1478,17 +1504,22 @@
                     <div class="footer-col-title">Services</div>
                     <div class="footer-col-links">
                         <a href="/contact"><img width="10" height="10"
-                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns"/> Social Media</a>
+                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns" /> Social
+                            Media</a>
                         <a href="/contact"><img width="10" height="10"
-                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns"/> Digital
+                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns" />
+                            Digital
                             Marketing</a>
                         <a href="/contact"><img width="10" height="10"
-                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns"/> Website
+                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns" />
+                            Website
                             Design</a>
                         <a href="/contact"><img width="10" height="10"
-                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns"/> Ad Management</a>
+                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns" /> Ad
+                            Management</a>
                         <a href="/contact"><img width="10" height="10"
-                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns"/> Technical Web
+                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns" />
+                            Technical Web
                             Support</a>
                     </div>
                 </div>
@@ -1532,12 +1563,12 @@
                         Copyright &copy; 2020 - 2025 Nowify Media Advertising & Technology Inc. All Rights Reserved.
                     </div>
                     <div class="footer-credit-links">
-                    <a href="/privacy-policy">Privacy Policy</a>|
-                    
-                    <a href="/security-policy">Security Policy</a>|
-                    <a href="/cookie-policy">Cookie Policy</a>|
-                    <a href="/legal-information">Legal Information</a>
-                  </div>
+                        <a href="/privacy-policy">Privacy Policy</a>|
+
+                        <a href="/security-policy">Security Policy</a>|
+                        <a href="/cookie-policy">Cookie Policy</a>|
+                        <a href="/legal-information">Legal Information</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1552,7 +1583,7 @@
             alt="whatsapp--v1" /><img width="10" height="10" src="https://img.icons8.com/ios-glyphs/e3e5e9/30/full-stop--v1.png" alt="full-stop--v1" /> Çevrimiçi
     </a> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="assets/script.js"></script>
 </body>
 
