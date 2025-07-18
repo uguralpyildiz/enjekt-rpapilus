@@ -155,11 +155,11 @@
 
     <section class="first-container" >
     
-        <div class="container-fluid-hero " style="background:#121212 !important; height: auto; padding-top: 150px; background-repeat: no-repeat !important; background-size: cover !important; background-position: center !important;">
+        <div class="container-fluid-hero " style="background:#000000 !important; height: auto; padding-top: 150px; background-repeat: no-repeat !important; background-size: cover !important; background-position: center !important;">
         
             <div class="i-services-container exam12" style="width: 1350px; margin: auto; margin-bottom: 50px;">
             
-                <div class="i-services active">
+                <div class="i-services ">
                     <div class="i-services-text-container" >
                         <div class="hero-title ">
                             <div class="badge-section">
@@ -188,7 +188,7 @@
                         
                     </div>
                     <div class="i-services-img ">
-                        <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block;">
+                        <video poster="assets/img/services/thumbnail.jpg"  autoplay muted loop playsinline style="width: 100%; height: auto; display: block;">
                             <source src="assets/img/services/webdesign2.webm" type="video/webm">
                             <source src="assets/img/services/webdesign2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -238,7 +238,7 @@
                         
                     </div>
                     <div class="i-services-img ">
-                        <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block;">
+                        <video poster="assets/img/services/thumbnail.jpg" poster="assets/img/services/thumbnail.jpg" autoplay muted loop playsinline style="width: 100%; height: auto; display: block;">
                             <source src="assets/img/services/webdesignui.webm" type="video/webm">
                             <source src="assets/img/services/webdesignui.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -334,7 +334,7 @@
                         
                     </div>
                     <div class="i-services-img ">
-                        <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block;">
+                        <video poster="assets/img/services/thumbnail.jpg" autoplay muted loop playsinline style="width: 100%; height: auto; display: block;">
                             <source src="assets/img/services/webdesign.webm" type="video/webm">
                             <source src="assets/img/services/webdesign.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -540,9 +540,9 @@
                         </div>
                     </div>
                 </section>
-                <div class="i-services-container pricing" style="margin-top: 50px;">
+                <div class="nthhover i-services-container pricing" style="margin-top: 50px;">
     
-                    <div class="i-services  ">
+                    <div class="i-services st1 ">
                         <div class="pack-title-mini">
                             From 0 to 1
                         </div>
@@ -584,7 +584,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="i-services middle">
+                    <div class="i-services st2 middle">
                         <div class="pack-title-mini">
                             <div>Accelerate your growth</div>
                             <div class="mostpop">Most Popular</div>
@@ -627,7 +627,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="i-services  ">
+                    <div class="i-services st3 ">
                         <div class="pack-title-mini">
                             Built to stand out.
                         </div>
@@ -645,7 +645,7 @@
                         <div class="pack-detail-list">
                             <ul>
                                 <li><img width="20px" height="20px" src="https://img.icons8.com/forma-light/9fffc2/148/checked.png"
-                                        alt="listicon">Up to 50 custom pages</li>
+                                        alt="listicon">Up to 30 custom pages</li>
                                 <li><img width="20px" height="20px" src="https://img.icons8.com/forma-light/9fffc2/148/checked.png"
                                         alt="listicon">Lightning-fast performance</li>
                                 <li><img width="20px" height="20px" src="https://img.icons8.com/forma-light/9fffc2/148/checked.png"
@@ -671,7 +671,23 @@
                     </div>
               
                    
-    
+                    <script>
+                        const services = document.querySelectorAll('.i-services');
+
+                            services.forEach(service => {
+                                service.addEventListener('mouseenter', () => {
+                                    services.forEach(s => {
+                                        if (s !== service) s.style.opacity = '0.5';
+                                    });
+                                });
+
+                                service.addEventListener('mouseleave', () => {
+                                    services.forEach(s => {
+                                        s.style.opacity = '1';
+                                    });
+                                });
+                            });
+                    </script>
                     
     
     
