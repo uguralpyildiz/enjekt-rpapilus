@@ -821,8 +821,8 @@ filter: grayscale(0);
     
 }
 .mxw a{
-    background: linear-gradient(to top, #cccccc, #e6e6e6);
-    color: #000;
+    background: linear-gradient(to top, #cccccc, #e6e6e6) !important;
+    color: #000 !important;
 }
 .hero-cta-buttons .nav-cta-btn-sec.kasend-btn{
     background: #d4d4d4 !important;
