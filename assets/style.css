@@ -424,7 +424,7 @@ body{
     background: url(icon/stroke.webp);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-position: bottom;
+        background-position:80% 80%;
         background-size: 110%;
     text-shadow: 0 0 100px #ffffff20;
 }
