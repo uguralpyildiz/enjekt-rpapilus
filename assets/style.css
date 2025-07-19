@@ -421,7 +421,7 @@ body{
 }
 
 .stroke-text-gradient-s{
-    background: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHQ1cWxjdHk1bXQwMW5sejY3eDFld3J3NGluaWVtZHE5MTE4YXhiayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xKBdOSxnnd03FaPgxn/giphy.gif);
+    background: url(icon/stroke.webp);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-position: bottom;
