@@ -34,6 +34,7 @@ body{
    
 }
 
+
 .i-services-detail ul{
     list-style-type:decimal;
     padding: 0 30px;
@@ -1369,14 +1370,14 @@ footer{
 .reveal.active {
     transform: translateY(0);
     opacity: 1 !important;
-    filter: blur(0px) !important;
+   
 }
 
 .reveal {
     position: relative;
     transform: translateY(50px);
-    opacity: .2;
-    filter: blur(2px);
+    opacity: .1;
+    
     transition: .5s all ease;
 }
 .instagram {
@@ -3701,4 +3702,48 @@ img.lazy-img.loaded {
 }
 .testiomonials .i-services-text {
     height: 100px;
+}
+
+.webdesign .i-services{
+    padding:30px;
+    justify-content: center;
+    gap: 25px;
+    border: 1px solid #ffffff20;
+    
+    border-radius: 11px;
+}
+.webdesign .i-services-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 0 ;
+    margin-top: 35px;
+}
+.webdesign .i-services-text-container{
+    padding: 0;
+}
+.webdesign .i-services-text{
+    font-size: 16px !important;
+    width: calc(50% - 15px);
+    padding:15px;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #000, #111111);
+    border: 1px solid #ffffff20;
+}
+
+.webdesign .i-services .hero-title h1{
+    font-size: 36px !important;
+    font-weight: 400;
+}
+.linksecnums{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 38px;
+    font-weight: 500;
+    text-shadow: 0 0 10px #000000;
+    z-index: 1;
 }

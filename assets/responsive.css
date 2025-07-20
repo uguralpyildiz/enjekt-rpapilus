@@ -143,6 +143,21 @@
 }
 
 @media screen and (max-width:800px) {
+    .webdesign .i-services-text {
+        width: 100%;
+       
+        font-size: 14px !important;
+    }
+        .webdesign .i-services {
+            flex-direction: column;
+            width: 100%;
+            padding: 10px;
+        }
+        .linksecnums{
+            display: none;
+            font-size: 28px;
+            top: 0px;
+        }
     .mxw {
             max-width: 100%;
             margin-top: 25px;
