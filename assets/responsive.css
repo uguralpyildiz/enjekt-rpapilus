@@ -148,6 +148,9 @@
        
         font-size: 14px !important;
     }
+        .footer-container .services-help-title {
+            padding: 5px;
+        }
         .webdesign .i-services {
             flex-direction: column;
             width: 100%;

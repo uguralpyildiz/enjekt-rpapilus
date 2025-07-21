@@ -289,7 +289,28 @@ body{
     height: calc(100vh - 100px); 
     padding-top: 80px;
    z-index: 0;
+   
 }
+.fade-in {
+    opacity: 0;
+    transform: scale(1.1);
+    overflow: hidden;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+
+
+
+@keyframes fadeIn {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+
 
 .hero-info{
     display: flex;
@@ -425,7 +446,7 @@ body{
     background: url(icon/stroke.webp);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-position:80% 80%;
+        background-position:bottom;
         background-size: 110%;
     text-shadow: 0 0 100px #ffffff20;
 }
@@ -1682,7 +1703,7 @@ h1.typing-text{
     background: #111111;
     border-radius: 11px;
     border: 2px solid #1f1f1f;
-    padding: 20px;
+    padding: 30px;
  }
  .profil-card:hover{
     border: 2px solid #363636;
@@ -1860,6 +1881,35 @@ h1.typing-text{
     z-index: -1;
 }
 .endura-pro::after{
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100% !important;
+    height: 100%;
+    background: linear-gradient(to top, #000, transparent);
+    z-index: -2;
+}
+.endura-pasd {
+    position: relative;
+    background: url(https://images.unsplash.com/photo-1614850523011-8f49ffc73908?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    padding-bottom: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.endura-pasd::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 50%;
+    background: linear-gradient(to bottom, #000, transparent);
+    z-index: -1;
+}
+.endura-pasd::after{
     content: "";
     position: absolute;
     bottom: 0%;
@@ -2060,6 +2110,7 @@ i {
     border: 2px solid #796bbf80;
     background: radial-gradient(circle, #111111 1%, rgba(121, 107, 191, 0.185) 63%, #111111 100%);
 }
+
 .pricing .i-services.middle .pack-title-mini {
     color: #bbadff;
 }
@@ -3709,8 +3760,16 @@ img.lazy-img.loaded {
     justify-content: center;
     gap: 25px;
     border: 1px solid #ffffff20;
-    
+    background: #000;
     border-radius: 11px;
+}
+.webdesign .i-services:hover{
+   
+    border: 1px solid #ffffff40;
+    
+}
+.nonebefore::before{
+    background: none !important;
 }
 .webdesign .i-services-list{
     display: flex;
@@ -3746,4 +3805,18 @@ img.lazy-img.loaded {
     font-weight: 500;
     text-shadow: 0 0 10px #000000;
     z-index: 1;
+}
+.fade-in::before {
+    opacity: 0;
+    animation: fadeInOnly 4s ease forwards !important;
+}
+
+@keyframes fadeInOnly {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+       opacity: 1;
+    }
 }
