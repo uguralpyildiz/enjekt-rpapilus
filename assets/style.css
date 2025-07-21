@@ -3806,17 +3806,3 @@ img.lazy-img.loaded {
     text-shadow: 0 0 10px #000000;
     z-index: 1;
 }
-.fade-in::before {
-    opacity: 0;
-    animation: fadeInOnly 4s ease forwards !important;
-}
-
-@keyframes fadeInOnly {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-       opacity: 1;
-    }
-}
