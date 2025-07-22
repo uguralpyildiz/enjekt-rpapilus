@@ -1986,7 +1986,7 @@ i {
 
 .dot-link-effect {
     position: absolute;
-    left: 10.5%;
+    left: 10%;
     bottom: 0px;
     height: 8px;
     width: 8px;
@@ -2013,7 +2013,7 @@ i {
 }
 
 .active0 {
-    left: 10.5%;
+    left: 10%;
 }
 
 .active1 {
@@ -2021,18 +2021,21 @@ i {
 }
 
 .active2 {
-    left: 49.5%;
+    left: 51%;
 }
 
 .active3 {
-    left: 71%;
+    left: 71.5%;
 }
 
 .active4 {
     left: 90%;
 }
-.shine{
-    
+.hte2{
+    left: 30%;
+}
+.dot-link-effect.active1 {
+    left: 30% !important;
 }
 
 
@@ -2047,7 +2050,7 @@ i {
 }
 
 #nth a:nth-child(1):hover~.dot-link-effect {
-    left: 10.5%;
+    left: 10%;
 }
 
 #nth a:nth-child(2):hover~.dot-link-effect {
@@ -2055,11 +2058,11 @@ i {
 }
 
 #nth a:nth-child(3):hover~.dot-link-effect {
-    left: 49.5%;
+    left: 51%;
 }
 
 #nth a:nth-child(4):hover~.dot-link-effect {
-    left: 71%;
+    left: 71.5%;
 }
 
 #nth a:nth-child(5):hover~.dot-link-effect {
@@ -2418,6 +2421,12 @@ i {
     .overlay-menu{
         display: none !important;
     }
+    .mobileoptimization {
+        display: block;
+    }
+    .services-icon-down {
+        display: auto;
+    }
 }
 
 .overlay-menu {
@@ -2434,6 +2443,9 @@ i {
 
 
 @media only screen and (max-width: 1300px) {
+    .mobileoptimization, .services-icon-down {
+            display: none;
+        }
 
     .nav-container {
         width: 100%;
@@ -3806,3 +3818,133 @@ img.lazy-img.loaded {
     text-shadow: 0 0 10px #000000;
     z-index: 1;
 }
+
+
+.overlayer-dropbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000000be;
+    z-index: 99;
+   
+}
+
+.services-dropdown-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    display: none;
+    background: #111111;
+   transition: .5s ease all;
+    border-bottom: 1px solid #ffffff20;
+    box-shadow: 0 0px 50px #000000;
+    z-index: 100;
+    padding-top: 51px;
+}
+.overlayer-dropbox.active {
+    display: flex;
+}
+.services-dropdown-box.active {
+    display: flex;
+    top: 0 !important;
+}
+
+.dropbox-co {
+    width: 1350px;
+    margin: auto;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 50px;
+    color: #fff;
+}
+.dropbox-content{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  
+    padding: 0 20px;
+    
+}
+.services-icon-down{
+    transition: .3s ease all !important;
+    
+}
+
+.dropbox-content a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0;
+    transition: .3s ease all;
+}
+
+.dropbox-cobox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    padding-bottom: 25px;
+    padding-top: 35px;
+}
+.dropbox-cobox .boxscco{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.3%;
+    height: 300px;
+    border: 1px solid #ffffff20;
+    border-radius: 11px;
+    text-decoration: none;
+    transition: .3s ease all;
+    opacity: 0.8;
+}
+.boxscco:hover {
+    opacity: 1;
+    box-shadow: 0 0 20px #00000050;
+}
+
+.service-title-cobox{
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    text-align: left;
+    padding: 10px 20px;
+    height: 100%;
+    background: linear-gradient(to top, #000, #00000030);
+}
+.alttextcobox{
+    font-size: 14px;
+    color: #ffffffb6;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+.vox {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s ease all !important;
+}
+.boxscco:hover .vox{
+    
+    transform: scale(1.1);
+}
+
+

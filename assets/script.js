@@ -2,11 +2,12 @@
 window.addEventListener('scroll', function () {
     var nav = document.querySelector(".sticky-fun"); 
     if (window.scrollY > 50) {
-        nav.style.background = "linear-gradient(to bottom,#000000,#161616)";
+        nav.style.background = "linear-gradient(to top,#111111,#000000)";
     } else {
         nav.style.background = ""; 
     }
 });
+
 
 
 function reveal() {
@@ -49,7 +50,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+const trigger = document.querySelector('.services-drop');
+const fas = document.querySelectorAll('.p1, .p3, .p4, .p5');
+const overlayer = document.querySelector('.overlayer-dropbox');
+const dropdownBox = document.querySelector('.services-dropdown-box');
+const dotLink = document.querySelector('.dot-link-effect');
+const dotLinkS = document.querySelector('.services-icon-down');
 
+trigger.addEventListener('mouseover', () => {
+    overlayer.classList.add('active');
+    dropdownBox.classList.add('active');
+    dotLink.classList.add('active1');
+    dotLinkS.style.transform = "rotate(-180deg)";
+});
+
+overlayer.addEventListener('mouseover', () => {
+    overlayer.classList.remove('active');
+    dropdownBox.classList.remove('active');
+    dotLink.classList.remove('active1');
+    dotLinkS.style.transform = "rotate(0deg)";
+});
+fas.forEach(fa => {
+    fa.addEventListener('mouseover', () => {
+        overlayer.classList.remove('active');
+        dropdownBox.classList.remove('active');
+        dotLink.classList.remove('active1');
+        dotLinkS.style.transform = "rotate(0deg)";
+    });
+});
 
 
 
