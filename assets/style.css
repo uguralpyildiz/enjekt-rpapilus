@@ -515,6 +515,9 @@ body{
 .hero-info-badge.sc2 {
     background: linear-gradient(to top, #000, #313131);
 }
+h1{
+    font-size: 64px;
+}
 .hero-info-badge.sc3 {
     background: linear-gradient(to bottom, #313131, #000);
 }
@@ -538,12 +541,44 @@ body{
     margin-top: 50px;
 }
 .lang-btn{
+    position: relative;
+    overflow: hidden;
+    background:transparent;
+    width:90px;
+    height: 50px;
+    background: #574c8e50;
+    border: 1px solid #ffffff25;
+    border-radius: 5px;
+}
+.lang-btn:hover .langbtn-selected{
+    position: absolute;
+    top:-50px
+}
+
+.langbtn-selected{
+    position: relative;
+    top: 0;
+    transition: .2s ease all;
+}
+.langbtn-selector{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    transition: .2s ease all;
+
+}
+.lang-btn:hover .langbtn-selector{
+    position: absolute;
+    top:0px
+}
+.lang-btn a{
     display: flex;
     align-items: center;
     color: #fff;
     gap: 5px;
-    font-size: 13px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 500;
+    
 }
 .i-services{
     display: flex;
@@ -3890,7 +3925,7 @@ img.lazy-img.loaded {
     border-radius: 11px;
     text-decoration: none;
     transition: .3s ease all;
-    opacity: 0.8;
+    opacity: 1;
 }
 .boxscco:hover {
     opacity: 1;
@@ -3910,7 +3945,7 @@ img.lazy-img.loaded {
     text-align: left;
     padding: 10px 20px;
     height: 100%;
-    background: linear-gradient(to top, #000, #00000030);
+    background: linear-gradient(to top, #000 30%, #00000020);
 }
 .alttextcobox{
     font-size: 14px;
@@ -3923,10 +3958,12 @@ img.lazy-img.loaded {
     height: 100%;
     object-fit: cover;
     transition: .3s ease all !important;
+    transform-origin: bottom right;
+    opacity: .9;
 }
 .boxscco:hover .vox{
-    
-    transform: scale(1.1);
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 
