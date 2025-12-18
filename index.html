@@ -260,7 +260,7 @@
    
 
     <section class="first-container">
-
+        
         <div class="container-fluid-hero ">
             <div class="hero-section hero">
                 <div class="hero-container">
@@ -470,9 +470,11 @@
             </div>
         </div>
     </section>
+  
 
-    <section style="background: linear-gradient(to bottom, #0a0a0a, #000)" class="first-container reveal webdesign">
-        <div class="i-services-header" style="padding-top: 100px;">
+    <section style="background: linear-gradient(to bottom, #0a0a0a, #000)" class="first-container  webdesign">
+
+        <div class="i-services-header reveal" style="padding-top: 100px;">
     
     
             <div class="hero-info" style="padding: 15px 0;">
@@ -490,7 +492,7 @@
     
             <div class="i-services-container exam12" style="width: 1350px; margin: auto; margin-bottom: 50px;">
     
-                <div class="i-services   rwreverse">
+                <div class="i-services reveal  rwreverse">
                     <div class="i-services-text-container ">
                         <div class="hero-title ">
                             <div class="linksecnums">
@@ -545,7 +547,7 @@
                         </video>
                     </div>
                 </div>
-    
+                <div class="divider" style="background: transparent;"></div>
     
                 <div class="i-services active rwreverse reveal">
                     <div class="i-services-text-container">
@@ -600,6 +602,7 @@
                         </video>
                     </div>
                 </div>
+                <div class="divider" style="background: transparent;"></div>
                 <div class="i-services active rwreverse reveal">
                     <div class="i-services-text-container">
                         <div class="hero-title ">
@@ -650,7 +653,7 @@
                         <img src="assets/img/services/webdesign3.webp" alt="nowify media" class="lazy-img loaded">
                     </div>
                 </div>
-              
+                <div class="divider" style="background: transparent;"></div>
                 <div class="i-services active rwreverse reveal middle" style="align-items: end;">
                     <div class="i-services-text-container">
                         <div class="hero-title ">
@@ -741,11 +744,41 @@
     
     
     </section>
+        
+<script>
+    (() => {
+        const section = document.querySelector('.webdesign');
+        const line = section.querySelector('.neon-scroll-line');
 
-    <section class="whitetem" style="background: #f3f3f3; margin-top: 120px; padding-bottom: 120px;">
+        const maxHeight = section.offsetHeight;
+
+        window.addEventListener('scroll', () => {
+            const start = section.offsetTop;
+            const end = start + section.offsetHeight - window.innerHeight;
+            const y = window.scrollY;
+
+            if (y <= start) {
+                line.style.height = '0px';
+                return;
+            }
+
+            if (y >= end) {
+                line.style.height = maxHeight + 'px';
+                return;
+            }
+
+            const progress = (y - start) / (end - start);
+            const height = Math.min(progress * maxHeight, maxHeight);
+
+            line.style.height = `${height}px`;
+        });
+    })();
+</script>
+
+    <section class="whitetem" style="background: #f3f3f3; margin-top: 120px; padding-bottom: 120px; border-radius: 50px 50px 0 0 ;">
         <div class="container-5 reveal">
             <div class="index-services">
-                <div class="i-services-header" style="padding-top: 100px;">
+                <div class="i-services-header stickyeffects" style="padding-top: 100px;">
 
 
                    
@@ -758,8 +791,11 @@
                         Smart Solutions <br> <span class="stroke-text-gradient-ss">Made for Your Brand</span>
                     </h1>
                 </div>
+               
+<div class="whitebox">
 
-                <div class="i-services-container ">
+</div>
+                <div class="i-services-container animcard">
 
                     <div class="i-services  ">
                         <div class="i-services-text-container">
@@ -816,8 +852,8 @@
                             <img src="assets/img/services/herocon.png" alt="nowify media">
                         </div>
                     </div>
-                    <div class="divider" style="background: #11111100;"></div>
-                    <div class="i-services reveal">
+                   
+                    <div class="i-services ">
                         <div class="i-services-text-container">
                             <div class="imgoverlayer">
                                 <img width="35" height="35" src="https://img.icons8.com/fluency/148/google-logo.png" alt="checked"
@@ -883,8 +919,8 @@
                         </div>
                     </div>
                     
-                    <div class="divider" style="background: #11111100;"></div>
-                    <div class="i-services  reveal ">
+                   
+                    <div class="i-services   ">
                         <div class="i-services-text-container">
                             <div class="imgoverlayer">
                                 <img width="35" height="35" src="https://img.icons8.com/color/148/html-5--v1.png" alt="checked"
@@ -944,85 +980,113 @@
                             </video>
                         </div>
                     </div>
+                    <div class="i-services nonebgover">
+                       
+                    </div>
 
                 </div>
+               
+                <script>
+                    const cards = document.querySelectorAll('.i-services');
+
+                        window.addEventListener('scroll', () => {
+                            cards.forEach((card, index) => {
+                                const rect = card.getBoundingClientRect();
+                                const offset = window.innerHeight * 0.4;
+
+                                if (rect.top < offset && index !== cards.length - 1) {
+                                    card.classList.add('is-stacked');
+                                } else {
+                                    card.classList.remove('is-stacked');
+                                }
+                            });
+                        });
+
+                </script>
             </div>
         </div>
     </section>
 
-<section style="background: #000000; padding-top: 120px;">
-    <div class="container-5 reveal">
-        <div class="index-services">
-
-            <div class="i-services-header">
-
-
-                Design with a Pulse. <br> <span class="stroke-text-gradient-s">Growth with a Plan</span>
-            </div>
-            <div class="i-services-container tailor">
-
-                <div class="i-services reveal erw2">
-                    <div class="i-services-img">
-
+    <section style="background: #000000; padding-top: 120px;">
+            <div class="container-5 reveal">
+                <div class="index-services">
+                    <div class="badge-section" style="justify-content: center;">
+                        <div class="hero-info-badge sc1">
+                            <img style="filter: grayscale(0);" width="20" height="20" src="https://img.icons8.com/color/48/google-logo.png"
+                                alt="google-logo" class="lazy-img loaded">
+                            Trusted Growth Partner
+                        </div>
+                        
                     </div>
-                    <div class="i-services-text-container">
-                        <div class="i-services-text" style="justify-content: center;">
-                            For Startups
-                        </div>
-                        <div class="i-services-text-alt">
-                            Launch fast. Scale smart.
-                            We craft high-performing websites tailored for ambitious startupsdesigned to validate
-                            ideas, attract users,
-                            and impress investors.
-                        </div>
+                    <div class="i-services-header">
 
-                        <div class="hero-cta-buttons" style="margin-top: 30px;">
-                            <a class="nav-cta-btn" href="/get-a-quote" target="_blank">
-                                <div class="nav-cta-btn-sec" style="width: 100%;">
-                                    <span>See Startup Solutions</span>
-                                    <img width="16" height="16"
-                                        src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png"
-                                        alt="up-right-arrow">
+
+                        Design with a Pulse. <br> <span class="stroke-text-gradient-s">Growth with a Plan</span>
+                    </div>
+                    <div class="i-services-container tailor">
+
+                        <div class="i-services reveal erw2">
+                            <div class="i-services-img">
+
+                            </div>
+                            <div class="i-services-text-container">
+                                <div class="i-services-text" style="justify-content: center;">
+                                    For Startups
                                 </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="i-services reveal erw">
-                    <div class="i-services-img">
-
-                    </div>
-                    <div class="i-services-text-container">
-                        <div class="i-services-text" style="justify-content: center;">
-                            For Established Businesses
-                        </div>
-                        <div class="i-services-text-alt">
-                            <span class="shine">Time to be seen, trusted, and remembered.</span>
-                            We help companies elevate their digital presence with custom websites built to grow
-                            visibility, credibility,
-                            and conversions.
-                        </div>
-
-                        <div class="hero-cta-buttons" style="margin-top: 30px;">
-                            <a class="nav-cta-btn" href="/get-a-quote" target="_blank">
-                                <div class="nav-cta-btn-sec" style="width: 100%;">
-                                    <span>See Business Solutions</span>
-                                    <img width="16" height="16"
-                                        src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png"
-                                        alt="up-right-arrow">
+                                <div class="i-services-text-alt">
+                                    Launch fast. Scale smart.
+                                    We craft high-performing websites tailored for ambitious startupsdesigned to validate
+                                    ideas, attract users,
+                                    and impress investors.
                                 </div>
-                            </a>
+
+                                <div class="hero-cta-buttons" style="margin-top: 30px;">
+                                    <a class="nav-cta-btn" href="/get-a-quote" target="_blank">
+                                        <div class="nav-cta-btn-sec" style="width: 100%;">
+                                            <span>See Startup Solutions</span>
+                                            <img width="16" height="16"
+                                                src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png"
+                                                alt="up-right-arrow">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+
+                        <div class="i-services reveal erw">
+                            <div class="i-services-img">
+
+                            </div>
+                            <div class="i-services-text-container">
+                                <div class="i-services-text" style="justify-content: center;">
+                                    For Established Businesses
+                                </div>
+                                <div class="i-services-text-alt">
+                                    <span class="shine">Time to be seen, trusted, and remembered.</span>
+                                    We help companies elevate their digital presence with custom websites built to grow
+                                    visibility, credibility,
+                                    and conversions.
+                                </div>
+
+                                <div class="hero-cta-buttons" style="margin-top: 30px;">
+                                    <a class="nav-cta-btn" href="/get-a-quote" target="_blank">
+                                        <div class="nav-cta-btn-sec" style="width: 100%;">
+                                            <span>See Business Solutions</span>
+                                            <img width="16" height="16"
+                                                src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png"
+                                                alt="up-right-arrow">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
+
                 </div>
-
-
             </div>
-
-        </div>
-    </div>
-</section>
+    </section>
 
     <section>
         <div  class="case-section endura-pro">
@@ -1413,129 +1477,130 @@
             </script>
         </div>
     </section>
-<div class="container-fluid-hero-default portfolio ">
 
-    <div class="container reveal active" style="margin-top: 50px; margin-bottom: 50px;">
-        <div class="services-help problogsec">
-            <div class="hero-info" style="padding: 15px 0;">
-                <img style="width: 60px;" src="https://img.icons8.com/ios/250/ffffff/open-source.png"
-                    alt="nowify media">
+    <div class="container-fluid-hero-default portfolio ">
+
+            <div class="container reveal active" style="margin-top: 50px; margin-bottom: 50px;">
+                <div class="services-help problogsec">
+                    <div class="hero-info" style="padding: 15px 0;">
+                        <img style="width: 60px;" src="https://img.icons8.com/ios-filled/50/ffffff/open-source.png"
+                            alt="nowify media">
+
+                    </div>
+                    <div class="services-help-title ">
+
+                        <span class="stroke-text-gradient-s"> Start with a Free Evaluation</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="portfolio-flex-container reverse-port blog-ports reveal">
+
+
+                <div class="services-help ">
+                    <a href="/brand-and-website-evalution" class="services-help-col portfolio-sec catalog">
+                        <div class="services-help-img-big blog-img">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="jobs">
+                        </div>
+                        <div class="services-help-header blog-title-header">
+                            <div class="hero-info brand-case" style="justify-content: start; text-align: start;">
+                                Brand & Website Evaluation
+                            </div>
+                            <div class="blog-parag">
+                                <p>
+                                    We analyze how your brand looks and feels in the digital space.
+                                    Design messaging speed and trust signals are reviewed to uncover strengths and weak points.
+                                    No sugarcoating just clear insights.
+                                </p>
+                            </div>
+                            <div class="services-help-title-alt pill-section">
+                                <div class="portfolio-pill">
+                                    <img width="20" height="20"
+                                        src="https://img.icons8.com/fluency-systems-filled/ffffff/50/visible.png"
+                                        alt="visible" />
+                                    10.1K Views
+                                </div>
+                                <div class="portfolio-pill">Brand Strategy</div>
+                                <div class="portfolio-pill">UI UX</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="services-help ">
+                    <a href="/ui-ux-landing-page-feedback" class="services-help-col portfolio-sec catalog">
+                        <div class="services-help-img-big blog-img">
+                            <img src="https://images.unsplash.com/photo-1602576666092-bf6447a729fc?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="jobs">
+                        </div>
+                        <div class="services-help-header blog-title-header">
+                            <div class="hero-info brand-case" style="justify-content: start; text-align: start;">
+                                UI UX & Landing Page Feedback
+                            </div>
+                            <div class="blog-parag">
+                                <p>
+                                    We break down why users click or leave.
+                                    Layout buttons content flow and hierarchy are reviewed from a real user perspective.
+                                    Conversion blockers are clearly pointed out.
+                                </p>
+                            </div>
+                            <div class="services-help-title-alt pill-section">
+                                <div class="portfolio-pill">
+                                    <img width="20" height="20"
+                                        src="https://img.icons8.com/fluency-systems-filled/ffffff/50/visible.png"
+                                        alt="visible" />
+                                    3.2K Views
+                                </div>
+                                <div class="portfolio-pill">Landing Page</div>
+                                <div class="portfolio-pill">Conversion</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="services-help ">
+                    <a href="/digital-growth-roadmap" class="services-help-col portfolio-sec catalog">
+                        <div class="services-help-img-big blog-img">
+                            <img src="https://images.unsplash.com/photo-1590103514966-5e2a11c13e21?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="jobs">
+                        </div>
+                        <div class="services-help-header blog-title-header">
+                            <div class="hero-info brand-case" style="justify-content: start; text-align: start;">
+                                Digital Growth Roadmap
+                            </div>
+                            <div class="blog-parag">
+                                <p>
+                                    We define what to focus on based on your current stage.
+                                    Whether it is ads content or website optimization you get a clear direction.
+                                    Built for brands that want structured growth not random moves.
+                                </p>
+                            </div>
+                            <div class="services-help-title-alt pill-section">
+                                <div class="portfolio-pill">
+                                    <img width="20" height="20"
+                                        src="https://img.icons8.com/fluency-systems-filled/ffffff/50/visible.png"
+                                        alt="visible" />
+                                    1.1K Views
+                                </div>
+                                <div class="portfolio-pill">Growth</div>
+                                <div class="portfolio-pill">Marketing</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+
+
+
 
             </div>
-            <div class="services-help-title ">
-
-                <span class="stroke-text-gradient-s"> Start with a Free Evaluation</span>
-            </div>
-        </div>
     </div>
-
-
-
-    <div class="portfolio-flex-container reverse-port blog-ports reveal">
-
-
-        <div class="services-help ">
-            <a href="/brand-and-website-evalution" class="services-help-col portfolio-sec catalog">
-                <div class="services-help-img-big blog-img">
-                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="jobs">
-                </div>
-                <div class="services-help-header blog-title-header">
-                    <div class="hero-info brand-case" style="justify-content: start; text-align: start;">
-                        Brand & Website Evaluation
-                    </div>
-                    <div class="blog-parag">
-                        <p>
-                            We analyze how your brand looks and feels in the digital space.
-                            Design messaging speed and trust signals are reviewed to uncover strengths and weak points.
-                            No sugarcoating just clear insights.
-                        </p>
-                    </div>
-                    <div class="services-help-title-alt pill-section">
-                        <div class="portfolio-pill">
-                            <img width="20" height="20"
-                                src="https://img.icons8.com/fluency-systems-filled/ffffff/50/visible.png"
-                                alt="visible" />
-                            10.1K Views
-                        </div>
-                        <div class="portfolio-pill">Brand Strategy</div>
-                        <div class="portfolio-pill">UI UX</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="services-help ">
-            <a href="/ui-ux-landing-page-feedback" class="services-help-col portfolio-sec catalog">
-                <div class="services-help-img-big blog-img">
-                    <img src="https://images.unsplash.com/photo-1602576666092-bf6447a729fc?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="jobs">
-                </div>
-                <div class="services-help-header blog-title-header">
-                    <div class="hero-info brand-case" style="justify-content: start; text-align: start;">
-                        UI UX & Landing Page Feedback
-                    </div>
-                    <div class="blog-parag">
-                        <p>
-                            We break down why users click or leave.
-                            Layout buttons content flow and hierarchy are reviewed from a real user perspective.
-                            Conversion blockers are clearly pointed out.
-                        </p>
-                    </div>
-                    <div class="services-help-title-alt pill-section">
-                        <div class="portfolio-pill">
-                            <img width="20" height="20"
-                                src="https://img.icons8.com/fluency-systems-filled/ffffff/50/visible.png"
-                                alt="visible" />
-                            3.2K Views
-                        </div>
-                        <div class="portfolio-pill">Landing Page</div>
-                        <div class="portfolio-pill">Conversion</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="services-help ">
-            <a href="/digital-growth-roadmap" class="services-help-col portfolio-sec catalog">
-                <div class="services-help-img-big blog-img">
-                    <img src="https://images.unsplash.com/photo-1590103514966-5e2a11c13e21?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="jobs">
-                </div>
-                <div class="services-help-header blog-title-header">
-                    <div class="hero-info brand-case" style="justify-content: start; text-align: start;">
-                        Digital Growth Roadmap
-                    </div>
-                    <div class="blog-parag">
-                        <p>
-                            We define what to focus on based on your current stage.
-                            Whether it is ads content or website optimization you get a clear direction.
-                            Built for brands that want structured growth not random moves.
-                        </p>
-                    </div>
-                    <div class="services-help-title-alt pill-section">
-                        <div class="portfolio-pill">
-                            <img width="20" height="20"
-                                src="https://img.icons8.com/fluency-systems-filled/ffffff/50/visible.png"
-                                alt="visible" />
-                            1.1K Views
-                        </div>
-                        <div class="portfolio-pill">Growth</div>
-                        <div class="portfolio-pill">Marketing</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-
-
-
-
-
-
-
-    </div>
-</div>
 
     
 
