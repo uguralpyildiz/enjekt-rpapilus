@@ -206,9 +206,10 @@
        
     } 
         .container-fluid-hero {
-            
-            background-position: top;
-            background-size: 100%;
+            object-fit: cover;
+           
+            background-position: center;
+            background-size: cover;
         }
     
         .hero-section {
