@@ -210,6 +210,7 @@
                                 style="flex-direction: column; justify-content: start; align-items: start;">
         
                                 <div class="nav-cta-btn-sec" style="padding-bottom: 5px;">
+                                    
                                     <span style="font-size: 20px;">Web Design & Development</span>
                                     <img width="16" height="16"
                                         src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png" alt="up-right-arrow">
@@ -741,14 +742,18 @@
     
     </section>
 
-    <section style="background: #f3f3f3; margin-top: 120px; padding-bottom: 120px;">
+    <section class="whitetem" style="background: #f3f3f3; margin-top: 120px; padding-bottom: 120px;">
         <div class="container-5 reveal">
             <div class="index-services">
                 <div class="i-services-header" style="padding-top: 100px;">
 
 
                    
-
+                    <div class="badge-section" style="justify-content: center;">
+                        <div class="hero-info-badge sc2"><img width="20" height="20"
+                                src="https://img.icons8.com/ios-glyphs/ffffff/60/sparkles.png" alt="google-logo"
+                                class="lazy-img loaded">Strategy Driven</div>
+                    </div>
                     <h1 style="line-height:1.2; font-weight: 500; color: #111;">
                         Smart Solutions <br> <span class="stroke-text-gradient-ss">Made for Your Brand</span>
                     </h1>
@@ -758,18 +763,8 @@
 
                     <div class="i-services  ">
                         <div class="i-services-text-container">
-                            <div class="imgoverlayer">
-                                <img width="35" height="35" src="assets/icon/circle.webp" alt="checked"
-                                    class="lazy-img loaded">
-                                <img width="35" height="35" src="assets/icon/play.webp" alt="checked"
-                                    class="lazy-img loaded">
-                                <img width="35" height="35" src="assets/icon/plus.webp" alt="checked"
-                                    class="lazy-img loaded">
-
-                                <img width="35" height="35" src="assets/icon/value.webp" alt="checked"
-                                    class="lazy-img loaded">
-
-                            </div>
+                            
+                            
                             <div class="i-services-text" style="color: #111;">
                                 Brand
                                 Strategy & Identity Design
@@ -821,7 +816,7 @@
                             <img src="assets/img/services/herocon.png" alt="nowify media">
                         </div>
                     </div>
-                    <div class="divider" style="background: #11111120;"></div>
+                    <div class="divider" style="background: #11111100;"></div>
                     <div class="i-services reveal">
                         <div class="i-services-text-container">
                             <div class="imgoverlayer">
@@ -888,7 +883,7 @@
                         </div>
                     </div>
                     
-                    <div class="divider" style="background: #11111120;"></div>
+                    <div class="divider" style="background: #11111100;"></div>
                     <div class="i-services  reveal ">
                         <div class="i-services-text-container">
                             <div class="imgoverlayer">
@@ -955,7 +950,79 @@
         </div>
     </section>
 
+<section style="background: #000000; padding-top: 120px;">
+    <div class="container-5 reveal">
+        <div class="index-services">
 
+            <div class="i-services-header">
+
+
+                Design with a Pulse. <br> <span class="stroke-text-gradient-s">Growth with a Plan</span>
+            </div>
+            <div class="i-services-container tailor">
+
+                <div class="i-services reveal erw2">
+                    <div class="i-services-img">
+
+                    </div>
+                    <div class="i-services-text-container">
+                        <div class="i-services-text" style="justify-content: center;">
+                            For Startups
+                        </div>
+                        <div class="i-services-text-alt">
+                            Launch fast. Scale smart.
+                            We craft high-performing websites tailored for ambitious startupsdesigned to validate
+                            ideas, attract users,
+                            and impress investors.
+                        </div>
+
+                        <div class="hero-cta-buttons" style="margin-top: 30px;">
+                            <a class="nav-cta-btn" href="/get-a-quote" target="_blank">
+                                <div class="nav-cta-btn-sec" style="width: 100%;">
+                                    <span>See Startup Solutions</span>
+                                    <img width="16" height="16"
+                                        src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png"
+                                        alt="up-right-arrow">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="i-services reveal erw">
+                    <div class="i-services-img">
+
+                    </div>
+                    <div class="i-services-text-container">
+                        <div class="i-services-text" style="justify-content: center;">
+                            For Established Businesses
+                        </div>
+                        <div class="i-services-text-alt">
+                            <span class="shine">Time to be seen, trusted, and remembered.</span>
+                            We help companies elevate their digital presence with custom websites built to grow
+                            visibility, credibility,
+                            and conversions.
+                        </div>
+
+                        <div class="hero-cta-buttons" style="margin-top: 30px;">
+                            <a class="nav-cta-btn" href="/get-a-quote" target="_blank">
+                                <div class="nav-cta-btn-sec" style="width: 100%;">
+                                    <span>See Business Solutions</span>
+                                    <img width="16" height="16"
+                                        src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png"
+                                        alt="up-right-arrow">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
 
     <section>
         <div  class="case-section endura-pro">
@@ -1313,12 +1380,16 @@
             <script>
                 var swiper = new Swiper(".profileSwiper", {
                     slidesPerView: 1.16,
-
+                    
                     effect: "coverflow",
                     grabCursor: true,
                     centeredSlides: true,
                     loop: true,
-
+                     autoplay: {
+                        delay: 2000, 
+                        disableOnInteraction: true,
+                        pauseOnMouseEnter: true,
+                    },
                     coverflowEffect: {
                         rotate: 0,
                         stretch: -20,
@@ -1466,79 +1537,7 @@
     </div>
 </div>
 
-    <section style="background: #000000; padding-top: 120px;">
-        <div class="container-5 reveal">
-            <div class="index-services">
-
-                <div class="i-services-header">
-
-
-                    Design with a Pulse. <br> <span class="stroke-text-gradient-s">Growth with a Plan</span>
-                </div>
-                <div class="i-services-container tailor">
-
-                    <div class="i-services reveal erw2">
-                        <div class="i-services-img">
-
-                        </div>
-                        <div class="i-services-text-container">
-                            <div class="i-services-text" style="justify-content: center;">
-                                For Startups
-                            </div>
-                            <div class="i-services-text-alt">
-                                Launch fast. Scale smart.
-                                We craft high-performing websites tailored for ambitious startupsdesigned to validate
-                                ideas, attract users,
-                                and impress investors.
-                            </div>
-
-                            <div class="hero-cta-buttons" style="margin-top: 30px;">
-                                <a class="nav-cta-btn" href="/get-a-quote" target="_blank">
-                                    <div class="nav-cta-btn-sec" style="width: 100%;">
-                                        <span>See Startup Solutions</span>
-                                        <img width="16" height="16"
-                                            src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png"
-                                            alt="up-right-arrow">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="i-services reveal erw">
-                        <div class="i-services-img">
-
-                        </div>
-                        <div class="i-services-text-container">
-                            <div class="i-services-text" style="justify-content: center;">
-                                For Established Businesses
-                            </div>
-                            <div class="i-services-text-alt">
-                                <span class="shine">Time to be seen, trusted, and remembered.</span>
-                                We help companies elevate their digital presence with custom websites built to grow
-                                visibility, credibility,
-                                and conversions.
-                            </div>
-
-                            <div class="hero-cta-buttons" style="margin-top: 30px;">
-                                <a class="nav-cta-btn" href="/get-a-quote" target="_blank">
-                                    <div class="nav-cta-btn-sec" style="width: 100%;">
-                                        <span>See Business Solutions</span>
-                                        <img width="16" height="16"
-                                            src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png"
-                                            alt="up-right-arrow">
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-    </section>
+    
 
 
 

@@ -517,8 +517,7 @@ body{
 }
 h1{
     font-size: 64px;
-    font-weight: 600 !important;
-    font-style: italic;
+    
 }
 .hero-info-badge.sc3 {
     background: linear-gradient(to bottom, #313131, #000);
@@ -596,8 +595,14 @@ h1{
 .rwreverse{
     flex-direction: row-reverse;
 }
+.whitetem .i-services{
+    border: 2px solid #11111112;
+    padding: 15px;
+    box-shadow: 0 0 50px #00000010;
+    border-radius: 8px;
+}
 .imgoverlayer{
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -608,10 +613,12 @@ h1{
     height: 50px;
 }
 .imgoverlayer img{
-    background: #141414;
-    border: #ffffff20 solid 1px;
+    background: linear-gradient(to top, #fff, #f5f5f5);
+    border: #cccccc50 solid 1px;
     border-radius: 50%;
     padding: 5px;
+    width: 40px;
+    height: 40px;
 }
 .imgoverlayer img:nth-child(1){
     position: absolute;
@@ -622,19 +629,19 @@ h1{
 .imgoverlayer img:nth-child(2){
     position: absolute;
     top: 0;
-    left: 25px;
+    left: 30px;
  
 }
 .imgoverlayer img:nth-child(3){
     position: absolute;
     top: 0;
-    left: 50px;
+    left: 60px;
 
 }
 .imgoverlayer img:nth-child(4){
     position: absolute;
     top: 0;
-    left: 75px;
+    left: 90px;
  
 }
 .i-services-img{
@@ -673,7 +680,7 @@ background: url(/assets/img/services/erw.webp);
     background-size: 100%;
     background-position: center;
     transition: .4s ease all !important;
-    opacity: .76 !important;
+    opacity: .96 !important;
 }
 .erwf{
 background: url(/assets/img/services/erwf.webp);
@@ -691,7 +698,7 @@ background: url(/assets/img/services/erw2.webp);
     background-size: 100%;
     background-position: center;
     transition: .4s ease all !important;
-    opacity: .76 !important;
+    opacity: .96 !important;
 }
 .erw:hover{
     text-shadow: 0 0 20px #ffffff50;
