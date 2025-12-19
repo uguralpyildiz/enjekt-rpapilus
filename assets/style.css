@@ -280,7 +280,7 @@ body{
     align-items: end;
     justify-content: start;
     max-width: 100%;
-    background: url(img/services/bg.webp);
+
     background-repeat: no-repeat;
     background-size: 105%;
     background-position: center;
@@ -382,7 +382,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, #000000dc, #000000d8);
+    background: linear-gradient(to top, #0000006b, #07002be7);
     
     z-index: -1 !important;
 }
@@ -676,7 +676,7 @@ h1{
 .erw{
 background: url(/assets/img/services/erw.webp);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 130%;
     background-position: center;
     transition: .4s ease all !important;
     opacity: .96 !important;
@@ -684,7 +684,7 @@ background: url(/assets/img/services/erw.webp);
 .erwf{
 background: url(/assets/img/services/erwf.webp);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 130%;
     background-position: center;
     transition: .4s ease all !important;
     filter: grayscale(1);
@@ -694,14 +694,14 @@ background: url(/assets/img/services/erwf.webp);
 .erw2{
 background: url(/assets/img/services/erw2.webp);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 130%;
     background-position: center;
     transition: .4s ease all !important;
     opacity: .96 !important;
 }
 .erw:hover{
     text-shadow: 0 0 20px #ffffff50;
-    background-size: 120%;
+    background-size: 150%;
     background-position: top;
    opacity: 1 !important;
 }
@@ -731,7 +731,7 @@ background: url(/assets/img/services/erw2.webp);
 }
 .erwf:hover{
     text-shadow: 0 0 20px #ffffff50;
-    background-size: 120%;
+    background-size: 150%;
     background-position: top;
 filter: grayscale(0);
 }
@@ -752,7 +752,7 @@ filter: grayscale(0);
 }
 .erw2:hover{
     text-shadow: 0 0 20px #ffffff50;
-    background-size: 120%;
+    background-size: 150%;
     background-position: center;
     opacity: 1 !important;
 }
@@ -1495,7 +1495,7 @@ h1.typing-text{
 
 .slider-section{
     
-    max-width: 1500px;
+    max-width: 100%;
     margin: auto;
 }
 .first-container{
@@ -1533,13 +1533,13 @@ h1.typing-text{
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
-    background: linear-gradient(to right, #000, transparent);
+    background: linear-gradient(to right, #000000ad, transparent);
 }
 
 .first-container .slider::before {
     left: 0;
     top: 0;
-    background: linear-gradient(to right, #000, transparent);
+    background: linear-gradient(to right, #000000ad, transparent);
 }
 
 .first-container .slider .slide-track {
@@ -3915,7 +3915,7 @@ img.lazy-img.loaded {
     align-items: center;
     justify-content: center;
     width: 33.3%;
-    height: 300px;
+    height: 320px;
     border: 1px solid #ffffff20;
     border-radius: 11px;
     text-decoration: none;
@@ -3940,7 +3940,7 @@ img.lazy-img.loaded {
     text-align: left;
     padding: 10px 20px;
     height: 100%;
-    background: linear-gradient(to top, #000 30%, #00000020);
+    background: linear-gradient(to top, #000 30%, #00000050);
 }
 .alttextcobox{
     font-size: 14px;
@@ -4097,7 +4097,7 @@ img.lazy-img.loaded {
             position: sticky;
             top: 120px;
             /* header varsa ayarla */
-            background: #fff;
+            background: #f3f3f3;
             border-radius: 16px;
             margin-bottom: 120px;
             transition: transform .4s ease, box-shadow .4s ease;
@@ -4142,4 +4142,35 @@ img.lazy-img.loaded {
                     background: #f3f3f3;
                 }
 }
+.arkadia{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: scale(1.1);
+    height: 100%;
+}
+.arkadia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #0000006b, #07002be7);
 
+    z-index: 1 !important;
+}
+
+.video-section{
+    max-width: 1350px;
+    margin: auto;
+    padding: 15px 0;
+}
+.videosectionvideo{
+    background: #666666;
+    width: 100%;
+    height: 700px;
+}
+
+/* <div class="video-section"><div class="videosectionvideo"></div></div> */
