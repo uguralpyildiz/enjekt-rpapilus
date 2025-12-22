@@ -81,6 +81,39 @@ fas.forEach(fa => {
 
 
 
+document.querySelectorAll('.enj-aibtnx').forEach(button => {
+        button.addEventListener('click', () => {
+            const pageUrl = encodeURIComponent(window.location.href);
+            const buttonText = button.innerText.toLowerCase();
+
+            let aiUrl = '';
+            let prompt = encodeURIComponent(
+                ` ${window.location.href}\n\nCan you analyze and summarize the content of this page? Please highlight the key points and explain it in a clear, easy-to-understand way.`
+            );
+
+            if (buttonText.includes('chatgpt')) {
+                aiUrl = `https://chat.openai.com/?q=${prompt}`;
+            }
+            else if (buttonText.includes('claude')) {
+                aiUrl = `https://claude.ai/new?q=${prompt}`;
+            }
+            else if (buttonText.includes('grok')) {
+                aiUrl = `https://grok.x.ai/?q=${prompt}`;
+            }
+            else if (buttonText.includes('perplexity')) {
+                aiUrl = `https://www.perplexity.ai/?q=${prompt}`;
+            }
+            else if (buttonText.includes('gemini')) {
+                aiUrl = `https://gemini.google.com/app?q=${prompt}`;
+            }
+
+            if (aiUrl) {
+                window.open(aiUrl, '_blank');
+            }
+        });
+});
+
+
 
 
 
@@ -110,7 +143,7 @@ for (let i = 0; i < nthAll.length; i++) {
 for (let i = 0; i < nthAll.length; i++) {
     nthAll[i].addEventListener("mouseover", () => {
         for (let i = 0; i < nthAll.length; i++) {
-            nthAll[i].style.opacity = ".30"
+            nthAll[i].style.opacity = ".25"
         }
         nthAll[i].style.opacity = "1"
     })

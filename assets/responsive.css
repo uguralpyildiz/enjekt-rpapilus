@@ -366,9 +366,9 @@
                 
 }
 @media screen and (max-width:650px) {
-    .nav-cta-btn-sec{
+    /* .nav-cta-btn-sec{
         display: none;
-    }
+    } */
     .nav-ghost{
         height: 63px;
     }
