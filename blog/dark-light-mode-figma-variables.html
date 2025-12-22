@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title>How to Create Dark & Light Mode with Variables in Figma | Nowify Media</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Nowify Media",
+  "url": "https://nowifymedia.com",
+  "logo": "https://nowifymedia.com/../logo.png",
+  "description": "Nowify Media builds blazing-fast, user-focused websites that are as beautiful as they are functional. From custom design to full-stack development, we craft digital experiences that convert.",
+  "sameAs": [
+    "https://www.instagram.com/nowifymedia"
+  ]
+}
+</script>
+<meta name="description"
+    content="Nowify Media builds blazing-fast, user-focused websites that are as beautiful as they are functional. From custom UI design to clean, scalable code — we build digital experiences that convert.">
+<meta name="keywords"
+    content="NowifyMedia Web Design, Custom Website Development, UI UX Design Agency, Responsive Web Design, Fast Website Development, Frontend Backend Development, SEO Optimized Websites, Creative Web Studio, Clean Code Agency, High-Performance Web Design">
+<meta http-equiv="Content-Language" content="en" />
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <meta name="robots" content="index, follow">
+        
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+        <link rel="manifest" href="../manifest.json">
+        <meta name="msapplication-TileColor" content="#000000">
+        <meta name="msapplication-TileImage" content="../ms-icon-144x144.png">
+        <meta name="theme-color" content="#000000">
+        <link rel="preload" href="../assets/style.css" as="style">
+        <link rel="stylesheet" href="../assets/style.css">
+        <link rel="stylesheet" href="../assets/responsive.css">
+    
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    </head>
+
+<body>
+    
+    <nav class="sticky-funs" style="background:linear-gradient(to top, rgb(17, 17, 17), rgb(0, 0, 0));">
+    
+        <div class="nav-container">
+            <div class="overlay-menu"></div>
+            <div class="nav-title">
+                <div class="nav-logo-container">
+                    <a href="/" class="nav-logo">
+                        <img width="30px" height="auto" src="../logo.png" alt="logo">
+                        <div class="nav-logo-text">
+                            Nowify<span>Media</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="nav-link-container">
+                <div class="nav-links nav-link-settings">
+                    <div class="nav-menu-header">
+                        <a href="/" class="nav-logo">
+                            <img width="30px" height="auto" src="../logo.png" alt="logo">
+                            <div class="nav-logo-text">
+                                Nowify<span>Media</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="nth" class="nav-links-effect-container">
+    
+                        <a href="/" class="nav-link">
+                            <div class="link-anim-set">
+                                <div class="link-anim-set-p p1">
+                                    Introduction
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/services" class="nav-link services-drop">
+                            <div class="link-anim-set">
+                                <div class="link-anim-set-p p2">
+                                    Services <img class="services-icon-down" width="13" height="13"
+                                        src="https://img.icons8.com/ffffff/android/124/down.png" alt="chevron-down" />
+                                </div>
+                            </div>
+    
+                        </a>
+                        <a href="/pricing" class="nav-link">
+                            <div class="link-anim-set">
+                                <div class="link-anim-set-p p3">
+                                    Pricing
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/case-studies" class="nav-link">
+                            <div class="link-anim-set">
+                                <div class="link-anim-set-p p4">
+                                    Case Studies
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/about-us" class="nav-link">
+                            <div class="link-anim-set">
+                                <div class="link-anim-set-p p5">
+                                    About us
+                                </div>
+                            </div>
+                        </a>
+    
+    
+                        <div class="dot-link-effect activenone"></div>
+    
+                    </div>
+    
+                    <div class="lang-btn">
+                        <div class="langbtn-selected">
+                            <a href="#EN"><img width="20" height="20"
+                                    src="https://img.icons8.com/fluency-systems-regular/150/ffffff/globe--v1.png"
+                                    alt="globe--v1" /> EN</a>
+                        </div>
+                        <div class="langbtn-selector">
+                            <a href="#TR">
+                                <img width="20" height="20"
+                                    src="https://img.icons8.com/fluency-systems-regular/150/ffffff/globe--v1.png"
+                                    alt="globe--v1" /> TR
+                            </a>
+                        </div>
+                    </div>
+                    <div class="download-center">
+                        <a href="/contact" id="downloadCv" class="download-cv">
+                            <span class="download-text">
+                                Get Started
+                                <img width="16" height="16"
+                                    src="https://img.icons8.com/e3e5e9/android/124/up-right-arrow.png" alt="up-right-arrow">
+                            </span>
+                        </a>
+                    </div>
+    
+    
+    
+                </div>
+                <button class="menu-btn">
+                    <img width="30" height="30" src="https://img.icons8.com/ios/100/ffffff/menu--v1.png" alt="menu--v1" />
+                </button>
+    
+            </div>
+    
+        </div>
+    
+    </nav>
+
+    <div class="mobileoptimization">
+        <div class="overlayer-dropbox"></div>
+        <div class="services-dropdown-box">
+    
+            <div class="dropbox-co">
+                <div class="dropbox-cobox">
+                    <a href="/brand-strategy-and-identity" class="boxscco">,
+                        <img class="vox" src="../assets/icon/consult.png" alt="erw">
+                        <div class="service-title-cobox">
+                            <div class="hero-cta-buttons"
+                                style="flex-direction: column; justify-content: start; align-items: start;">
+    
+                                <div class="nav-cta-btn-sec" style="padding-bottom: 5px;">
+                                    <span style="font-size: 20px;">Brand Strategy & Identity Design </span>
+                                    <img width="16" height="16"
+                                        src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png"
+                                        alt="up-right-arrow">
+                                </div>
+                                <div class="alttextcobox">
+                                    <span>
+                                        We shape your brand’s voice and visual identity.
+                                        Learn how we make it all click.
+                                    </span>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                    </a>
+                    <a href="/web-design" class="boxscco ">,
+                        <img class="vox" src="../assets/icon/web.png" alt="erw">
+                        <div class="service-title-cobox">
+                            <div class="hero-cta-buttons"
+                                style="flex-direction: column; justify-content: start; align-items: start;">
+    
+                                <div class="nav-cta-btn-sec" style="padding-bottom: 5px;">
+                                    <span style="font-size: 20px;">Web Design & Development</span>
+                                    <img width="16" height="16"
+                                        src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png"
+                                        alt="up-right-arrow">
+                                </div>
+                                <div class="alttextcobox">
+                                    <span>
+                                        Clean, fast, high-converting websites.
+                                        See how we bring them to life.
+                                    </span>
+    
+                                </div>
+                            </div>
+    
+                        </div>
+                    </a>
+                    <a href="/web-design" class="boxscco">,
+                        <img class="vox" src="../assets/icon/ads.png" alt="erw">
+                        <div class="service-title-cobox">
+                            <div class="hero-cta-buttons"
+                                style="flex-direction: column; justify-content: start; align-items: start;">
+    
+                                <div class="nav-cta-btn-sec" style="padding-bottom: 5px;">
+                                    <span style="font-size: 20px;">Digital Advertising & SEO </span>
+                                    <img width="16" height="16"
+                                        src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png"
+                                        alt="up-right-arrow">
+                                </div>
+                                <div class="alttextcobox">
+                                    <span>
+                                        Smarter reach through ads and SEO.
+                                        Discover how we drive results.
+                                    </span>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                    </a>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    </div>
+
+    <div class="navblog">
+        <div class="navblog-container">
+            Web Design agency <div class="divider-smi"></div>
+            All articles <div class="divider-smi"></div>
+            Design <div class="divider-smi"></div>
+            How to Create Dark & Light Mode with Variables in Figma?
+        </div>
+    </div>
+    
+  
+    
+    <section class="blogsectionx" style="padding-bottom: 100px; margin-top: 200px;">
+        <div class="container-5">
+            <div class="index-services" style="padding: 5px 0;">
+    
+                <div class="i-services-header" style="color: #111;">
+                    How to Create Dark & Light Mode with Variables in Figma?
+                </div>
+                <div class="document-align">
+                    Tutorial <div class="divider-smi"></div>
+                    3 min <div class="divider-smi"></div>
+                    Published on Dec 03, 2025
+                </div>
+
+                
+                <div class="detailimg blogdetailimg" style="margin-bottom: 21px;">
+                    <img style="width: 100%; height: 100%;"
+                        src="https://cdn.prod.website-files.com/67053868fc01e494462e71c9/6711560789c5f9aef85e2d7e_64bea7bcf45f8aa378e124b4_dark-light-mode-figma-variables.png"
+                        alt="nowify media">
+                </div>
+               
+                <div class="i-services-container" style="margin-top: 0;">
+    
+                    <div class="i-services" id="stickycontainer" style="align-items: start;">
+                        <div class="i-services-text-container i-services-detail" style="max-width: 1000px; padding-top: 0; margin: auto;">
+                                <div class="divider"></div>
+                            <!-- AI SUMMARY -->
+                            <section class="enj-aiwrapx">
+                                <div class="enj-aisummaryx">
+                                    <h3 class="enj-aititlex">
+                                        <span class="spanclass-importanttext">Use AI to summarize this article</span>
+                                    </h3>
+                        
+                                    <div class="enj-aitoolsx">
+                                        <button class="enj-aibtnx"><img width="50" height="50" src="https://img.icons8.com/ios/50/chatgpt.png"
+                                                alt="chatgpt" /> ChatGPT</button>
+                                        <button class="enj-aibtnx"><img width="48" height="48" src="https://img.icons8.com/fluency/48/claude-ai.png"
+                                                alt="claude-ai" /> Claude</button>
+                                        <button class="enj-aibtnx"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/grok.png"
+                                                alt="grok" /> Grok</button>
+                                        <button class="enj-aibtnx"><img width="48" height="48" src="https://img.icons8.com/fluency/48/perplexity-ai.png"
+                                                alt="perplexity-ai" />
+                                            Perplexity</button>
+                                        <button class="enj-aibtnx"><img
+                                                src="https://images.seeklogo.com/logo-png/61/2/gemini-icon-logo-png_seeklogo-611605.png" alt="googlegemini">
+                                            Gemini</button>
+                                    </div>
+                                </div>
+                        
+                                <div class="enj-aicontentx">
+                                    <h4 class="enj-aikeytitlex">
+                                        <span class="spanclass-importanttext">Key points</span>
+                                    </h4>
+                                
+                                    <p class="enj-aisubtitlex">In this article:</p>
+                                
+                                    <ul class="enj-ailistx">
+                                        <li>
+                                            Introduction to the <span class="spanclass-importanttext">Variables feature in Figma</span> and how it
+                                            enhances web design possibilities.
+                                        </li>
+                                        <li>
+                                            Step-by-step guide to <span class="spanclass-importanttext">creating Dark & Light Mode</span> using color
+                                            variables in Figma.
+                                        </li>
+                                        <li>
+                                            How to <span class="spanclass-importanttext">centralize colors</span> in collections, assign them to
+                                            components, and maintain consistency across your prototype.
+                                        </li>
+                                        <li>
+                                            Tips to <span class="spanclass-importanttext">switch between modes efficiently</span> and provide optimal
+                                            visual experience for users.
+                                        </li>
+                                    </ul>
+                                
+                                    <h5 class="enj-aitargetx">
+                                        <span class="spanclass-importanttext">Who is this article for?</span>
+                                    </h5>
+                                
+                                    <p class="enj-aitextx">
+                                        This article is aimed at <span class="spanclass-importanttext">web designers, UI/UX professionals, front-end
+                                            developers</span>, and anyone involved in prototyping who wants to enhance user experience by implementing
+                                        <span class="spanclass-importanttext">Dark & Light Mode</span> efficiently using Figma variables.
+                                    </p>
+                                </div>
+
+                            </section>
+                                <div class="divider"></div>
+                                
+                            <div class="i-services-text blogt">
+                                <span class="spanclass-importanttext">The new Variables feature in Figma</span>
+                            </div>
+                            <div class="i-services-text-alt blogtal">
+                                The new Variables feature in Figma takes web design possibilities to new heights. With these variables, you can
+                                create even more powerful prototypes by utilizing an integrated logic system. In this article, we will guide you
+                                step by step to create a Dark & Light Mode using variables in Figma. This will enable you to provide an optimal
+                                visual experience for your users based on their color preferences.
+                            </div>
+                            <div class="divider" style="background: #adadad50"></div>
+                            <div class="i-services-text blogt">
+                                <span class="spanclass-importanttext">1. Adding Color Variables in Figma</span>
+                            </div>
+                            <div class="detailimg blogdetailimg" style="margin-bottom: 21px;">
+                                <img style="width: 100%; height: 100%;"
+                                    src="https://cdn.prod.website-files.com/67053868fc01e494462e71c9/6711560889c5f9aef85e2e6a_64bea5fae25f6a9e1b306817_ajout-variant-figma.png"
+                                    alt="nowify media">
+                            </div>
+                            <div class="divider" style="background: #adadad50"></div>
+                            <div class="i-services-text-alt blogtal">
+                                Start by creating variants to define the different colors for your project. These variables will allow us to
+                                centralize all styles used in the prototype and change colors with just one click. From the design panel, follow
+                                these steps:
+                                <ul class="enj-paglist">
+                                    <li>Click on <span class="spanclass-importanttext">"Local Variables"</span></li>
+                                    <li>In the variables table, click on <span class="spanclass-importanttext">"Create variable"</span></li>
+                                    <li>Choose the <span class="spanclass-importanttext">"Color"</span> variable</li>
+                                    <li>In the Name column, assign a name to your color (e.g., 100 / 200 / 300 for shades of gray)</li>
+                                    <li>In the Value column, assign a value to the color by adding a HEX code</li>
+                                    <li>Group colors from the same family by selecting them, right-clicking, and clicking <span
+                                            class="spanclass-importanttext">"New group with section"</span></li>
+                                    <li>Rename your collection to <span class="spanclass-importanttext">"Colors"</span></li>
+                                </ul>
+                            </div>
+                            <div class="divider" style="background: #adadad50"></div>
+                            <div class="i-services-text blogt">
+                                <span class="spanclass-importanttext">2. Create a Second Collection for Uniformity in the Prototype</span>
+                            </div>
+                            <div class="detailimg blogdetailimg" style="margin-bottom: 21px;">
+                                <img style="width: 100%; height: 100%;"
+                                    src="https://cdn.prod.website-files.com/67053868fc01e494462e71c9/6711560889c5f9aef85e2e6d_64bea617ed46af522b5c85b2_cre%25CC%2581er-collection-figma.png"
+                                    alt="nowify media">
+                            </div>
+                            <div class="divider" style="background: #adadad50"></div>
+                            <div class="i-services-text-alt blogtal">
+                                To maintain uniformity in the prototype, designate primary and secondary colors for each graphic element: texts,
+                                backgrounds, borders, etc. Create a new collection called <span class="spanclass-importanttext">"Tokens"</span> and
+                                connect the colors from your "Colors" collection:
+                                <ul class="enj-paglist">
+                                    <li>Add variables for texts, backgrounds, and borders by defining <span
+                                            class="spanclass-importanttext">"Primary"</span> and <span
+                                            class="spanclass-importanttext">"Secondary"</span></li>
+                                    <li>Click on the color, go to "Libraries" and choose the color from the "Colors" collection</li>
+                                    <li>Group your Primary and Secondary for Texts, Backgrounds, and Borders</li>
+                                </ul>
+                            </div>
+                            <div class="divider" style="background: #adadad50"></div>
+                            <div class="i-services-text blogt">
+                                <span class="spanclass-importanttext">3. Create a Second Mode in the Collection</span>
+                            </div>
+                            <div class="detailimg blogdetailimg" style="margin-bottom: 21px;">
+                                <img style="width: 100%; height: 100%;"
+                                    src="https://cdn.prod.website-files.com/67053868fc01e494462e71c9/6711560889c5f9aef85e2e71_64bea62f9d3d1a01ba89fe2d_cre%25CC%2581er-mode-figma.png"
+                                    alt="nowify media">
+                            </div>
+                            <div class="divider" style="background: #adadad50"></div>
+                            <div class="i-services-text-alt blogtal">
+                                Define new colors for a second mode (e.g., Light & Dark):
+                                <ul class="enj-paglist">
+                                    <li>From the "Tokens" collection, click the "+" icon to add a new column for the new mode</li>
+                                    <li>Rename the two modes (e.g., <span class="spanclass-importanttext">"Light"</span> and <span
+                                            class="spanclass-importanttext">"Dark"</span>)</li>
+                                    <li>For each row, customize the color for your Dark mode</li>
+                                </ul>
+                            </div>
+                            <div class="divider" style="background: #adadad50"></div>
+                            <div class="i-services-text blogt">
+                                <span class="spanclass-importanttext">4. Connect the Variables to the Design</span>
+                            </div>
+                            <div class="detailimg blogdetailimg" style="margin-bottom: 21px;">
+                                <img style="width: 100%; height: 100%;"
+                                    src="https://cdn.prod.website-files.com/67053868fc01e494462e71c9/6711560889c5f9aef85e2e75_64bea5aa3bce5f5c6f75dec3_connecter-variant-figma.png"
+                                    alt="nowify media">
+                            </div>
+                            <div class="divider" style="background: #adadad50"></div>
+                            <div class="i-services-text-alt blogtal">
+                                Connect variables to your Figma design:
+                                <ul class="enj-paglist">
+                                    <li>Select a component from your prototype</li>
+                                    <li>Open the color panel and click "Libraries" if not set by default</li>
+                                    <li>Assign the color variables from the "Tokens" collection to each component</li>
+                                </ul>
+                            </div>
+                            <div class="divider" style="background: #adadad50"></div>
+                            <div class="i-services-text blogt">
+                                <span class="spanclass-importanttext">5. Switch from Dark to Light Mode</span>
+                            </div>
+                            <div class="detailimg blogdetailimg" style="margin-bottom: 21px;">
+                                <img style="width: 100%; height: 100%;"
+                                    src="https://cdn.prod.website-files.com/67053868fc01e494462e71c9/6711560889c5f9aef85e2e78_64bea54fae3d14eb8a53f8cd_dark-light-mode-figma.png"
+                                    alt="nowify media">
+                            </div>
+                            <div class="divider" style="background: #adadad50"></div>
+                            <div class="i-services-text-alt blogtal">
+                                Your Dark & Light mode in Figma is ready:
+                                <ul class="enj-paglist ">
+                                    <li>Go to layers in the design panel</li>
+                                    <li>Click the <span class="spanclass-importanttext">"Variable"</span> icon</li>
+                                    <li>Open the "Tokens" collection</li>
+                                    <li>Select either Dark or Light mode</li>
+                                    <li>Alternatively, leave layers in auto mode to match the frame mode</li>
+                                </ul>
+                            </div>
+                            <div class="divider" style="background: #adadad50"></div>
+                            <div class="i-services-text-alt blogtal">
+                                With the power of variables in Figma, you can now create Dark & Light Mode prototypes more efficiently, enhancing
+                                user experience by offering color preferences and pushing the boundaries of web design.
+                            </div>
+                            
+                      
+
+                        <a href="/contact" class="blog-cta">
+                            
+                            <div class="ctabpro">
+                                <img src="../assets/profile/ugur-alp-yildiz.png" alt="">
+                                <div class="ctab">
+                                
+                                    Uğur Alp Yıldız
+                                    <div class="ctab-name">
+                                        Co-founder
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            <div class="ctab">
+                                <div class="blog-linksection">
+                                    <div class="nav-cta-btn" target="_blank">
+                                        <div class="nav-cta-btn-sec">
+                                            <span>Get in touch with our experts </span>
+                                            <img style="width: 16px !important; height: 16px !important;" width="16" height="16"
+                                                src="https://img.icons8.com/111111/android/124/up-right-arrow.png" alt="up-right-arrow"
+                                                class="lazy-img loaded">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="divider"></div>
+                        
+                    <div class="footer-container pad5 reveal" style="background: none !important; margin-top: 25px !important; padding-top: 10px !important;">
+                        <div class="services-help-col  p50  footer-cta erw2" style="margin-bottom: 0;">
+                            <div class="services-help-header" style="margin-bottom: 0;">
+                                <div class="services-help-title cta-alt stroke-text-gradient">
+                                    Ready to Turn Your Website Into Your Most Powerful Asset?
+                                </div>
+                    
+                                <div class="hero-cta-buttons" style="justify-content: center; margin-bottom: 0;">
+                                    <a class="nav-cta-btn" href="/contact" target="_blank">
+                                        <div class="nav-cta-btn-sec">
+                                            <span>Get Started</span>
+                                            <img width="16" height="16" src="https://img.icons8.com/android/ffffff/124/up-right-arrow.png"
+                                                alt="up-right-arrow" class="lazy-img loaded">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+
+                        
+                        
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  
+
+
+    
+
+    
+    
+    <footer style="padding-top: 0;">
+        <div class="footer-container" style="margin-top: 0;">
+    
+    
+            <div class="footer-col-container">
+                <div class="footer-col sec-col">
+                    <div class="footer-logo">
+                        <a href="/" class="nav-logo">
+                            <img width="30px" height="auto" src="../logo.png" alt="NowifyMedia" />
+                            <div class="nav-logo-text">
+                                Nowify<span>Media</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="footer-company-alt">
+                        At NowifyMedia, we're here to push the boundaries of the digital world.
+                        <br /><br />
+                        We don’t just see what we do as a service  it’s our passion. Because your success is our success.
+                    </div>
+                </div>
+    
+                <div class="footer-col">
+                    <div class="footer-col-title">Useful Links</div>
+                    <div class="footer-col-links">
+                        <a href="/"><img width="10" height="10"
+                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns"/> Home</a>
+                        <a href="/case-studies"><img width="10" height="10"
+                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns"/> Our Work</a>
+                        <a href="/contact"><img width="10" height="10"
+                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns"/> Contact Us</a>
+                    </div>
+                </div>
+    
+                <div class="footer-col">
+                    <div class="footer-col-title">Services</div>
+                    <div class="footer-col-links">
+                        <a href="/contact"><img width="10" height="10"
+                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns"/> Social Media</a>
+                        <a href="/contact"><img width="10" height="10"
+                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns"/> Digital Marketing</a>
+                        <a href="/contact"><img width="10" height="10"
+                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns"/> Website Design</a>
+                        <a href="/contact"><img width="10" height="10"
+                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns"/> Ad Management</a>
+                        <a href="/contact"><img width="10" height="10"
+                                src="https://img.icons8.com/ios-glyphs/e3e5e9/30/chevron-right.png" alt="icns"/> Technical Web
+                            Support</a>
+                    </div>
+                </div>
+    
+                <div class="footer-col">
+                    <div class="footer-col-pro-links">
+                        <a class="nav-cta-btn" href="https://wa.me/905379409326" target="_blank"
+                            style="background: #ffffff;">
+                            <div class="nav-cta-btn-sec kasend-btn" style="background: #ffffff;">
+                                <span>
+                                    <img width="25" height="25" src="https://img.icons8.com/ios-glyphs/272727/30/online.png"
+                                        alt="online" /> Book a Call
+                                </span>
+                                <img width="16" height="16"
+                                    src="https://img.icons8.com/android/272727/24/up-right-arrow.png"
+                                    alt="up-right-arrow" />
+                            </div>
+                        </a>
+    
+                        <a class="nav-cta-btn" href="https://instagram.com/nowifymedia" target="_blank"
+                            style="background: #ffffff;">
+                            <div class="nav-cta-btn-sec kasend-btn instagram">
+                                <span>
+                                    <img width="25" height="25"
+                                        src="https://img.icons8.com/windows/e3e5e9/32/instagram-new.png"
+                                        alt="instagram-new" /> Instagram
+                                </span>
+                                <img width="16" height="16"
+                                    src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png"
+                                    alt="up-right-arrow" />
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-credit-container">
+                <div class="footer-credit">
+                    <div class="credit">
+                        Copyright &copy; 2020 - 2025 Nowify Media Advertising & Technology Inc. All Rights Reserved.
+                    </div>
+                    <div class="footer-credit-links">
+                            <a href="/privacy-policy">Privacy Policy</a>|
+                            
+                            <a href="/security-policy">Security Policy</a>|
+                            <a href="/cookie-policy">Cookie Policy</a>|
+                            <a href="/legal-information">Legal Information</a>
+                          </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/script.js"></script>
+</body>
+
+
+</html>
