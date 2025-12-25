@@ -299,21 +299,24 @@ body{
     align-items: end;
     justify-content: start;
     max-width: 100%;
-    background: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXBwZTZuOW15d2UzOXRhYnQ4eWpvNDQ1Z2p1ZGQ0Ym5yM3luMG40MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DrGTpea3X6EOOKVxPl/giphy.gif);
+    background: url(img/services/bg.webp);
     background-repeat: no-repeat;
     
     background-position: center ;
     margin: auto;
     padding: 0;
     transition: .8s ease all; 
-    background-size: 100% ;
+    background-size: 105% ;
  
-  animation: heroBgIntro 2.6s ease forwards;
+  animation: heroBgIntro 3.6s ease forwards;
   will-change: background-size;
     height: calc(100vh - 100px); 
     padding-top: 80px;
    z-index: 0;
    
+}
+.container-services-nav-for-hero{
+    height: calc(80vh - 150px) !important;
 }
 .fade-in {
     opacity: 0;
@@ -324,11 +327,11 @@ body{
 
 @keyframes heroBgIntro {
     from {
-        background-size: 150%;
+        background-size: 200%;
     }
 
     to {
-        background-size: 100%;
+        background-size: 105%;
     }
 }
 
@@ -397,7 +400,14 @@ body{
     gap: 8px;
     font-size: 18px;
     padding: 5px 0;
-    padding-top: 25px;
+    padding-bottom: 35px;
+    font-weight: 400;
+
+}
+.erwf .i-services-list .i-services-text{
+   
+    padding-bottom: 0px;
+ 
 
 }
 .i-services-list .i-services-text-alt{
@@ -419,7 +429,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, #0000006b, #000000e7);
+    background: linear-gradient(to top, #000000af, #000000e7);
     
     z-index: -1 !important;
 }
@@ -552,6 +562,74 @@ body{
 .hero-info-badge.sc2 {
     background: linear-gradient(to top, #000, #313131);
 }
+.swiper-nav {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.swiper-nav .swiper-button-prev-c,
+.swiper-nav .swiper-button-next-c {
+    width: 100px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.03);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    color: #888;
+
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 1 !important;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 0 !important;
+
+}
+
+
+.swiper-nav .swiper-button-prev-c:hover,
+.swiper-nav .swiper-button-next-c:hover {
+    color: #fff;
+    background: rgba(168, 154, 238, 0.1);
+
+    border-color: #a89aee;
+
+    box-shadow: 0 0 15px rgba(168, 154, 238, 0.3);
+}
+
+
+.swiper-nav .swiper-button-prev-c:active,
+.swiper-nav .swiper-button-next-c:active {
+    transform: scale(0.85);
+}
+
+
+.swiper-nav .swiper-button-prev-c::before {
+    content: '← ';
+    margin-right: 8px;
+}
+
+.swiper-nav .swiper-button-next-c::after {
+    content: ' →';
+    margin-left: 8px;
+}
+.hero-info-badge.sc4 {
+    background: rgba(13, 13, 13, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05);
+    height: 40px;
+}
+
+
 h1{
     font-size: 52px;
 }
@@ -714,18 +792,18 @@ h1{
 }
 
 .erw{
-background: url(/assets/img/services/erw.webp);
+background: url(/assets/img/erw.png);
     background-repeat: no-repeat;
-    background-size: 130%;
-    background-position: top !important;
+    background-size: 101%;
+    background-position: center !important;
     transition: .4s ease all !important;
     opacity: .96 !important;
 }
 .erwf{
-background: url(/assets/img/services/erwf.webp);
+background: url(/assets/img/erwf.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: top !important;
+    background-position: right !important;
     transition: .4s ease all !important;
 
 }
@@ -739,17 +817,17 @@ background: url(/assets/img/services/erwf.webp);
 
 
 .erw2{
-background: url(/assets/img/services/erw2.webp);
+background: url(/assets/img/erw2.png);
     background-repeat: no-repeat;
-    background-size: 130%;
-    background-position: top;
+    background-size: 100%;
+    background-position: center;
     transition: .4s ease all !important;
     opacity: .96 !important;
 }
 .erw:hover{
-    text-shadow: 0 0 20px #ffffff50;
-    background-size: 150%;
-    background-position: top;
+    text-shadow: 0 0 50px #ffffff20;
+    background-size: 180%;
+    background-position: center;
    opacity: 1 !important;
 }
 
@@ -777,7 +855,7 @@ background: url(/assets/img/services/erw2.webp);
     margin: 25px 0;
 }
 .erwf:hover{
-    text-shadow: 0 0 20px #ffffff50;
+    text-shadow: 0 0 50px #ffffff20;
     background-size: 150%;
     background-position: top;
 filter: grayscale(0);
@@ -798,8 +876,8 @@ filter: grayscale(0);
     border-radius: 11px;
 }
 .erw2:hover{
-    text-shadow: 0 0 20px #ffffff50;
-    background-size: 150%;
+    text-shadow: 0 0 50px #ffffff20;
+    background-size: 180%;
     background-position: center;
     opacity: 1 !important;
 }
@@ -822,9 +900,7 @@ filter: grayscale(0);
     height: 100%;
     object-fit: cover;
 }
-.ktt-container{
-    background: red;
-}
+
 .hero-alt{
     font-size: 16px;
     padding: 10px 0;
@@ -860,7 +936,7 @@ filter: grayscale(0);
 }
 .whatsapp-btn{
     position: relative;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     gap: 5px;
@@ -917,9 +993,12 @@ filter: grayscale(0);
     
 }
 .mxw a{
-    background: linear-gradient(to top, #000, #353535) !important;
+    background: linear-gradient(to top, #262626, #1a1a1a) !important;
     color: #fff !important;
- 
+    border: 1px solid #333333;
+    font-weight: 300;
+    font-size: 18px;
+    box-shadow: 0 0 15px #000;
 }
 .hero-cta-buttons .nav-cta-btn-sec.kasend-btn{
     background: #d4d4d4 !important;
@@ -4249,13 +4328,13 @@ img.lazy-img.loaded {
     padding:30px 10px;
    }
    .erw2 .i-services-text-container{
-    padding: 80px 40px !important;
+    padding: 60px 30px !important;
    }
    .i-services-list .i-services-text{
     font-size: 14px !important;
    }
    .erw .i-services-text-container{
-    padding: 80px 40px !important;
+    padding: 60px 30px !important;
    }
    .footer-credit-links{
     justify-content: center;
@@ -4272,7 +4351,21 @@ img.lazy-img.loaded {
     display: none;
    }
 }
-
+.animcard .servicesanimtitle{
+    font-size: 38px;
+}
+.animcard .i-services-img {
+    background: #000;
+    width: 580px;
+    max-width: 520px;
+    padding:20px;
+    border-left: 1px solid #2b2b2b;
+    
+}
+.animcard .i-services-img img{
+    
+    width: 100%;
+}
 @media (min-width:1200px) {
     .i-services-container.animcard {
             position: relative;
@@ -4283,30 +4376,32 @@ img.lazy-img.loaded {
             position: sticky;
             top: 120px;
             /* header varsa ayarla */
-            background: #f3f3f3;
+            background: linear-gradient(to bottom, #0f0f0f 10%, #0a0a0a 90%);
             border-radius: 16px;
             margin-bottom: 120px;
             transition: transform .4s ease, box-shadow .4s ease;
             will-change: transform;
-    
-            transform-origin: top center;
+            border: 1px solid #2b2b2b;
+           
+            
+            padding: 0;
         }
     
         .animcard .i-services.is-stacked:nth-of-type(1) {
-            transform: scale(0.98) translateY(30px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, .08);
+            transform: scale(0.96) translateY(30px);
+            box-shadow: 0 0 200px #000; 
     
         }
     
         .animcard .i-services.is-stacked:nth-of-type(2) {
-            transform: scale(0.98) translateY(50px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, .08);
+            transform: scale(0.97) translateY(50px);
+            box-shadow: 0 0 200px #000; 
     
         }
     
         .animcard .i-services.is-stacked:nth-of-type(3) {
             transform: scale(0.98) translateY(70px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, .08);
+            box-shadow: 0 0 200px #000; 
         }
     
         .nonebgover {
@@ -4317,7 +4412,8 @@ img.lazy-img.loaded {
         }
                 .stickyeffects {
                     position: sticky;
-                    top: 0px;
+                    top: 50px;
+                   
                 }
         
                 .whitebox {
@@ -4325,7 +4421,7 @@ img.lazy-img.loaded {
                     bottom: 0px;
                     width: 100%;
                     height: 200px;
-                    background: #f3f3f3;
+                    background: #000;
                 }
 }
 /* .arkadia{
@@ -4509,7 +4605,7 @@ img.lazy-img.loaded {
 .enj-sliderq {
     position: relative;
     width: 100%;
-    height: 85vh;
+    min-height: 750px;
     overflow: hidden;
 }
 
@@ -4612,54 +4708,69 @@ img.lazy-img.loaded {
 }
 
 /* ===== PAGINATION ===== */
+/* --- PAGINATION CONTAINER --- */
 .enj-paginax {
     position: absolute;
     bottom: 40px;
     right: 0;
     display: flex;
-    gap: 18px;
+    gap: 12px;
+    /* Gap biraz daraltıldı daha sıkı durması için */
     z-index: 6;
-    /* PAGINATION DA ÜSTE */
     pointer-events: auto;
 }
 
+/* --- THUMBNAIL WRAPPER --- */
 .enj-thumbx {
     width: 64px;
     height: 64px;
     position: relative;
     cursor: pointer;
+    /* Köşeleri keskinleştir */
+    border-radius: 0 !important;
 }
 
+/* --- IMAGE: KESKİN KARE --- */
 .enj-thumbx img {
     width: 46px;
     height: 46px;
-    border-radius: 50%;
+    /* KESİN EMİR: Yuvarlaklığı sıfırla */
+    border-radius: 0 !important;
     object-fit: cover;
     position: absolute;
     top: 9px;
     left: 9px;
     z-index: 2;
+    /* Premium touch: Çok ince bir border */
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* --- PROGRESS SVG: KAREYE DÖNÜŞ --- */
 .enj-thumbx svg {
-    width: 64px;
-    height: 64px;
-    transform: rotate(-90deg);
+    position: absolute;
+    inset: 0;
+    /* Kare olduğu için rotation'a gerek kalmayabilir, duruma göre bakarsın */
+    transform: none;
 }
 
+/* Circle yerine "rect" kullanacağın için CSS'i buna göre güncelliyoruz */
 .enj-thumbx rect {
     fill: none;
-    stroke-width: 2;
+    stroke-width: 4;
+    /* Kare progresin toplam çevresi (64*4) üzerinden hesaplanır */
+    /* Dasharray ve offset değerlerini kare çevresine göre (approx 256) revize etmen gerekebilir */
 }
 
 .enj-bgx {
-    stroke: rgba(255, 255, 255, 0.144);
+    stroke: rgba(255, 255, 255, 0.2);
 }
 
 .enj-progressx {
-    stroke: #fff;
-  stroke-dasharray: 224;
-  stroke-dashoffset: 224; /* %0 */
+    stroke: #a89aee;
+    /* Kare çerçeve çevresi için (64px x 4) */
+    stroke-dasharray: 256;
+    stroke-dashoffset: 256;
+    transition: stroke-dashoffset 0.3s ease;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -4679,13 +4790,44 @@ img.lazy-img.loaded {
 }
 
 @media (max-width:768px) {
+    .animcard .i-services-img{
+        width: 100%;
+        padding: 0;
+    }
+    .animcard .i-services{
+        padding: 0 !important;
+       
+    }
+    .servicesanimtitle{
+        font-size: 24px !important;
+    }
+        .hero-cta-buttons .nav-cta-btn-sec{
+            font-size: 14px !important;
+        }
+    .mxw a {
+        font-size: 14px !important;
+        font-weight: 500 !important;
+    }
+    .i-services-header.stickyeffects h1{
+        font-size: 28px !important;
+    }
+    .i-services-header{
+        font-size: 28px !important;
+    }
     .enj-overlayq {
         background: linear-gradient(to top, rgba(0, 0, 0, .9), transparent 60%);
+    }
+    .navblog{
+        display: none !important;
     }
 
     .enj-contentq {
         bottom: 160px;
         max-width: none;
+        padding:0 20px;
+    }
+    .container-services-nav-for-hero{
+        height: 700px !important;
     }
 
     .enj-titleq {
@@ -4693,7 +4835,7 @@ img.lazy-img.loaded {
     }
 
     .enj-textq {
-        font-size: 15px
+        font-size: 13px
     }
 
     .enj-metaq {
@@ -5063,6 +5205,7 @@ color: #111;
 .footer-container .nav-cta-btn{
     padding: 0 !important;
 }
+
 
 
 *{
