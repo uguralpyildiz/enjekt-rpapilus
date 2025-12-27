@@ -1555,10 +1555,10 @@
             </div>
 
             <!-- Swiper JS -->
-            <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
             
             <!-- Init -->
-            <script defer>
+            <script >
                 document.addEventListener("DOMContentLoaded", () => {
                     if (typeof Swiper === "undefined") return;
 
@@ -2171,6 +2171,33 @@
 
 
     <script src="assets/script.js"></script>
+    <div class="overlayloadingscreen">
+        <div class="nav-logo-container">
+            <a class="nav-logo ">
+                <img class="sloadr" width="60px" height="auto" src="logo.png" alt="NowifyMedia">
+                <div class="nav-logo-text" style="font-size: 32px;">
+                    Nowify<span>Media</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <script>
+
+        const overlayloadingscreen = document.querySelector(".overlayloadingscreen");
+
+        // İlk başta overflow'u gizle
+        document.body.style.overflow = "hidden";
+
+        setTimeout(() => {
+            overlayloadingscreen.style.top = "-150%";
+        }, 2000);
+
+        setTimeout(() => {
+            overlayloadingscreen.style.display = "none";
+            // 5 saniye sonra overflow'u eski haline getir
+            document.body.style.overflow = "auto";
+        }, 3000);
+    </script>
 </body>
 
 
