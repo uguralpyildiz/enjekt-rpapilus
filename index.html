@@ -60,6 +60,8 @@
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 
 
 
@@ -667,7 +669,7 @@
                     </div>
                     <div class="i-services-container tailor">
 
-                        <a href="/contact" class="i-services reveal erw2">
+                        <a href="/web-design" class="i-services reveal erw2">
                             <div class="i-services-img">
 
                             </div>
@@ -694,7 +696,7 @@
                             </div>
                         </a>
 
-                        <a href="/contact" class="i-services reveal erw">
+                        <a href="/web-design" class="i-services reveal erw">
                             <div class="i-services-img">
 
                             </div>
@@ -727,6 +729,269 @@
                 </div>
             </div>
     </section>
+
+   <!-- progess -->
+<section style="margin-top: 230px;">
+    <div class="i-services-header reveal">
+
+
+        With our full-service agency, <span class="stroke-text-gradient-s">we are partnering with you from A to Z</span>
+
+    </div>
+    <div class="pro-ref-wrapper reveal">
+        <div class="pro-ref-container">
+
+            <div class="pro-ref-list">
+
+                <div class="pro-ref-card">
+                    <div class="pro-ref-media">
+                        <img
+                            src="https://cdn.prod.website-files.com/6705382c85d21c496de94fa5/6773c9800b06b65535b49344_design-sprint-agency-digidop.webp">
+                    </div>
+                    <div class="pro-ref-content">
+                        <span class="pro-ref-number">01</span>
+                        <h3 class="pro-ref-title">Discovery & Audit</h3>
+                        <p class="pro-ref-desc">We don't rely on guesswork. We dive deep into your ecosystem, auditing your current performance and market position to
+                        craft a data-driven strategy that aligns perfectly with your long-term business goals.
+                    </div>
+                </div>
+
+                <div class="pro-divider"></div>
+
+                <div class="pro-ref-card">
+                    <div class="pro-ref-media">
+                        <img
+                            src="https://cdn.prod.website-files.com/6705382c85d21c496de94fa5/675c1510092ce24e6e370a72_webdesign-digidop-agency.webp">
+                    </div>
+                    <div class="pro-ref-content">
+                        <span class="pro-ref-number">02</span>
+                        <h3 class="pro-ref-title">Design Strategy</h3>
+                        <p class="pro-ref-desc">Visuals that captivate, functionality that converts. We design pixel-perfect, intuitive interfaces that not only reflect
+                        your unique brand identity but also guide your users seamlessly toward the desired action.</p>
+                    </div>
+                </div>
+
+                <div class="pro-divider"></div>
+
+                <div class="pro-ref-card">
+                    <div class="pro-ref-media">
+                        <img
+                            src="https://cdn.prod.website-files.com/6705382c85d21c496de94fa5/675c1570d8f41f496c60f017_webflow-development-digidop-agency.webp">
+                    </div>
+                    <div class="pro-ref-content">
+                        <span class="pro-ref-number">03</span>
+                        <h3 class="pro-ref-title">Development</h3>
+                        <p class="pro-ref-desc">Clean, semantic, and scalable. We build high-performance foundations using modern frameworks, ensuring your site is
+                        lightning-fast, SEO-friendly, and architecturally ready for future growth.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pro-divider"></div>
+
+                <div class="pro-ref-card">
+                    <div class="pro-ref-media">
+                        <img
+                            src="https://cdn.prod.website-files.com/6705382c85d21c496de94fa5/675c16293a3a7ff7aba8bbe5_launch-website-agency-webflow-digidop.webp">
+                    </div>
+                    <div class="pro-ref-content">
+                        <span class="pro-ref-number">04</span>
+                        <h3 class="pro-ref-title">Quality Assurance & Launch</h3>
+                        <p class="pro-ref-desc">Perfection is in the details. Before going live, we conduct rigorous stress tests across all devices and browsers to
+                        ensure a glitch-free launch and a flawless user experience from day one.</p>
+                    </div>
+                </div>
+                <div class="pro-divider"></div>
+
+                <div class="pro-ref-card">
+                    <div class="pro-ref-media">
+                        <img
+                            src="https://cdn.prod.website-files.com/6705382c85d21c496de94fa5/675c15df8d0e9a81f232b470_team-training-webflow-agency-digidop.webp">
+                    </div>
+                    <div class="pro-ref-content">
+                        <span class="pro-ref-number">05</span>
+                        <h3 class="pro-ref-title">Handoff & Training Empowering your team.</h3>
+                        <p class="pro-ref-desc">You are in the driver's seat. We conclude with a comprehensive handover meeting and training session, empowering your
+                        team to manage content and updates independently without relying on code.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pro-ref-timeline-col" id="timelineCol">
+                <div class="pro-ref-line-bg"></div>
+                <div class="pro-ref-line-fill" id="fillLine">
+                    <div class="pro-ref-indicator"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll('.pro-ref-card');
+            const timelineCol = document.querySelector('#timelineCol');
+            const fillLine = document.querySelector('#fillLine');
+            const listContainer = document.querySelector('.pro-ref-list');
+
+            // 1. TIMELINE GEOMETRISI (Listenin başından sonuna)
+            function initTimelineGeometry() {
+                // Liste container'ın yüksekliği bizim referansımız olsun
+                // Çünkü dividerlar ve kartlar bu container'ın içinde.
+                // Çizgi tam listenin boyunda olmalı.
+
+                // Eğer daha hassas olsun istersen, ilk kartın tepesi ve son kartın altı:
+                if (cards.length > 0) {
+                    const listRect = listContainer.getBoundingClientRect();
+                    const firstCardRect = cards[0].getBoundingClientRect();
+                    const lastCardRect = cards[cards.length - 1].getBoundingClientRect();
+
+                    const startTop = firstCardRect.top - listRect.top; // İlk kartın tepesi
+                    const endTop = (lastCardRect.top - listRect.top) + lastCardRect.height; // Son kartın altı
+
+                    const totalHeight = endTop - startTop;
+
+                    timelineCol.style.top = `${startTop}px`;
+                    timelineCol.style.height = `${totalHeight}px`;
+                }
+            }
+
+            // 2. ACTIVE CLASS MANTIĞI (INTERSECTION OBSERVER - ODAK NOKTASI)
+            // RootMargin ayarı: '-50% 0px -50% 0px' 
+            // Bu ayar, ekranın tam ortasında 1 piksellik bir çizgi varmış gibi davranır.
+            // Hangi kart bu çizgiye değerse o aktif olur. Hata payı sıfırdır.
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '-50% 0px -50% 0px',
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Önce hepsini temizle (Garanti olsun)
+                        cards.forEach(c => c.classList.remove('active'));
+                        // Kesişeni aktif yap
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            cards.forEach(card => observer.observe(card));
+
+
+            // 3. TIMELINE SCROLL HESABI
+            function handleScroll() {
+                const windowHeight = window.innerHeight;
+                const scrollY = window.scrollY;
+
+                if (!timelineCol) return;
+
+                const timelineRect = timelineCol.getBoundingClientRect();
+                const timelineStartAbs = timelineRect.top + scrollY;
+                const timelineHeight = timelineCol.offsetHeight;
+
+                // Trigger Point: Ekranın Ortası (ViewCenter)
+                // Kullanıcı aşağı indikçe, çizginin tepesi ekranın ortasını geçtiği an dolmaya başlasın.
+                // NOT: İsteğe göre "ekranın altı" veya "ekranın %80'i" de yapılabilir.
+                // Kartların aktif olma mantığı "ekranın ortası" olduğu için,
+                // çizginin de ekranın ortasına göre dolması en senkronize görüntüyü verir.
+
+                const triggerPoint = scrollY + (windowHeight / 2);
+
+                let progress = triggerPoint - timelineStartAbs;
+
+                // Sınırlandırma
+                if (progress < 0) progress = 0;
+                if (progress > timelineHeight) progress = timelineHeight;
+
+                fillLine.style.height = `${progress}px`;
+            }
+
+            window.addEventListener('scroll', handleScroll);
+            window.addEventListener('resize', () => {
+                initTimelineGeometry();
+                handleScroll();
+            });
+
+            // Sayfa Yüklendiğinde
+            window.onload = () => {
+                initTimelineGeometry();
+                handleScroll();
+            };
+
+            // Timeout ile double check
+            setTimeout(() => {
+                initTimelineGeometry();
+                handleScroll();
+            }, 100);
+        });
+    </script>
+
+</section>
+<!-- progress -->
+
+    <section style="padding-top: 50px;">
+        <div class="i-services-header reveal" style="padding: 150px 0; max-width: 900px;">
+    
+            <h1 style="line-height:1.2; font-weight: 500;">
+                3 good reasons to work with <span class="stroke-text-gradient-s">NowifyMedia</span>
+            </h1>
+        </div>
+    
+        <div class="unique-aw-wrapper">
+    
+            <div class="unique-aw-item">
+                <div class="unique-aw-year"
+                    style="display: flex; align-items: center; justify-content: center; height: 70px;">
+                    <img style="width: 50px; height: 50px; object-fit: contain;" src="assets/icon/1 (1).png" alt="Speed">
+                </div>
+                <div class="unique-aw-main">
+                    <span class="unique-aw-org">PURE PERFORMANCE</span>
+                    <h3 class="unique-aw-title">Zero Bloat, Maximum Speed</h3>
+                </div>
+                <div class="unique-aw-desc">
+                    We hand-craft every line of code. No page builders, no unnecessary scripts. <strong>NowifyMedia</strong>
+                    delivers lightweight, lightning-fast websites that Google and your users love.
+                </div>
+            </div>
+    
+            <div class="unique-aw-item">
+                <div class="unique-aw-year"
+                    style="display: flex; align-items: center; justify-content: center; height: 70px;">
+                    <img style="width: 50px; height: 50px; object-fit: contain;" src="assets/icon/2.png" alt="Custom">
+                </div>
+                <div class="unique-aw-main">
+                    <span class="unique-aw-org">LIMITLESS CREATIVITY</span>
+                    <h3 class="unique-aw-title">Bespoke Custom Solutions</h3>
+                </div>
+                <div class="unique-aw-desc">
+                    Break free from platform constraints. With custom development, if you can imagine it, we can build it.
+                    We create unique, pixel-perfect experiences tailored 100% to your brand.
+                </div>
+            </div>
+    
+            <div class="unique-aw-item">
+                <div class="unique-aw-year"
+                    style="display: flex; align-items: center; justify-content: center; height: 70px;">
+                    <img style="width: 50px; height: 50px; object-fit: contain;" src="assets/icon/1 (3).png" alt="Scale">
+                </div>
+                <div class="unique-aw-main">
+                    <span class="unique-aw-org">SCALABILITY</span>
+                    <h3 class="unique-aw-title">Enterprise-Grade Architecture</h3>
+                </div>
+                <div class="unique-aw-desc">
+                    Built to last. Our custom code infrastructure ensures superior security and seamless API integrations,
+                    making your digital product ready to scale as <strong>NowifyMedia</strong> grows your business.
+                </div>
+            </div>
+    
+        </div>
+    
+       
+    </section>
+
 
     <!-- CASE STUDIES -->
     <section style="padding-top: 120px;">
@@ -872,6 +1137,71 @@
         </div>
     </section>
     <!-- CASE STUDIES -->
+
+    <!-- <div class="i-services-header reveal" style="padding-bottom: 50px; padding-top: 150px;">
+       
+    Hear from our customers<br> <span class="stroke-text-gradient-s">about their experience</span>
+    </div>
+    <div class="tst-container reveal">
+    
+    
+        <div class="tst-grid">
+    
+            <div class="tst-card tst-main-card">
+                <div class="tst-play-btn">
+                    <div class="tst-play-icon"></div>
+                </div>
+    
+                <div class="tst-content-overlay">
+                    <div class="tst-quote">
+                        "What sets NowifyMedia apart is their ability to deliver a solution and empower you, no matter the
+                        challenges."
+                    </div>
+    
+                    <div class="tst-footer">
+                        <div class="tst-author-info">
+                            <h4>Maxime Bascon</h4>
+                            <p>Chief of Staff @Growl</p>
+                        </div>
+                        <div class="tst-logo">
+                            <span style="color:#fff; font-weight:700; font-size:20px; letter-spacing:1px;">GROWL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="tst-side-column">
+    
+                <div class="tst-card tst-small-card tst-small-card-1">
+                    <div class="tst-play-btn">
+                        <div class="tst-play-icon"
+                            style="border-left-width: 14px; border-top-width: 8px; border-bottom-width: 8px;"></div>
+                    </div>
+                    <div class="tst-content-overlay" style="padding: 25px; justify-content: flex-end;">
+                        <div class="tst-small-info">
+                            <h4>Tiphanie Meyer</h4>
+                            <p>CMO @Chargemap</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="tst-card tst-small-card tst-small-card-2">
+                    <div class="tst-play-btn">
+                        <div class="tst-play-icon"
+                            style="border-left-width: 14px; border-top-width: 8px; border-bottom-width: 8px;"></div>
+                    </div>
+                    <div class="tst-content-overlay" style="padding: 25px; justify-content: flex-end;">
+                        <div class="tst-small-info">
+                            <h4>Samy Ouardini</h4>
+                            <p>Cofounder & CEO @Ramify</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+    </div> -->
 
     <!-- WHYUS -->
     <section style="background: #000;">
@@ -1266,6 +1596,7 @@
     <!-- WHYUS -->
 
 
+
     <!-- SLIDER -->
     <section style="margin: 100px 0;">
         <div class="enj-sliderq">
@@ -1655,131 +1986,7 @@
     </div>
     <!-- BLOG -->
     
-<section class="sss" style="padding: 80px 0;">
-    <div class="container reveal active">
-        <div class="services-help">
-            <div class="services-help-title">
-                How Does <span class="stroke-text-gradient-s">Our Process Work?</span>
-            </div>
-            <div class="hero-alt">
-                We move forward with a clear, transparent, and solution-oriented approach at every stage to ensure
-                your
-                brand stands out digitally in the most effective way.
-            </div>
-        </div>
 
-        <div class="faq-container">
-            <div class="asked-questions-container">
-                <div class="accordion-menu">
-
-                    <div class="accordion-item faq-active">
-                        <div class="faq-header" style="user-select: none;">1. Initial Meeting &amp; Needs Analysis</div>
-                        <div class="accordion-item paragraph">
-                            <div class="paragraph-content">
-                                Before we begin, we schedule a 30-minute intro call via your preferred platform
-                                Zoom,
-                                WhatsApp, Google Meet, or phone. We clarify your needs, expectations, and target
-                                audience during this meeting.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="faq-header" style="user-select: none;">2. Strategy &amp; Roadmap</div>
-                        <div class="accordion-item paragraph">
-                            <div class="paragraph-content">
-                                We analyze how your brand should be positioned digitally and craft a tailored
-                                roadmap.
-                                From competitor analysis to user behavior insights, we develop a strategy designed
-                                to
-                                elevate your brand image with measurable and sustainable steps.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="faq-header" style="user-select: none;">3. Design Creation</div>
-                        <div class="accordion-item paragraph">
-                            <div class="paragraph-content">
-                                We design user-focused and visually appealing interfaces. Clean, responsive, and
-                                powerful our designs reflect your brand identity and ensure high performance across
-                                all screen sizes.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="faq-header" style="user-select: none;">4. Development &amp; Integration</div>
-                        <div class="accordion-item paragraph">
-                            <div class="paragraph-content">
-                                We build your project using modern frontend (HTML, CSS, JS) and backend technologies
-                                (PHP, Laravel, Node.js, etc.). From API integrations and payment gateways to CRM
-                                systems
-                                and security layers we ensure your site runs fast and secure.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="faq-header" style="user-select: none;">5. Testing Phase</div>
-                        <div class="accordion-item paragraph">
-                            <div class="paragraph-content">
-                                Before launch, we run thorough tests across browsers, screen sizes, and devices. We
-                                also
-                                perform detailed SEO checks, speed optimization, and user experience audits to
-                                ensure
-                                everything is polished.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="faq-header" style="user-select: none;">6. Launch &amp; Training</div>
-                        <div class="accordion-item paragraph">
-                            <div class="paragraph-content">
-                                After your final approval, we perform a complete pre-launch review. Once live, we
-                                provide you with training and guidance on how to use your new website and admin
-                                panel
-                                effectively.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <div class="faq-header" style="user-select: none;">7. Support &amp; Follow-Up</div>
-                        <div class="accordion-item paragraph">
-                            <div class="paragraph-content">
-                                We don't disappear after launch. We offer ongoing support, monitor SEO performance,
-                                and
-                                continue improvements based on your needs. Optional maintenance and consultancy
-                                services
-                                help ensure long-term digital success.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="divider" style="margin-top: 50px; margin-bottom: 50px;">
-                        <div class="hero-cta-buttons">
-                            <a style="background: linear-gradient(to top, #262626, #1a1a1a) !important;
-    color: #fff !important;
-    border: 1px solid #333333;
-    font-weight: 300;
-    font-size: 18px;
-    box-shadow: 0 0 15px #000;" class="nav-cta-btn" href="/get-a-quote" target="_blank">
-                                <div class="nav-cta-btn-sec" style="width: 100%; color: #fff; padding: 12px 20px;">
-                                    <span>Get a Quote</span> <img width="16" height="16"
-                                        src="https://img.icons8.com/ffffff/android/124/up-right-arrow.png"
-                                        alt="up-right-arrow" class="lazy-img loaded">
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
   
 
