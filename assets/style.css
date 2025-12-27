@@ -41,6 +41,9 @@ body{
     right: 20px;
     cursor: pointer;
 }
+.nav-scrolled {
+    background: linear-gradient(to top, #111, #000);
+}
 .i-services-detail h1, .i-services-detail h2{
     color: #ffffff;
     font-weight: 500;
