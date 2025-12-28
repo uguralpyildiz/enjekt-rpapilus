@@ -626,12 +626,23 @@
                             </div>
                         </div>
                         <div class="i-services-img" style="max-width: 600px;">
-                            <video autoplay muted loop playsinline preload="none"
-                                poster="assets/img/services/webdesign2thumb.webp"
-                                style="width:100%; height:auto; display:block;">
-    
-                                <source src="assets/img/services/webdesign.webm" type="video/webm">
+                            <video muted loop playsinline preload="none" poster="assets/img/services/webdesign2thumb.webp"
+                                data-src="assets/img/services/webdesign.webm" class="hero-video" style="width:100%; height:auto; display:block;">
                             </video>
+                            <script>
+                                window.addEventListener("load", () => {
+                                        const video = document.querySelector(".hero-video");
+                                        if (!video) return;
+
+                                        const src = video.getAttribute("data-src");
+                                        if (src) {
+                                            video.src = src;
+                                            video.play().catch(() => { });
+                                        }
+                                    });
+
+                            </script>
+                            
                         </div>
                     </div>
     
