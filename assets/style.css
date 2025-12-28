@@ -5706,7 +5706,7 @@ color: #111;
      padding-top: 20px;
  }
 
- .tst-author-info h4 {
+ .tst-author-info {
      margin: 0;
      color: #fff;
      font-size: 18px;
@@ -5743,12 +5743,13 @@ color: #111;
  }
 
  .tst-small-info {
+    color: #fff;
      text-align: center;
      /* Küçük kartlarda yazı play butonuna binmesin diye padding artırdım */
      padding-bottom: 10px;
  }
 
- .tst-small-info h4 {
+ .tst-small-info{
      color: #fff;
      font-size: 16px;
      margin: 0;
@@ -5763,6 +5764,9 @@ color: #111;
 
  /* --- MOBİL İYİLEŞTİRMELERİ --- */
  @media (max-width: 1024px) {
+    .tst-container{
+        padding: 15px;
+    }
      .tst-grid {
          grid-template-columns: 1fr;
          /* Tek sütuna düşür */
