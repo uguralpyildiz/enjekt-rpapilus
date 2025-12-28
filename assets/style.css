@@ -793,7 +793,7 @@ h1{
 }
 
 .erw{
-background: url(/assets/img/erw.png);
+background: url(/assets/img/erw.webp);
     background-repeat: no-repeat;
     background-size: 101%;
     background-position: center !important;
@@ -801,7 +801,7 @@ background: url(/assets/img/erw.png);
     opacity: .96 !important;
 }
 .erwf{
-background: url(/assets/img/erwf.png);
+background: url(/assets/img/erwf.webp);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: right !important;
@@ -818,7 +818,7 @@ background: url(/assets/img/erwf.png);
 
 
 .erw2{
-background: url(/assets/img/erw2.png);
+background: url(/assets/img/erw2.webp);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -5379,12 +5379,19 @@ color: #111;
 }
 
 
+
 /* --- MOBİL AYARLARI --- */
 .proc-mobile-img {
     display: none;
 }
 
 @media (max-width: 900px) {
+    .blogsectionx{
+        padding-top: 125px;
+    }
+    .enj-aitoolsx button{
+        color: #000 !important;
+    }
     .proc-container {
         flex-direction: column;
         gap: 0;
@@ -5779,10 +5786,7 @@ color: #111;
     .tst-quote{
         display: none;
     }
-     body {
-         padding: 20px;
-         /* Mobilde kenar boşluğunu azalt */
-     }
+    
 
      .tst-header h2 {
          font-size: 28px;
