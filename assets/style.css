@@ -1373,10 +1373,75 @@ footer{
 }
 
 .footer-cta {
-    max-width: 1350px;
+    max-width: 100%;
     margin: auto;
-    padding: 0;
+    padding: 65px;
+    border: none !important;
     margin-top: 0;
+}
+.footer-cta.erw2{
+    position: relative;
+    background-size: 100% !important;
+    background-position: center !important;
+}
+.footer-cta.erw2:hover{
+    background-size: 110% !important;
+}
+.footer-cta.erw2:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom,#000,transparent,transparent,transparent,transparent);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.inputscr .footer-col-title{
+    margin-bottom: 30px;
+   
+}
+.logosectionimg{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logosectionimg a svg{
+    width: 30px;
+    height: 30px;
+    color: #ffffff99;
+    transition: .3s ease all;
+}
+.logosectionimg a:hover svg{
+    color: #ffffff;
+}
+.inputscrs{
+    margin-bottom: 35px;
+}
+.inputscrs input{
+    width: 100%;
+    padding: 20px;
+    background: #000;
+    border:1px solid #353535;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+}
+.inputscr-head{
+    font-size: 18px;
+    color: #c2c2c2;
+}
+.inputscrs .nav-cta-btn-sec{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background: #111111;
+    
+    border:1px solid #353535;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
 }
 
 .footer-container{
@@ -1443,9 +1508,21 @@ footer{
     width: calc(25% + 200px);
 }
 .footer-col-title{
+    position: relative;
     font-size: 22px;
     font-weight: 500;
-
+    margin-bottom: 20px;
+    
+}
+.footer-col-title::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, #000 30%, #ffffff50);
+    
 }
 .footer-col-pro-links{
     display: flex;
@@ -1467,21 +1544,22 @@ footer{
 }
 
 .footer-company-alt{
-    color: #c2c2c2;
-    font-size: 15px;
+    color: #d6d6d6;
+    font-size: 16px;
     font-weight: 400;
     padding: 10px 0;
     margin: 20px 0;
+    max-width: 500px;
     border-radius: 5px;
 }
 .footer-col-links{
     display: flex;
-    gap: 5px;
     flex-direction: column;
     padding-top: 5px;
 }
 .footer-credit-container{
     
+    background: linear-gradient(to bottom, #1a1a1a, #111111);
 }
 .footer-credit{
     display: flex;
@@ -1489,8 +1567,8 @@ footer{
     justify-content: space-between;
     max-width: 1350px;
     margin: auto;
-    padding: 20px 0;
-    padding-bottom: 70px;
+    padding: 30px 0;
+    
     color: #a1a1a1;
     font-size: 14px;
 }
@@ -1498,20 +1576,30 @@ footer{
     color: #a1a1a1;
     padding: 5px;
     text-decoration: none;
+    
 }
+
 .footer-credit-links a:hover{
     text-decoration: underline;
 }
 .footer-col-links a{
+    width: 100%;
+    position: relative;
     text-decoration: none;
     color: #c2c2c2;
-    padding: 5px 0;
+    padding: 15px 0;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 18px;
+    transition: .3s ease all;
 }
 .footer-col-links a:hover{
-    text-decoration: underline;
+    
+    color: #ffffff;
+    text-shadow: 0 0 55px #ffffff50;
+  
 }
+
+
 .faq-container .catalog-item .catalog-number{
     align-items: start;
     gap: 5px;
@@ -1558,19 +1646,34 @@ footer{
     opacity: 1;
     transform: translateY(0);
 }
+.nav-cta-btn-sec svg{
+    width: 25px;
+    height: 25px;
+}
 .instagram {
-    background: #833ab4;
-    background: linear-gradient(to right,
-            #833ab4, #fd1d1d, #fcb045) !important;
-            color: #ffffff;
+    background: #111111 !important;
+        color: #ffffff;
+        border: 1px solid #353535;
 }
 .facebook{
     background: #4B6CE9 !important;
     color: #ffffff;
 }
 .linkedin{
-    background: #4571D2 !important;
+    background: #0a0a0a !important;
+        color: #ffffff;
+        border: 1px solid #353535;
+}
+.youtube{
+    background: #0a0a0a !important;
     color: #ffffff;
+    border: 1px solid #353535;
+    transition: .1s ease all;
+}
+.youtube:hover{
+    background: #131313 !important;
+    color: #ffffff;
+    border: 1px solid #535353;
 }
 
 
@@ -1613,7 +1716,24 @@ h1.typing-text{
 
 
 
-
+.footer-cta-nig {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 50px;
+    max-width: 400px;
+}
+.footer-cta-nig .services-help-col .services-help-header{
+    padding:30px 15px;
+}
+.footer-cta-nig .services-help-col .services-help-title{
+    font-size: 22px;
+    padding: 0;
+}
+.footer-cta-nig .services-help-col .nav-cta-btn-sec{
+    color: #c2c2c2;
+    font-weight: 400;
+}
 
 
 
@@ -6029,6 +6149,7 @@ color: #111;
 
 
 
+    
 
 
 
