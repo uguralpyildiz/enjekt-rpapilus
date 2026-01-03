@@ -1376,9 +1376,10 @@ footer{
     max-width: 100%;
     margin: auto;
     padding: 65px;
-    border: none !important;
+    
     margin-top: 0;
 }
+
 .footer-cta.erw2{
     position: relative;
     background-size: 100% !important;
